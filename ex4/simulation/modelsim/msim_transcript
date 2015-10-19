@@ -1,0 +1,225 @@
+# Reading C:/Altera/15.0/modelsim_ase/tcl/vsim/pref.tcl
+# do timer_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim PE vmap 10.3d Lib Mapping Utility 2014.10 Oct  7 2014
+# vmap -modelsim_quiet work rtl_work 
+# Copying C:/Altera/15.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:/Altera/15.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -2008 -work work {C:/Users/Daichi/hubiC/ELN/FPGA/Projects/ex4/timer.vhd}
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 08:37:19 on Oct 13,2015
+# vcom -reportprogress 300 -2008 -work work C:/Users/Daichi/hubiC/ELN/FPGA/Projects/ex4/timer.vhd 
+# -- Loading package STANDARD
+# -- Compiling package timerpack
+# -- Loading package TEXTIO
+# -- Loading package NUMERIC_BIT
+# -- Loading package timerpack
+# -- Compiling entity timer
+# -- Compiling architecture type1 of timer
+# -- Compiling architecture type2 of timer
+# -- Loading entity timer
+# End time: 08:37:19 on Oct 13,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim work.timer
+# vsim -gui "+altera" -l msim_transcript -do "timer_run_msim_rtl_vhdl.do" 
+# Start time: 08:37:28 on Oct 13,2015
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.numeric_bit(body)
+# Loading work.timerpack
+# Loading work.timer(type2)
+add wave -position insertpoint  \
+sim:/timer/hor \
+sim:/timer/en \
+sim:/timer/fin \
+sim:/timer/hordiv \
+sim:/timer/cpt \
+sim:/timer/div
+force -freeze sim:/timer/hor 1 0, 0 {50 ps} -r 100
+force -freeze sim:/timer/en 1 0
+force -freeze sim:/timer/fin 1 0, 0 {50 ps} -r 100
+# Value length (1) does not equal array index length (9).
+# 
+# ** Error: (vsim-4011) Invalid force value: 1 0, 0 {50 ps}.
+# 
+run
+run
+run
+run
+run
+run
+run
+force -freeze sim:/timer/fin 1 0, 0 {50 ps} -r 100
+# Value length (1) does not equal array index length (9).
+# 
+# ** Error: (vsim-4011) Invalid force value: 1 0, 0 {50 ps}.
+# 
+run
+run
+force -freeze sim:/timer/fin(0) 1 0, 0 {50 ps} -r 100
+run
+run
+run
+run
+run
+run
+force -freeze sim:/timer/Inputs 1 0, 0 {50 ps} -r 100
+# Value length (1) does not equal array index length (9).
+# 
+# ** Error: (vish-4011) Invalid force value: 1 0, 0 {50 ps}.
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+force -freeze sim:/timer/fin(1) 1 0, 0 {40 ps} -r 80
+force -freeze sim:/timer/fin(2) 1 0, 0 {30 ps} -r 60
+force -freeze sim:/timer/fin(3) 1 0, 0 {20 ps} -r 40
+force -freeze sim:/timer/fin(4) 1 0, 0 {10 ps} -r 20
+force -freeze sim:/timer/fin(5) 1 0, 0 {5 ps} -r 10
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+force -freeze sim:/timer/en 0 0
+run
+run
+run
+run
+run
+run
+run
+run
+force -freeze sim:/timer/en 1 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+force -freeze sim:/timer/cpt 1 0, 0 {50 ps} -r 100
+# Value length (1) does not equal array index length (9).
+# 
+# ** Error: (vsim-4011) Invalid force value: 1 0, 0 {50 ps}.
+# 
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+force -freeze sim:/timer/fin(0) 1 0
+force -freeze sim:/timer/fin(1) 1 0
+force -freeze sim:/timer/fin(2) 1 0
+force -freeze sim:/timer/fin(3) 1 0
+force -freeze sim:/timer/fin(4) 1 0
+force -freeze sim:/timer/fin(5) 1 0
+force -freeze sim:/timer/fin(6) 1 0
+force -freeze sim:/timer/fin(7) 1 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# End time: 11:07:16 on Oct 13,2015, Elapsed time: 2:29:48
+# Errors: 4, Warnings: 0

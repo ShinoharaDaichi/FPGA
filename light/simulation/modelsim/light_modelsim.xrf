@@ -1,0 +1,9 @@
+vendor_name = ModelSim
+source_file = 1, G:/Hubic/ELN/FPGA/Projects/light/light.bdf
+source_file = 1, G:/Hubic/ELN/FPGA/Projects/light/light.vwf
+source_file = 1, G:/Hubic/ELN/FPGA/Projects/light/db/light.cbx.xml
+design_name = light
+instance = comp, \f~output\, f~output, light, 1
+instance = comp, \x1~input\, x1~input, light, 1
+instance = comp, \x2~input\, x2~input, light, 1
+instance = comp, \inst2~0\, inst2~0, light, 1

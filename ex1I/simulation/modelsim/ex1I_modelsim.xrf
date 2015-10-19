@@ -1,0 +1,14 @@
+vendor_name = ModelSim
+source_file = 1, G:/Hubic/ELN/FPGA/Projects/ex1I/ex1I.vhd
+source_file = 1, G:/Hubic/ELN/FPGA/Projects/ex1I/ex1I.vwf
+source_file = 1, G:/Hubic/ELN/FPGA/Projects/ex1I/db/ex1I.cbx.xml
+source_file = 1, c:/altera/13.0/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, c:/altera/13.0/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, c:/altera/13.0/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, c:/altera/13.0/quartus/libraries/vhdl/ieee/timing_p.vhd
+design_name = ex1I
+instance = comp, \f~output , f~output, ex1I, 1
+instance = comp, \x3~input , x3~input, ex1I, 1
+instance = comp, \x1~input , x1~input, ex1I, 1
+instance = comp, \x2~input , x2~input, ex1I, 1
+instance = comp, \f~0 , f~0, ex1I, 1

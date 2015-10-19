@@ -1,0 +1,24 @@
+# do ex1I.do 
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ex1I
+# 
+# Top level modules:
+# 	ex1I
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ex1I_vlg_sample_tst
+# -- Compiling module ex1I_vlg_check_tst
+# -- Compiling module ex1I_vlg_vec_tst
+# 
+# Top level modules:
+# 	ex1I_vlg_vec_tst
+# vsim -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -t 1ps -novopt work.ex1I_vlg_vec_tst 
+# Loading work.ex1I_vlg_vec_tst
+# Loading work.ex1I
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading cycloneive_ver.cycloneive_lcell_comb
+# Loading work.ex1I_vlg_sample_tst
+# Loading work.ex1I_vlg_check_tst
+# Simulation passed !
+# ** Note: $finish    : ex1I.vt(152)
+#    Time: 200 ns  Iteration: 0  Instance: /ex1I_vlg_vec_tst/tb_out

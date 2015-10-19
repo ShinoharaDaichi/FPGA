@@ -1,0 +1,37 @@
+# Reading C:/Altera/15.0/modelsim_ase/tcl/vsim/pref.tcl
+# do add4bit_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim PE vmap 10.3d Lib Mapping Utility 2014.10 Oct  7 2014
+# vmap -modelsim_quiet work rtl_work 
+# Copying C:/Altera/15.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:/Altera/15.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {C:/Users/Daichi/hubiC/ELN/FPGA/Projects/ex3/add1bit/add1bit.vhd}
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 20:39:11 on Oct 11,2015
+# vcom -reportprogress 300 -93 -work work C:/Users/Daichi/hubiC/ELN/FPGA/Projects/ex3/add1bit/add1bit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity add1bit
+# -- Compiling architecture LogicFunction of add1bit
+# End time: 20:39:12 on Oct 11,2015, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Daichi/hubiC/ELN/FPGA/Projects/ex3/add4bit/add4bit.vhd}
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 20:39:12 on Oct 11,2015
+# vcom -reportprogress 300 -93 -work work C:/Users/Daichi/hubiC/ELN/FPGA/Projects/ex3/add4bit/add4bit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity add4bit
+# -- Compiling architecture LogicFunction of add4bit
+# End time: 20:39:12 on Oct 11,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 

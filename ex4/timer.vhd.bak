@@ -1,0 +1,51 @@
+package timerpack is 
+constant nbits : integer := 9 ; 
+end package ; 
+library ieee; 
+use ieee.numeric_bit.all ; 
+use work.timerpack.all ; 
+entity timer is 
+port ( hor, en : in bit ; 
+fin : in unsigned(nbits-1 downto 0) ; 
+hordiv : out bit ) ; 
+end timer ; 
+architecture type1 of timer is 
+signal cpt : unsigned(nbits-1 downto 0) ; 
+signal div : bit ; 
+begin 
+hordiv <= div ; 
+P1 : process 
+begin 
+wait until rising_edge(hor) ; 
+if en = '0' then 
+cpt <= fin ; 
+div <= '0' ; 
+elsif cpt = 0 then 
+cpt <= fin ; 
+div <= not div ; 
+else 
+cpt <= cpt - 1 ; 
+end if ; 
+end process P1 ; 
+end type1 ; 
+architecture type2 of timer is 
+signal cpt : unsigned(nbits-1 downto 0) ; 
+
+ 
+signal div : bit ; 
+begin 
+hordiv <= div ; 
+P1 : process 
+begin 
+wait until rising_edge(hor) ; 
+if en = '0' then 
+cpt <= (others => '0') ; 
+div <= '0' ; 
+elsif cpt >= fin then 
+cpt <= (others => '0') ; 
+div <= not div ; 
+else 
+cpt <= cpt + 1 ; 
+end if ; 
+end process P1 ; 
+end type2 ; 

@@ -1,0 +1,81 @@
+# Reading C:/Altera/15.0/modelsim_ase/tcl/vsim/pref.tcl
+# do light2_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim PE vmap 10.3d Lib Mapping Utility 2014.10 Oct  7 2014
+# vmap -modelsim_quiet work rtl_work 
+# Copying C:/Altera/15.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:/Altera/15.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {C:/Users/Daichi/hubiC/ELN/FPGA/Projects/light2/light2.vhd}
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 08:18:19 on Oct 13,2015
+# vcom -reportprogress 300 -93 -work work C:/Users/Daichi/hubiC/ELN/FPGA/Projects/light2/light2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity light2
+# -- Compiling architecture LogicFunction of light2
+# End time: 08:18:19 on Oct 13,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim work.light2
+# vsim -gui "+altera" -l msim_transcript -do "light2_run_msim_rtl_vhdl.do" 
+# Start time: 08:18:22 on Oct 13,2015
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.light2(logicfunction)
+add wave -position insertpoint  \
+sim:/light2/x1 \
+sim:/light2/x2 \
+sim:/light2/f
+force -freeze sim:/light2/x1 1 0, 0 {25 ps} -r 50
+force -freeze sim:/light2/x2 1 0, 0 {50 ps} -r 100
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+force -freeze sim:/light2/Inputs 1 0, 0 {50 ps} -r 100
+# Value length (1) does not equal array index length (2).
+# 
+# ** Error: (vish-4011) Invalid force value: 1 0, 0 {50 ps}.
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+force -freeze sim:/light2/Inputs 1 0, 0 {50 ps} -r 100
+# Value length (1) does not equal array index length (2).
+# 
+# ** Error: (vish-4011) Invalid force value: 1 0, 0 {50 ps}.
+run
+run
+run
+run
+run
+run
+run
+run
+# End time: 11:07:12 on Oct 13,2015, Elapsed time: 2:48:50
+# Errors: 2, Warnings: 0

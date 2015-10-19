@@ -1,0 +1,16 @@
+vendor_name = ModelSim
+source_file = 1, G:/Hubic/ELN/FPGA/Projects/ex3/add1bit/add1bit.vhd
+source_file = 1, G:/Hubic/ELN/FPGA/Projects/ex3/add1bit/add1bit.vwf
+source_file = 1, G:/Hubic/ELN/FPGA/Projects/ex3/add1bit/db/add1bit.cbx.xml
+source_file = 1, c:/altera/13.0/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, c:/altera/13.0/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, c:/altera/13.0/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, c:/altera/13.0/quartus/libraries/vhdl/ieee/timing_p.vhd
+design_name = add1bit
+instance = comp, \somme~output , somme~output, add1bit, 1
+instance = comp, \cout~output , cout~output, add1bit, 1
+instance = comp, \b~input , b~input, add1bit, 1
+instance = comp, \a~input , a~input, add1bit, 1
+instance = comp, \cin~input , cin~input, add1bit, 1
+instance = comp, \somme~0 , somme~0, add1bit, 1
+instance = comp, \cout~0 , cout~0, add1bit, 1

@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 dG:\Hubic\ELN\FPGA\Projects\ex4\simulation\qsim
+vtimer
+Z1 !s100 z``5kaAHbmml:EZ@]He281
+Z2 IHe]:VD>`a7TCLP_4`WQ@13
+Z3 VQe1Y:akCXR6X_6LRGGIUn0
+Z4 dG:\Hubic\ELN\FPGA\Projects\ex4\simulation\qsim
+Z5 w1442583915
+Z6 8timer.vo
+Z7 Ftimer.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|timer.vo|
+Z10 o-work work -O0
+!i10b 1
+!s85 0
+Z11 !s108 1442583918.935000
+Z12 !s107 timer.vo|
+!s101 -O0
+vtimer_vlg_check_tst
+!i10b 1
+Z13 !s100 n9UkKhRGXFii3cig1Se`J0
+Z14 IJ?hKod2g1bM^zc74KmAVf1
+Z15 VlUd:JU<iFfg^oQEQR>b5:2
+R4
+Z16 w1442583912
+Z17 8timer.vt
+Z18 Ftimer.vt
+L0 61
+R8
+r1
+!s85 0
+31
+Z19 !s108 1442583919.138000
+Z20 !s107 timer.vt|
+Z21 !s90 -work|work|timer.vt|
+!s101 -O0
+R10
+vtimer_vlg_sample_tst
+!i10b 1
+Z22 !s100 @R0F_P6aQGD36_ian@UMG1
+Z23 IHUQ8I3>b;]mlX[@HLcAkT0
+Z24 Vola3A@;ZUd13l0;F:A19m3
+R4
+R16
+R17
+R18
+L0 29
+R8
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R10
+vtimer_vlg_vec_tst
+!i10b 1
+!s100 7B=o9lk`O0^ALDhK5IUHa0
+IK;KTC?;[iF`m3ji]N8UB00
+Z25 VAl?cbDe7`4Fcm]j;8m6Cc1
+R4
+R16
+R17
+R18
+Z26 L0 157
+R8
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R10

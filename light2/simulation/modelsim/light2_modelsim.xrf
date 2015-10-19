@@ -1,0 +1,13 @@
+vendor_name = ModelSim
+source_file = 1, G:/Hubic/ELN/FPGA/Projects/light2/light2.vhd
+source_file = 1, G:/Hubic/ELN/FPGA/Projects/light2/light2.vwf
+source_file = 1, G:/Hubic/ELN/FPGA/Projects/light2/db/light2.cbx.xml
+source_file = 1, c:/altera/13.0/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, c:/altera/13.0/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, c:/altera/13.0/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, c:/altera/13.0/quartus/libraries/vhdl/ieee/timing_p.vhd
+design_name = light2
+instance = comp, \f~output , f~output, light2, 1
+instance = comp, \x1~input , x1~input, light2, 1
+instance = comp, \x2~input , x2~input, light2, 1
+instance = comp, \f~0 , f~0, light2, 1

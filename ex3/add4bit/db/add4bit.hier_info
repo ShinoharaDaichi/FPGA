@@ -1,0 +1,97 @@
+|add4bit
+a[0] => add1bit:fourAdders:0:add.a
+a[1] => add1bit:fourAdders:1:add.a
+a[2] => add1bit:fourAdders:2:add.a
+a[3] => add1bit:fourAdders:3:add.a
+b[0] => add1bit:fourAdders:0:add.b
+b[1] => add1bit:fourAdders:1:add.b
+b[2] => add1bit:fourAdders:2:add.b
+b[3] => add1bit:fourAdders:3:add.b
+cin => add1bit:fourAdders:0:add.cin
+somme[0] <= add1bit:fourAdders:0:add.somme
+somme[1] <= add1bit:fourAdders:1:add.somme
+somme[2] <= add1bit:fourAdders:2:add.somme
+somme[3] <= add1bit:fourAdders:3:add.somme
+cout <= add1bit:fourAdders:3:add.cout
+
+
+|add4bit|add1bit:\fourAdders:0:add
+a => somme.IN0
+a => somme.IN0
+a => somme.IN0
+a => somme.IN0
+b => somme.IN1
+b => somme.IN1
+b => somme.IN1
+b => somme.IN1
+cin => somme.IN1
+cin => somme.IN1
+cin => cout.IN1
+cin => cout.IN1
+cin => somme.IN1
+cin => somme.IN1
+cin => cout.IN1
+somme <= somme.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|add4bit|add1bit:\fourAdders:1:add
+a => somme.IN0
+a => somme.IN0
+a => somme.IN0
+a => somme.IN0
+b => somme.IN1
+b => somme.IN1
+b => somme.IN1
+b => somme.IN1
+cin => somme.IN1
+cin => somme.IN1
+cin => cout.IN1
+cin => cout.IN1
+cin => somme.IN1
+cin => somme.IN1
+cin => cout.IN1
+somme <= somme.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|add4bit|add1bit:\fourAdders:2:add
+a => somme.IN0
+a => somme.IN0
+a => somme.IN0
+a => somme.IN0
+b => somme.IN1
+b => somme.IN1
+b => somme.IN1
+b => somme.IN1
+cin => somme.IN1
+cin => somme.IN1
+cin => cout.IN1
+cin => cout.IN1
+cin => somme.IN1
+cin => somme.IN1
+cin => cout.IN1
+somme <= somme.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|add4bit|add1bit:\fourAdders:3:add
+a => somme.IN0
+a => somme.IN0
+a => somme.IN0
+a => somme.IN0
+b => somme.IN1
+b => somme.IN1
+b => somme.IN1
+b => somme.IN1
+cin => somme.IN1
+cin => somme.IN1
+cin => cout.IN1
+cin => cout.IN1
+cin => somme.IN1
+cin => somme.IN1
+cin => cout.IN1
+somme <= somme.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+

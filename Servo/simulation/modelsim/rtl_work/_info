@@ -1,0 +1,366 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Daichi/hubiC/ELN/FPGA/Projects/Servo/simulation/modelsim
+Cadd_counter_quad_cfg
+Z1 equad_segment7
+Z2 acounter_quad
+Z3 DEx4 work 8 segment7 0 22 Lg3C]f4:c>SDCc@1S;91n2
+Z4 DAx4 work 13 quad_segment7 12 counter_quad 22 Ll_Q<<LO6>D`6nK;H0iZ=3
+Z5 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z6 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z7 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z8 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z9 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z10 DEx4 work 13 quad_segment7 0 22 2^lZV<AA6<O=?[2JCLnn03
+Z11 w1444908725
+R0
+Z12 8C:/Users/Daichi/hubiC/ELN/FPGA/Projects/quad_segment7/quad_segment7.vhd
+Z13 FC:/Users/Daichi/hubiC/ELN/FPGA/Projects/quad_segment7/quad_segment7.vhd
+l0
+L157
+V:`9;Q;<[2akhZN@VRgXOW3
+!s100 jXez][Y3=];gB9e[;B6VJ2
+Z14 OV;C;10.3d;59
+31
+Z15 !s110 1444910715
+!i10b 1
+Z16 !s108 1444910715.264000
+Z17 !s90 -reportprogress|300|-93|-work|work|C:/Users/Daichi/hubiC/ELN/FPGA/Projects/quad_segment7/quad_segment7.vhd|
+Z18 !s107 C:/Users/Daichi/hubiC/ELN/FPGA/Projects/quad_segment7/quad_segment7.vhd|
+!i113 1
+Z19 o-93 -work work
+Z20 tExplicit 1
+Cdigit_quad_cfg
+R1
+adigit_quad
+R3
+DAx4 work 13 quad_segment7 10 digit_quad 22 AJm1U:5eXlbz;aYYhhW980
+R5
+R6
+R7
+R8
+R9
+R10
+R11
+R0
+R12
+R13
+l0
+L149
+V4EGG_hUfGzfQ_[JAbWfeJ0
+!s100 _b5HW0:3LcIkbA2Re7F5>1
+R14
+31
+R15
+!i10b 1
+R16
+R17
+R18
+!i113 1
+R19
+R20
+Epwm
+Z21 w1444896954
+R6
+R7
+R8
+R9
+R0
+Z22 8C:/Users/Daichi/hubiC/ELN/FPGA/Projects/PWM/pwm.vhd
+Z23 FC:/Users/Daichi/hubiC/ELN/FPGA/Projects/PWM/pwm.vhd
+l0
+L6
+Vg44h9T2>zhl40LfFHV_?i0
+!s100 o4P`]F=_?YEiD7YO3<^gd3
+R14
+31
+Z24 !s110 1444910714
+!i10b 1
+Z25 !s108 1444910714.754000
+Z26 !s90 -reportprogress|300|-93|-work|work|C:/Users/Daichi/hubiC/ELN/FPGA/Projects/PWM/pwm.vhd|
+Z27 !s107 C:/Users/Daichi/hubiC/ELN/FPGA/Projects/PWM/pwm.vhd|
+!i113 1
+R19
+R20
+Alogic
+R6
+R7
+R8
+R9
+Z28 DEx4 work 3 pwm 0 22 g44h9T2>zhl40LfFHV_?i0
+l28
+L21
+VHD_@7BURRh4Y:CkL8XZBb0
+!s100 ;z@F6?2lb4bITSHkP@P<13
+R14
+31
+R24
+!i10b 1
+R25
+R26
+R27
+!i113 1
+R19
+R20
+Equad_segment7
+R11
+R5
+R6
+R7
+R8
+R9
+R0
+R12
+R13
+l0
+L6
+V2^lZV<AA6<O=?[2JCLnn03
+!s100 2D?Yb]]lnj<mN1]^]Z75j1
+R14
+31
+R15
+!i10b 1
+R16
+R17
+R18
+!i113 1
+R19
+R20
+Acounter_quad
+R5
+R6
+R7
+R8
+R9
+R10
+l136
+L119
+VLl_Q<<LO6>D`6nK;H0iZ=3
+!s100 i^;e8LEOm_nK5cL4S@YTV3
+R14
+31
+R15
+!i10b 1
+R16
+R17
+R18
+!i113 1
+R19
+R20
+Adigit_quad
+R5
+R6
+R7
+R8
+R9
+R10
+l63
+L42
+VAJm1U:5eXlbz;aYYhhW980
+!s100 R3z4[kP?Aombda6L=3QP`0
+R14
+31
+R15
+!i10b 1
+R16
+R17
+R18
+!i113 1
+R19
+R20
+Esegment7
+Z29 w1444904769
+R5
+R6
+R7
+R8
+R9
+R0
+Z30 8C:/Users/Daichi/hubiC/ELN/FPGA/Projects/segment7/segment7.vhd
+Z31 FC:/Users/Daichi/hubiC/ELN/FPGA/Projects/segment7/segment7.vhd
+l0
+L6
+VLg3C]f4:c>SDCc@1S;91n2
+!s100 K6LN9I5k2FDolFE]^j9Wm1
+R14
+31
+R24
+!i10b 1
+Z32 !s108 1444910714.233000
+Z33 !s90 -reportprogress|300|-93|-work|work|C:/Users/Daichi/hubiC/ELN/FPGA/Projects/segment7/segment7.vhd|
+Z34 !s107 C:/Users/Daichi/hubiC/ELN/FPGA/Projects/segment7/segment7.vhd|
+!i113 1
+R19
+R20
+Asub_counter_single
+R5
+R6
+R7
+R8
+R9
+R3
+l246
+L243
+VHLJ^_zY8ZnV<Cb5N_J4GK1
+!s100 U?AIYzdf0LSUPKbca9TY<3
+R14
+31
+R24
+!i10b 1
+R32
+R33
+R34
+!i113 1
+R19
+R20
+Aadd_counter_single
+R5
+R6
+R7
+R8
+R9
+R3
+l132
+L129
+VV6Emlb`a;AHCMaTMJXNHP0
+!s100 RVG8<W@<YJAfl4i0M>MDS1
+R14
+31
+R24
+!i10b 1
+R32
+R33
+R34
+!i113 1
+R19
+R20
+Adigit_single
+R5
+R6
+R7
+R8
+R9
+R3
+l24
+L21
+VaFKVQUFJIjJXFC55WP@1b0
+!s100 lM`68FK22;mSW38aJVV5d3
+R14
+31
+R24
+!i10b 1
+R32
+R33
+R34
+!i113 1
+R19
+R20
+Eservo
+Z35 w1444910089
+R6
+R7
+R8
+R9
+R0
+Z36 8C:/Users/Daichi/hubiC/ELN/FPGA/Projects/Servo/servo.vhd
+Z37 FC:/Users/Daichi/hubiC/ELN/FPGA/Projects/Servo/servo.vhd
+l0
+L5
+V4DSESbW2DZXh:6X9_2_MZ2
+!s100 neG[HaTL>9CnM3Wnk<gW21
+R14
+31
+R15
+!i10b 1
+Z38 !s108 1444910715.798000
+Z39 !s90 -reportprogress|300|-93|-work|work|C:/Users/Daichi/hubiC/ELN/FPGA/Projects/Servo/servo.vhd|
+Z40 !s107 C:/Users/Daichi/hubiC/ELN/FPGA/Projects/Servo/servo.vhd|
+!i113 1
+R19
+R20
+Aservo_arch
+R6
+R7
+R8
+R9
+Z41 DEx4 work 5 servo 0 22 4DSESbW2DZXh:6X9_2_MZ2
+l96
+L44
+V_>Nm5JDd_0b4YhZ5Xo`O23
+!s100 QkX[ohbTUSXe5J9KlbIJB3
+R14
+31
+R15
+!i10b 1
+R38
+R39
+R40
+!i113 1
+R19
+R20
+Cservo_cfg
+eservo
+aservo_arch
+R28
+R5
+R10
+DAx4 work 5 servo 10 servo_arch 22 _>Nm5JDd_0b4YhZ5Xo`O23
+R6
+R7
+R8
+R9
+R41
+R35
+R0
+R36
+R37
+l0
+L106
+VUPiT6<B7Y]SMEJWn4`4<Y1
+!s100 `d4:DaPdGBa5gJ6z6V_kW3
+R14
+31
+!s110 1444910716
+!i10b 1
+R38
+R39
+R40
+!i113 1
+R19
+R20
+Csub_counter_quad_cfg
+R1
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+R9
+R10
+R11
+R0
+R12
+R13
+l0
+L165
+ViJU6;hE3mh[9n]Ra0kRVl0
+!s100 c>EjHK:0HN3UIl6Qdob=]2
+R14
+31
+R15
+!i10b 1
+R16
+R17
+R18
+!i113 1
+R19
+R20

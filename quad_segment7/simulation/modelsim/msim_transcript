@@ -1,0 +1,683 @@
+# Reading C:/Altera/15.0/modelsim_ase/tcl/vsim/pref.tcl
+# do quad_segment7_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim PE vmap 10.3d Lib Mapping Utility 2014.10 Oct  7 2014
+# vmap -modelsim_quiet work rtl_work 
+# Copying C:/Altera/15.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:/Altera/15.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {C:/Users/Daichi/hubiC/ELN/FPGA/Projects/segment7/segment7.vhd}
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 09:43:14 on Oct 15,2015
+# vcom -reportprogress 300 -93 -work work C:/Users/Daichi/hubiC/ELN/FPGA/Projects/segment7/segment7.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity segment7
+# -- Compiling architecture add_counter_single of segment7
+# -- Compiling architecture sub_counter_single of segment7
+# -- Loading entity segment7
+# End time: 09:43:14 on Oct 15,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Daichi/hubiC/ELN/FPGA/Projects/quad_segment7/quad_segment7.vhd}
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 09:43:14 on Oct 15,2015
+# vcom -reportprogress 300 -93 -work work C:/Users/Daichi/hubiC/ELN/FPGA/Projects/quad_segment7/quad_segment7.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity quad_segment7
+# -- Compiling architecture counter_quad of quad_segment7
+# -- Compiling configuration add_counter_quad_cfg
+# -- Loading entity quad_segment7
+# -- Loading architecture counter_quad of quad_segment7
+# -- Loading entity segment7
+# -- Compiling configuration sub_counter_quad_cfg
+# -- Loading entity quad_segment7
+# -- Loading architecture counter_quad of quad_segment7
+# -- Loading entity segment7
+# End time: 09:43:15 on Oct 15,2015, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+vsim work.quad_segment7
+# vsim -gui "+altera" -l msim_transcript -do "quad_segment7_run_msim_rtl_vhdl.do" 
+# Start time: 09:43:29 on Oct 15,2015
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.quad_segment7(counter_quad)
+# Loading work.segment7(sub_counter_single)
+add wave -position insertpoint  \
+sim:/quad_segment7/input
+add wave -position insertpoint  \
+sim:/quad_segment7/HEX00 \
+sim:/quad_segment7/HEX01 \
+sim:/quad_segment7/HEX02 \
+sim:/quad_segment7/HEX03 \
+sim:/quad_segment7/HEX04 \
+sim:/quad_segment7/HEX05 \
+sim:/quad_segment7/HEX06 \
+sim:/quad_segment7/HEX10 \
+sim:/quad_segment7/HEX11 \
+sim:/quad_segment7/HEX12 \
+sim:/quad_segment7/HEX13 \
+sim:/quad_segment7/HEX14 \
+sim:/quad_segment7/HEX15 \
+sim:/quad_segment7/HEX16 \
+sim:/quad_segment7/HEX20 \
+sim:/quad_segment7/HEX21 \
+sim:/quad_segment7/HEX22 \
+sim:/quad_segment7/HEX23 \
+sim:/quad_segment7/HEX24 \
+sim:/quad_segment7/HEX25 \
+sim:/quad_segment7/HEX26 \
+sim:/quad_segment7/HEX30 \
+sim:/quad_segment7/HEX31 \
+sim:/quad_segment7/HEX32 \
+sim:/quad_segment7/HEX33 \
+sim:/quad_segment7/HEX34 \
+sim:/quad_segment7/HEX35 \
+sim:/quad_segment7/HEX36
+force -freeze sim:/quad_segment7/input 1 0, 0 {50 ps} -r 100
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run -continue
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+force -freeze sim:/quad_segment7/input 1 0, 0 {0 ps} -r 1
+run
+run
+run
+run
+run
+run
+force -freeze sim:/quad_segment7/input 1 0, 0 {5 ps} -r 10
+run
+run
+run
+run
+run
+force -freeze sim:/quad_segment7/input 1 0, 0 {50 ps} -r 100
+run
+run
+run
+run
+run
+run
+run
+run
+noforce sim:/quad_segment7/input
+run
+run
+run
+force -freeze sim:/quad_segment7/input 1 0, 0 {50 ps} -r 100
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+noforce sim:/quad_segment7/input
+run
+force -freeze sim:/quad_segment7/input 1 0, 0 {5 ps} -r 10
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# WARNING: No extended dataflow license exists
+# Error Undo Start called while in Redo capture mode
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# End time: 09:49:47 on Oct 15,2015, Elapsed time: 0:06:18
+# Errors: 0, Warnings: 1

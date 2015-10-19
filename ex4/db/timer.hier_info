@@ -1,0 +1,42 @@
+|timer
+hor => div.CLK
+hor => cpt[0].CLK
+hor => cpt[1].CLK
+hor => cpt[2].CLK
+hor => cpt[3].CLK
+hor => cpt[4].CLK
+hor => cpt[5].CLK
+hor => cpt[6].CLK
+hor => cpt[7].CLK
+hor => cpt[8].CLK
+en => cpt.OUTPUTSELECT
+en => cpt.OUTPUTSELECT
+en => cpt.OUTPUTSELECT
+en => cpt.OUTPUTSELECT
+en => cpt.OUTPUTSELECT
+en => cpt.OUTPUTSELECT
+en => cpt.OUTPUTSELECT
+en => cpt.OUTPUTSELECT
+en => cpt.OUTPUTSELECT
+en => div.OUTPUTSELECT
+fin[0] => cpt.DATAB
+fin[0] => cpt.DATAB
+fin[1] => cpt.DATAB
+fin[1] => cpt.DATAB
+fin[2] => cpt.DATAB
+fin[2] => cpt.DATAB
+fin[3] => cpt.DATAB
+fin[3] => cpt.DATAB
+fin[4] => cpt.DATAB
+fin[4] => cpt.DATAB
+fin[5] => cpt.DATAB
+fin[5] => cpt.DATAB
+fin[6] => cpt.DATAB
+fin[6] => cpt.DATAB
+fin[7] => cpt.DATAB
+fin[7] => cpt.DATAB
+fin[8] => cpt.DATAB
+fin[8] => cpt.DATAB
+hordiv <= div.DB_MAX_OUTPUT_PORT_TYPE
+
+

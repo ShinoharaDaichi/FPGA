@@ -1,0 +1,198 @@
+$comment
+	File created using the following command:
+		vcd file ex1I.msim.vcd -direction
+$end
+$date
+	Thu Sep 17 17:46:15 2015
+$end
+$version
+	ModelSim Version 10.1d
+$end
+$timescale
+	1ps
+$end
+$scope module ex1I_vlg_vec_tst $end
+$var reg 1 ! x1 $end
+$var reg 1 " x2 $end
+$var reg 1 # x3 $end
+$var wire 1 $ f $end
+$var wire 1 % sampler $end
+$scope module i1 $end
+$var wire 1 & gnd $end
+$var wire 1 ' vcc $end
+$var wire 1 ( unknown $end
+$var tri1 1 ) devclrn $end
+$var tri1 1 * devpor $end
+$var tri1 1 + devoe $end
+$var wire 1 , f~output_o $end
+$var wire 1 - x3~input_o $end
+$var wire 1 . x1~input_o $end
+$var wire 1 / x2~input_o $end
+$var wire 1 0 f~0_combout $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+0"
+0#
+0$
+x%
+0&
+1'
+x(
+1)
+1*
+1+
+0,
+0-
+0.
+0/
+00
+$end
+#10000
+1#
+1-
+0%
+10
+1,
+1$
+#20000
+1"
+0#
+1/
+0-
+1%
+#30000
+1#
+1-
+0%
+00
+0,
+0$
+#40000
+1!
+0"
+0#
+1.
+0/
+0-
+1%
+10
+1,
+1$
+#50000
+1#
+1-
+0%
+00
+0,
+0$
+#60000
+1"
+0#
+1/
+0-
+1%
+#70000
+1#
+1-
+0%
+10
+1,
+1$
+#80000
+0!
+0"
+0#
+0.
+0/
+0-
+1%
+00
+0,
+0$
+#90000
+1#
+1-
+0%
+10
+1,
+1$
+#100000
+1"
+0#
+1/
+0-
+1%
+#110000
+1#
+1-
+0%
+00
+0,
+0$
+#120000
+1!
+0"
+0#
+1.
+0/
+0-
+1%
+10
+1,
+1$
+#130000
+1#
+1-
+0%
+00
+0,
+0$
+#140000
+1"
+0#
+1/
+0-
+1%
+#150000
+1#
+1-
+0%
+10
+1,
+1$
+#160000
+0!
+0"
+0#
+0.
+0/
+0-
+1%
+00
+0,
+0$
+#170000
+1#
+1-
+0%
+10
+1,
+1$
+#180000
+1"
+0#
+1/
+0-
+1%
+#190000
+1#
+1-
+0%
+00
+0,
+0$
+#200000

@@ -1,0 +1,132 @@
+LIBRARY IEEE; 
+USE IEEE.STD_LOGIC_1164.ALL; 
+USE IEEE.STD_LOGIC_UNSIGNED.ALL; 
+ENTITY countled IS 
+    PORT ( 
+          clk   : IN  STD_LOGIC; 
+          HEX00 : OUT STD_LOGIC;   
+          HEX01 : OUT STD_LOGIC;   
+          HEX02 : OUT STD_LOGIC;   
+          HEX03 : OUT STD_LOGIC;  
+          HEX04 : OUT STD_LOGIC;  
+          HEX05 : OUT STD_LOGIC;  
+          HEX06 : OUT STD_LOGIC   
+         ); 
+END countled; 
+ARCHITECTURE rtl OF countled IS 
+SIGNAL s_clk_compte : STD_LOGIC_VECTOR(25 DOWNTO 0)
+; 
+SIGNAL s_clk_lent : STD_LOGIC; 
+SIGNAL s_decimal : STD_LOGIC_VECTOR(3 DOWNTO 0); 
+BEGIN 
+PROCESS (clk) 
+BEGIN 
+    IF clk'EVENT AND clk = '1' THEN 
+        IF s_clk_compte > 50000000 THEN 
+            s_clk_compte <= (OTHERS => '0'); 
+        ELSE 
+           s_clk_compte <= s_clk_compte + 1; 
+        END IF; 
+        IF s_clk_compte < 25000000 THEN 
+            s_clk_lent <= '0'; 
+        ELSE 
+            s_clk_lent <= '1';         
+        END IF; 
+    END IF; 
+END PROCESS; 
+PROCESS (s_clk_lent) 
+BEGIN 
+    IF s_clk_lent'EVENT AND s_clk_lent = '1' THEN 
+        IF s_decimal > 8 THEN 
+            s_decimal <= (OTHERS => '0'); 
+        ELSE 
+            s_decimal <= s_decimal + 1;         
+        END IF; 
+    END IF; 
+END PROCESS; 
+PROCESS (s_decimal) 
+BEGIN 
+   CASE s_decimal IS 
+       WHEN "0000" => 
+            HEX00 <= '0'; 
+            HEX01 <= '0'; 
+            HEX02 <= '0'; 
+            HEX03 <= '0'; 
+            HEX04 <= '0'; 
+            HEX05 <= '0'; 
+            HEX06 <= '1'; 
+       WHEN "0001" => 
+            HEX00 <= '1'; 
+            HEX01 <= '0'; 
+            HEX02 <= '0'; 
+            HEX03 <= '1'; 
+            HEX04 <= '1'; 
+            HEX05 <= '1'; 
+            HEX06 <= '1'; 
+       WHEN "0010" => 
+            HEX00 <= '0'; 
+            HEX01 <= '0'; 
+            HEX02 <= '1'; 
+            HEX03 <= '0'; 
+            HEX04 <= '0'; 
+            HEX05 <= '1'; 
+            HEX06 <= '0'; 
+       WHEN "0011" =>                      
+            HEX00 <= '0'; 
+            HEX01 <= '0'; 
+            HEX02 <= '0'; 
+            HEX03 <= '0'; 
+            HEX04 <= '1'; 
+            HEX05 <= '1'; 
+            HEX06 <= '0'; 
+       WHEN "0100" => 
+            HEX00 <= '1'; 
+            HEX01 <= '0'; 
+            HEX02 <= '0'; 
+            HEX03 <= '1'; 
+            HEX04 <= '1'; 
+            HEX05 <= '0'; 
+            HEX06 <= '0'; 
+       WHEN "0101" => 
+            HEX00 <= '0'; 
+            HEX01 <= '1'; 
+            HEX02 <= '0'; 
+            HEX03 <= '0'; 
+            HEX04 <= '1'; 
+            HEX05 <= '0'; 
+            HEX06 <= '0'; 
+       WHEN "0110" => 
+            HEX00 <= '0'; 
+            HEX01 <= '1'; 
+            HEX02 <= '0'; 
+            HEX03 <= '0'; 
+            HEX04 <= '0'; 
+            HEX05 <= '0'; 
+            HEX06 <= '0'; 
+       WHEN "0111" => 
+            HEX00 <= '0'; 
+            HEX01 <= '0'; 
+            HEX02 <= '0'; 
+            HEX03 <= '1'; 
+            HEX04 <= '1'; 
+            HEX05 <= '1'; 
+            HEX06 <= '1'; 
+       WHEN "1000" =>                             
+            HEX00 <= '0'; 
+            HEX01 <= '0'; 
+            HEX02 <= '0'; 
+            HEX03 <= '0'; 
+            HEX04 <= '0'; 
+            HEX05 <= '0'; 
+            HEX06 <= '0'; 
+       WHEN OTHERS =>                      
+            HEX00 <= '0'; 
+            HEX01 <= '0'; 
+            HEX02 <= '0'; 
+            HEX03 <= '0'; 
+            HEX04 <= '1'; 
+            HEX05 <= '0'; 
+            HEX06 <= '0'; 
+   END CASE; 
+END PROCESS; 
+END; 

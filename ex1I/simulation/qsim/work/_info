@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dG:\Hubic\ELN\FPGA\Projects\ex1I\simulation\qsim
+vex1I
+Z1 IeHzCWU3P_AjzI5iBca=QK1
+Z2 V[8gOVVZmikd`j4ZWd]jGo0
+Z3 dG:\Hubic\ELN\FPGA\Projects\ex1I\simulation\qsim
+Z4 w1442504769
+Z5 8ex1I.vo
+Z6 Fex1I.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 o-work work -O0
+Z9 nex1@i
+!i10b 1
+Z10 !s100 _EV;Y=565A1iR2FQCF_l_3
+!s85 0
+Z11 !s108 1442504773.024000
+Z12 !s107 ex1I.vo|
+Z13 !s90 -work|work|ex1I.vo|
+!s101 -O0
+vex1I_vlg_check_tst
+!i10b 1
+!s100 mM3dI:BN0mghD=@CU10?K3
+IEGkHLgB3Mbg7XT02U1Pl=0
+V<W`iEV[RhP7;YG5o4oI8n3
+R3
+Z14 w1442504767
+Z15 8ex1I.vt
+Z16 Fex1I.vt
+L0 61
+R7
+r1
+!s85 0
+31
+Z17 !s108 1442504773.269000
+Z18 !s107 ex1I.vt|
+Z19 !s90 -work|work|ex1I.vt|
+!s101 -O0
+R8
+nex1@i_vlg_check_tst
+vex1I_vlg_sample_tst
+!i10b 1
+!s100 ?Kc?FA4;Y5ahjZ<_=iLR52
+IPB@UK_3TTAC8Y99JL]gVD2
+VI=J;>X>S=<g>QjhR69Y?[0
+R3
+R14
+R15
+R16
+L0 29
+R7
+r1
+!s85 0
+31
+R17
+R18
+R19
+!s101 -O0
+R8
+nex1@i_vlg_sample_tst
+vex1I_vlg_vec_tst
+!i10b 1
+!s100 HSP8m8`AXgY??Db0ZQZHT2
+IKn1g^FHoKGf>GEQM>WZ6]2
+VW7geTNMcfU^T=<hnX_g_k0
+R3
+R14
+R15
+R16
+L0 156
+R7
+r1
+!s85 0
+31
+R17
+R18
+R19
+!s101 -O0
+R8
+nex1@i_vlg_vec_tst

@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 dG:\Hubic\ELN\FPGA\Projects\ex3\add4bit\simulation\qsim
+vadd4bit
+Z1 !s100 IB<Qm1Q2jFiTA9?6D1AQO3
+Z2 IhXWHJbU_5NK_PQ7_EI91W1
+Z3 VbHY93W;W`OFL>Vka0ba291
+Z4 dG:\Hubic\ELN\FPGA\Projects\ex3\add4bit\simulation\qsim
+Z5 w1442582442
+Z6 8add4bit.vo
+Z7 Fadd4bit.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|add4bit.vo|
+Z10 o-work work -O0
+!i10b 1
+!s85 0
+Z11 !s108 1442582444.221000
+Z12 !s107 add4bit.vo|
+!s101 -O0
+vadd4bit_vlg_check_tst
+!i10b 1
+!s100 Vc1TDY7nkKV9FOIhRY8J:2
+IGKZPXWb41OVb:lo3J9B2a1
+Z13 VO>?_gCkL>^hY^XemHazbB3
+R4
+Z14 w1442582439
+Z15 8add4bit.vt
+Z16 Fadd4bit.vt
+L0 61
+R8
+r1
+!s85 0
+31
+Z17 !s108 1442582444.378000
+Z18 !s107 add4bit.vt|
+Z19 !s90 -work|work|add4bit.vt|
+!s101 -O0
+R10
+vadd4bit_vlg_sample_tst
+!i10b 1
+Z20 !s100 ?b:>U^COok]>XVF:0dfak0
+Z21 I5J=Ke[AOd^bAd_<i4a4;W1
+Z22 Veb5inI[T^72jPREEP[V>g3
+R4
+R14
+R15
+R16
+L0 29
+R8
+r1
+!s85 0
+31
+R17
+R18
+R19
+!s101 -O0
+R10
+vadd4bit_vlg_vec_tst
+!i10b 1
+!s100 jiOAjhm3TDd>W7h:mIPWk3
+I]mMafle[4FfBgH9A^=b4[1
+Z23 V^YG:[O?<S@:Cczzl7a3PN0
+R4
+R14
+R15
+R16
+L0 241
+R8
+r1
+!s85 0
+31
+R17
+R18
+R19
+!s101 -O0
+R10

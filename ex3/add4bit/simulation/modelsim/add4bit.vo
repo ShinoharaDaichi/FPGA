@@ -1,0 +1,333 @@
+// Copyright (C) 1991-2013 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+// VENDOR "Altera"
+// PROGRAM "Quartus II 32-bit"
+// VERSION "Version 13.0.0 Build 156 04/24/2013 SJ Web Edition"
+
+// DATE "09/18/2015 15:20:42"
+
+// 
+// Device: Altera EP4CE22F17C6 Package FBGA256
+// 
+
+// 
+// This Verilog file should be used for ModelSim-Altera (Verilog) only
+// 
+
+`timescale 1 ps/ 1 ps
+
+module add4bit (
+	a,
+	b,
+	cin,
+	somme,
+	cout);
+input 	[3:0] a;
+input 	[3:0] b;
+input 	cin;
+output 	[3:0] somme;
+output 	cout;
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+tri1 devclrn;
+tri1 devpor;
+tri1 devoe;
+wire \b[0]~input_o ;
+wire \somme[0]~output_o ;
+wire \somme[1]~output_o ;
+wire \somme[2]~output_o ;
+wire \somme[3]~output_o ;
+wire \cout~output_o ;
+wire \cin~input_o ;
+wire \a[0]~input_o ;
+wire \fourAdders:0:add|somme~1_cout ;
+wire \fourAdders:0:add|somme~2_combout ;
+wire \b[1]~input_o ;
+wire \a[1]~input_o ;
+wire \fourAdders:0:add|somme~3 ;
+wire \fourAdders:0:add|somme~4_combout ;
+wire \b[2]~input_o ;
+wire \a[2]~input_o ;
+wire \fourAdders:0:add|somme~5 ;
+wire \fourAdders:0:add|somme~6_combout ;
+wire \b[3]~input_o ;
+wire \a[3]~input_o ;
+wire \fourAdders:0:add|somme~7 ;
+wire \fourAdders:0:add|somme~8_combout ;
+wire \fourAdders:0:add|somme~9 ;
+wire \fourAdders:0:add|somme~10_combout ;
+
+
+cycloneive_io_ibuf \b[0]~input (
+	.i(b[0]),
+	.ibar(gnd),
+	.o(\b[0]~input_o ));
+// synopsys translate_off
+defparam \b[0]~input .bus_hold = "false";
+defparam \b[0]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cycloneive_io_obuf \somme[0]~output (
+	.i(\fourAdders:0:add|somme~2_combout ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\somme[0]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \somme[0]~output .bus_hold = "false";
+defparam \somme[0]~output .open_drain_output = "false";
+// synopsys translate_on
+
+cycloneive_io_obuf \somme[1]~output (
+	.i(\fourAdders:0:add|somme~4_combout ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\somme[1]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \somme[1]~output .bus_hold = "false";
+defparam \somme[1]~output .open_drain_output = "false";
+// synopsys translate_on
+
+cycloneive_io_obuf \somme[2]~output (
+	.i(\fourAdders:0:add|somme~6_combout ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\somme[2]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \somme[2]~output .bus_hold = "false";
+defparam \somme[2]~output .open_drain_output = "false";
+// synopsys translate_on
+
+cycloneive_io_obuf \somme[3]~output (
+	.i(\fourAdders:0:add|somme~8_combout ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\somme[3]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \somme[3]~output .bus_hold = "false";
+defparam \somme[3]~output .open_drain_output = "false";
+// synopsys translate_on
+
+cycloneive_io_obuf \cout~output (
+	.i(\fourAdders:0:add|somme~10_combout ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\cout~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \cout~output .bus_hold = "false";
+defparam \cout~output .open_drain_output = "false";
+// synopsys translate_on
+
+cycloneive_io_ibuf \cin~input (
+	.i(cin),
+	.ibar(gnd),
+	.o(\cin~input_o ));
+// synopsys translate_off
+defparam \cin~input .bus_hold = "false";
+defparam \cin~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cycloneive_io_ibuf \a[0]~input (
+	.i(a[0]),
+	.ibar(gnd),
+	.o(\a[0]~input_o ));
+// synopsys translate_off
+defparam \a[0]~input .bus_hold = "false";
+defparam \a[0]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cycloneive_lcell_comb \fourAdders:0:add|somme~1 (
+// Equation(s):
+// \fourAdders:0:add|somme~1_cout  = CARRY(\b[0]~input_o )
+
+	.dataa(\b[0]~input_o ),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(vcc),
+	.cin(gnd),
+	.combout(),
+	.cout(\fourAdders:0:add|somme~1_cout ));
+// synopsys translate_off
+defparam \fourAdders:0:add|somme~1 .lut_mask = 16'h00AA;
+defparam \fourAdders:0:add|somme~1 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+cycloneive_lcell_comb \fourAdders:0:add|somme~2 (
+// Equation(s):
+// \fourAdders:0:add|somme~2_combout  = (\cin~input_o  & ((\a[0]~input_o  & (\fourAdders:0:add|somme~1_cout  & VCC)) # (!\a[0]~input_o  & (!\fourAdders:0:add|somme~1_cout )))) # (!\cin~input_o  & ((\a[0]~input_o  & (!\fourAdders:0:add|somme~1_cout )) # 
+// (!\a[0]~input_o  & ((\fourAdders:0:add|somme~1_cout ) # (GND)))))
+// \fourAdders:0:add|somme~3  = CARRY((\cin~input_o  & (!\a[0]~input_o  & !\fourAdders:0:add|somme~1_cout )) # (!\cin~input_o  & ((!\fourAdders:0:add|somme~1_cout ) # (!\a[0]~input_o ))))
+
+	.dataa(\cin~input_o ),
+	.datab(\a[0]~input_o ),
+	.datac(gnd),
+	.datad(vcc),
+	.cin(\fourAdders:0:add|somme~1_cout ),
+	.combout(\fourAdders:0:add|somme~2_combout ),
+	.cout(\fourAdders:0:add|somme~3 ));
+// synopsys translate_off
+defparam \fourAdders:0:add|somme~2 .lut_mask = 16'h9617;
+defparam \fourAdders:0:add|somme~2 .sum_lutc_input = "cin";
+// synopsys translate_on
+
+cycloneive_io_ibuf \b[1]~input (
+	.i(b[1]),
+	.ibar(gnd),
+	.o(\b[1]~input_o ));
+// synopsys translate_off
+defparam \b[1]~input .bus_hold = "false";
+defparam \b[1]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cycloneive_io_ibuf \a[1]~input (
+	.i(a[1]),
+	.ibar(gnd),
+	.o(\a[1]~input_o ));
+// synopsys translate_off
+defparam \a[1]~input .bus_hold = "false";
+defparam \a[1]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cycloneive_lcell_comb \fourAdders:0:add|somme~4 (
+// Equation(s):
+// \fourAdders:0:add|somme~4_combout  = ((\b[1]~input_o  $ (\a[1]~input_o  $ (!\fourAdders:0:add|somme~3 )))) # (GND)
+// \fourAdders:0:add|somme~5  = CARRY((\b[1]~input_o  & ((\a[1]~input_o ) # (!\fourAdders:0:add|somme~3 ))) # (!\b[1]~input_o  & (\a[1]~input_o  & !\fourAdders:0:add|somme~3 )))
+
+	.dataa(\b[1]~input_o ),
+	.datab(\a[1]~input_o ),
+	.datac(gnd),
+	.datad(vcc),
+	.cin(\fourAdders:0:add|somme~3 ),
+	.combout(\fourAdders:0:add|somme~4_combout ),
+	.cout(\fourAdders:0:add|somme~5 ));
+// synopsys translate_off
+defparam \fourAdders:0:add|somme~4 .lut_mask = 16'h698E;
+defparam \fourAdders:0:add|somme~4 .sum_lutc_input = "cin";
+// synopsys translate_on
+
+cycloneive_io_ibuf \b[2]~input (
+	.i(b[2]),
+	.ibar(gnd),
+	.o(\b[2]~input_o ));
+// synopsys translate_off
+defparam \b[2]~input .bus_hold = "false";
+defparam \b[2]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cycloneive_io_ibuf \a[2]~input (
+	.i(a[2]),
+	.ibar(gnd),
+	.o(\a[2]~input_o ));
+// synopsys translate_off
+defparam \a[2]~input .bus_hold = "false";
+defparam \a[2]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cycloneive_lcell_comb \fourAdders:0:add|somme~6 (
+// Equation(s):
+// \fourAdders:0:add|somme~6_combout  = (\b[2]~input_o  & ((\a[2]~input_o  & (\fourAdders:0:add|somme~5  & VCC)) # (!\a[2]~input_o  & (!\fourAdders:0:add|somme~5 )))) # (!\b[2]~input_o  & ((\a[2]~input_o  & (!\fourAdders:0:add|somme~5 )) # (!\a[2]~input_o  & 
+// ((\fourAdders:0:add|somme~5 ) # (GND)))))
+// \fourAdders:0:add|somme~7  = CARRY((\b[2]~input_o  & (!\a[2]~input_o  & !\fourAdders:0:add|somme~5 )) # (!\b[2]~input_o  & ((!\fourAdders:0:add|somme~5 ) # (!\a[2]~input_o ))))
+
+	.dataa(\b[2]~input_o ),
+	.datab(\a[2]~input_o ),
+	.datac(gnd),
+	.datad(vcc),
+	.cin(\fourAdders:0:add|somme~5 ),
+	.combout(\fourAdders:0:add|somme~6_combout ),
+	.cout(\fourAdders:0:add|somme~7 ));
+// synopsys translate_off
+defparam \fourAdders:0:add|somme~6 .lut_mask = 16'h9617;
+defparam \fourAdders:0:add|somme~6 .sum_lutc_input = "cin";
+// synopsys translate_on
+
+cycloneive_io_ibuf \b[3]~input (
+	.i(b[3]),
+	.ibar(gnd),
+	.o(\b[3]~input_o ));
+// synopsys translate_off
+defparam \b[3]~input .bus_hold = "false";
+defparam \b[3]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cycloneive_io_ibuf \a[3]~input (
+	.i(a[3]),
+	.ibar(gnd),
+	.o(\a[3]~input_o ));
+// synopsys translate_off
+defparam \a[3]~input .bus_hold = "false";
+defparam \a[3]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cycloneive_lcell_comb \fourAdders:0:add|somme~8 (
+// Equation(s):
+// \fourAdders:0:add|somme~8_combout  = ((\b[3]~input_o  $ (\a[3]~input_o  $ (!\fourAdders:0:add|somme~7 )))) # (GND)
+// \fourAdders:0:add|somme~9  = CARRY((\b[3]~input_o  & ((\a[3]~input_o ) # (!\fourAdders:0:add|somme~7 ))) # (!\b[3]~input_o  & (\a[3]~input_o  & !\fourAdders:0:add|somme~7 )))
+
+	.dataa(\b[3]~input_o ),
+	.datab(\a[3]~input_o ),
+	.datac(gnd),
+	.datad(vcc),
+	.cin(\fourAdders:0:add|somme~7 ),
+	.combout(\fourAdders:0:add|somme~8_combout ),
+	.cout(\fourAdders:0:add|somme~9 ));
+// synopsys translate_off
+defparam \fourAdders:0:add|somme~8 .lut_mask = 16'h698E;
+defparam \fourAdders:0:add|somme~8 .sum_lutc_input = "cin";
+// synopsys translate_on
+
+cycloneive_lcell_comb \fourAdders:0:add|somme~10 (
+// Equation(s):
+// \fourAdders:0:add|somme~10_combout  = \fourAdders:0:add|somme~9 
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(gnd),
+	.cin(\fourAdders:0:add|somme~9 ),
+	.combout(\fourAdders:0:add|somme~10_combout ),
+	.cout());
+// synopsys translate_off
+defparam \fourAdders:0:add|somme~10 .lut_mask = 16'hF0F0;
+defparam \fourAdders:0:add|somme~10 .sum_lutc_input = "cin";
+// synopsys translate_on
+
+assign somme[0] = \somme[0]~output_o ;
+
+assign somme[1] = \somme[1]~output_o ;
+
+assign somme[2] = \somme[2]~output_o ;
+
+assign somme[3] = \somme[3]~output_o ;
+
+assign cout = \cout~output_o ;
+
+endmodule
