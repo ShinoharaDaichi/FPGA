@@ -1,0 +1,90 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Daichi/hubiC/ELN/FPGA/Projects/adc/simulation/qsim
+vadc
+Z1 !s110 1450307771
+!i10b 1
+!s100 e;P1EB^62g^Hm3iF_;J8i2
+I4YHPk3SXdPXabGlWjjD;P2
+Z2 V`JN@9S9cnhjKRR_L]QIcM3
+R0
+w1450307770
+8adc.vo
+Fadc.vo
+L0 32
+Z3 OV;L;10.3d;59
+r1
+!s85 0
+31
+!s108 1450307771.587000
+!s107 adc.vo|
+!s90 -work|work|adc.vo|
+!i113 1
+Z4 o-work work
+vadc_vlg_check_tst
+R1
+!i10b 1
+!s100 XPISzUk=HfbSL=kT:B=7b0
+I=33Lak;1lAllgIbb]Y5H11
+R2
+R0
+Z5 w1450307768
+Z6 8Waveform.vwf.vt
+Z7 FWaveform.vwf.vt
+L0 64
+R3
+r1
+!s85 0
+31
+Z8 !s108 1450307771.760000
+Z9 !s107 Waveform.vwf.vt|
+Z10 !s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R4
+vadc_vlg_sample_tst
+R1
+!i10b 1
+!s100 U]z8jjZ59K]DbPGA;O?U70
+IZl2MR@04j@baj;Vzkf=o83
+R2
+R0
+R5
+R6
+R7
+L0 30
+R3
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R4
+vadc_vlg_vec_tst
+R1
+!i10b 1
+!s100 bAUM8P5^;L:6Dd0IP1B<z3
+I2oAACN4J>gO^4V3P@[:`40
+R2
+R0
+R5
+R6
+R7
+L0 462
+R3
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R4

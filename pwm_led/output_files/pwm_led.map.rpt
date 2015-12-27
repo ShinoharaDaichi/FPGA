@@ -1,0 +1,879 @@
+Analysis & Synthesis report for pwm_led
+Tue Dec 08 12:57:41 2015
+Quartus II 64-Bit Version 15.0.0 Build 145 04/22/2015 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Analysis & Synthesis DSP Block Usage Summary
+  9. Registers Removed During Synthesis
+ 10. General Register Statistics
+ 11. Inverted Register Statistics
+ 12. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 13. Parameter Settings for User Entity Instance: pwm:pwm_0
+ 14. Parameter Settings for User Entity Instance: pwm:pwm_1
+ 15. Parameter Settings for User Entity Instance: pwm:pwm_2
+ 16. Parameter Settings for User Entity Instance: pwm:pwm_3
+ 17. Parameter Settings for User Entity Instance: pwm:pwm_4
+ 18. Parameter Settings for User Entity Instance: pwm:pwm_5
+ 19. Parameter Settings for User Entity Instance: pwm:pwm_6
+ 20. Parameter Settings for User Entity Instance: pwm:pwm_7
+ 21. Parameter Settings for User Entity Instance: pwm:pwm_8
+ 22. Parameter Settings for User Entity Instance: pwm:pwm_9
+ 23. Port Connectivity Checks: "quad_segment7:quad_segment7_1|segment7:MSB_segment7"
+ 24. Port Connectivity Checks: "quad_segment7:quad_segment7_1|segment7:third_segment7"
+ 25. Port Connectivity Checks: "quad_segment7:quad_segment7_1|segment7:second_segment7"
+ 26. Port Connectivity Checks: "quad_segment7:quad_segment7_1|segment7:LSB_segment7"
+ 27. Port Connectivity Checks: "quad_segment7:quad_segment7_1"
+ 28. Port Connectivity Checks: "pwm:pwm_9"
+ 29. Port Connectivity Checks: "pwm:pwm_8"
+ 30. Port Connectivity Checks: "pwm:pwm_7"
+ 31. Port Connectivity Checks: "pwm:pwm_6"
+ 32. Port Connectivity Checks: "pwm:pwm_5"
+ 33. Port Connectivity Checks: "pwm:pwm_4"
+ 34. Port Connectivity Checks: "pwm:pwm_3"
+ 35. Port Connectivity Checks: "pwm:pwm_2"
+ 36. Port Connectivity Checks: "pwm:pwm_1"
+ 37. Port Connectivity Checks: "pwm:pwm_0"
+ 38. Post-Synthesis Netlist Statistics for Top Partition
+ 39. Elapsed Time Per Partition
+ 40. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus II License Agreement,
+the Altera MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Altera and sold by Altera or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                 ;
++---------------------------------+--------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Tue Dec 08 12:57:41 2015      ;
+; Quartus II 64-Bit Version       ; 15.0.0 Build 145 04/22/2015 SJ Web Edition ;
+; Revision Name                   ; pwm_led                                    ;
+; Top-level Entity Name           ; pwm_led                                    ;
+; Family                          ; Cyclone V                                  ;
+; Logic utilization (in ALMs)     ; N/A                                        ;
+; Total registers                 ; 422                                        ;
+; Total pins                      ; 43                                         ;
+; Total virtual pins              ; 0                                          ;
+; Total block memory bits         ; 0                                          ;
+; Total DSP Blocks                ; 10                                         ;
+; Total HSSI RX PCSs              ; 0                                          ;
+; Total HSSI PMA RX Deserializers ; 0                                          ;
+; Total HSSI TX PCSs              ; 0                                          ;
+; Total HSSI PMA TX Serializers   ; 0                                          ;
+; Total PLLs                      ; 0                                          ;
+; Total DLLs                      ; 0                                          ;
++---------------------------------+--------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                             ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                          ; Setting            ; Default Value      ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                          ; 5CGXFC5C6F27C7     ;                    ;
+; Top-level entity name                                                           ; pwm_led            ; pwm_led            ;
+; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
+; Use smart compilation                                                           ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation      ; On                 ; On                 ;
+; Enable compact report table                                                     ; Off                ; Off                ;
+; Restructure Multiplexers                                                        ; Auto               ; Auto               ;
+; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                ;
+; Create Debugging Nodes for IP Cores                                             ; Off                ; Off                ;
+; Preserve fewer node names                                                       ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                       ; Off                ; Off                ;
+; Verilog Version                                                                 ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                                    ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                        ; Auto               ; Auto               ;
+; Safe State Machine                                                              ; Off                ; Off                ;
+; Extract Verilog State Machines                                                  ; On                 ; On                 ;
+; Extract VHDL State Machines                                                     ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                               ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                      ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                                  ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                         ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                       ; On                 ; On                 ;
+; Parallel Synthesis                                                              ; On                 ; On                 ;
+; DSP Block Balancing                                                             ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                              ; On                 ; On                 ;
+; Power-Up Don't Care                                                             ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                                    ; Off                ; Off                ;
+; Remove Duplicate Registers                                                      ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                            ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                          ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                           ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                       ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                            ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                             ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                                  ; Off                ; Off                ;
+; Optimization Technique                                                          ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                              ; 70                 ; 70                 ;
+; Auto Carry Chains                                                               ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                            ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                           ; Off                ; Off                ;
+; Auto ROM Replacement                                                            ; On                 ; On                 ;
+; Auto RAM Replacement                                                            ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                      ; On                 ; On                 ;
+; Auto Shift Register Replacement                                                 ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                                 ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                                   ; On                 ; On                 ;
+; Strict RAM Replacement                                                          ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                               ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                           ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                                   ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                             ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                               ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                         ; On                 ; On                 ;
+; Report Parameter Settings                                                       ; On                 ; On                 ;
+; Report Source Assignments                                                       ; On                 ; On                 ;
+; Report Connectivity Checks                                                      ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                              ; Off                ; Off                ;
+; Synchronization Register Chain Length                                           ; 3                  ; 3                  ;
+; PowerPlay Power Optimization During Synthesis                                   ; Normal compilation ; Normal compilation ;
+; HDL message level                                                               ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                                 ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                        ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                              ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                       ; 100                ; 100                ;
+; Clock MUX Protection                                                            ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                     ; Off                ; Off                ;
+; Block Design Naming                                                             ; Auto               ; Auto               ;
+; SDC constraint protection                                                       ; Off                ; Off                ;
+; Synthesis Effort                                                                ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                            ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                              ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                     ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                          ; On                 ; On                 ;
+; Synthesis Seed                                                                  ; 1                  ; 1                  ;
+; Automatic Parallel Synthesis                                                    ; On                 ; On                 ;
+; Partial Reconfiguration Bitstream ID                                            ; Off                ; Off                ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 8      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                     ;
++------------------------------------+-----------------+-----------------+-------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path   ; Used in Netlist ; File Type       ; File Name with Absolute Path                                            ; Library ;
++------------------------------------+-----------------+-----------------+-------------------------------------------------------------------------+---------+
+; ../PWM/pwm.vhd                     ; yes             ; User VHDL File  ; C:/Users/Daichi/hubiC/ELN/FPGA/Projects/PWM/pwm.vhd                     ;         ;
+; ../segment7/segment7.vhd           ; yes             ; User VHDL File  ; C:/Users/Daichi/hubiC/ELN/FPGA/Projects/segment7/segment7.vhd           ;         ;
+; ../quad_segment7/quad_segment7.vhd ; yes             ; User VHDL File  ; C:/Users/Daichi/hubiC/ELN/FPGA/Projects/quad_segment7/quad_segment7.vhd ;         ;
+; pwm_led.vhd                        ; yes             ; User VHDL File  ; C:/Users/Daichi/hubiC/ELN/FPGA/Projects/pwm_led/pwm_led.vhd             ;         ;
++------------------------------------+-----------------+-----------------+-------------------------------------------------------------------------+---------+
+
+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Estimate of Logic utilization (ALMs needed) ; 346       ;
+;                                             ;           ;
+; Combinational ALUT usage for logic          ; 486       ;
+;     -- 7 input functions                    ; 0         ;
+;     -- 6 input functions                    ; 117       ;
+;     -- 5 input functions                    ; 64        ;
+;     -- 4 input functions                    ; 56        ;
+;     -- <=3 input functions                  ; 249       ;
+;                                             ;           ;
+; Dedicated logic registers                   ; 422       ;
+;                                             ;           ;
+; I/O pins                                    ; 43        ;
+;                                             ;           ;
+; Total DSP Blocks                            ; 10        ;
+;                                             ;           ;
+; Maximum fan-out node                        ; clk~input ;
+; Maximum fan-out                             ; 422       ;
+; Total fan-out                               ; 3317      ;
+; Average fan-out                             ; 3.30      ;
++---------------------------------------------+-----------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                           ;
++------------------------------------+-------------------+--------------+-------------------+------------+------+--------------+-----------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node         ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                             ; Library Name ;
++------------------------------------+-------------------+--------------+-------------------+------------+------+--------------+-----------------------------------------------------------------+--------------+
+; |pwm_led                           ; 486 (28)          ; 422 (12)     ; 0                 ; 10         ; 43   ; 0            ; |pwm_led                                                        ; work         ;
+;    |pwm:pwm_0|                     ; 64 (64)           ; 59 (59)      ; 0                 ; 1          ; 0    ; 0            ; |pwm_led|pwm:pwm_0                                              ; work         ;
+;    |pwm:pwm_1|                     ; 39 (39)           ; 39 (39)      ; 0                 ; 1          ; 0    ; 0            ; |pwm_led|pwm:pwm_1                                              ; work         ;
+;    |pwm:pwm_2|                     ; 39 (39)           ; 39 (39)      ; 0                 ; 1          ; 0    ; 0            ; |pwm_led|pwm:pwm_2                                              ; work         ;
+;    |pwm:pwm_3|                     ; 39 (39)           ; 39 (39)      ; 0                 ; 1          ; 0    ; 0            ; |pwm_led|pwm:pwm_3                                              ; work         ;
+;    |pwm:pwm_4|                     ; 39 (39)           ; 39 (39)      ; 0                 ; 1          ; 0    ; 0            ; |pwm_led|pwm:pwm_4                                              ; work         ;
+;    |pwm:pwm_5|                     ; 39 (39)           ; 39 (39)      ; 0                 ; 1          ; 0    ; 0            ; |pwm_led|pwm:pwm_5                                              ; work         ;
+;    |pwm:pwm_6|                     ; 39 (39)           ; 39 (39)      ; 0                 ; 1          ; 0    ; 0            ; |pwm_led|pwm:pwm_6                                              ; work         ;
+;    |pwm:pwm_7|                     ; 39 (39)           ; 39 (39)      ; 0                 ; 1          ; 0    ; 0            ; |pwm_led|pwm:pwm_7                                              ; work         ;
+;    |pwm:pwm_8|                     ; 39 (39)           ; 39 (39)      ; 0                 ; 1          ; 0    ; 0            ; |pwm_led|pwm:pwm_8                                              ; work         ;
+;    |pwm:pwm_9|                     ; 39 (39)           ; 39 (39)      ; 0                 ; 1          ; 0    ; 0            ; |pwm_led|pwm:pwm_9                                              ; work         ;
+;    |quad_segment7:quad_segment7_1| ; 43 (22)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |pwm_led|quad_segment7:quad_segment7_1                          ; work         ;
+;       |segment7:LSB_segment7|      ; 7 (7)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |pwm_led|quad_segment7:quad_segment7_1|segment7:LSB_segment7    ; work         ;
+;       |segment7:second_segment7|   ; 7 (7)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |pwm_led|quad_segment7:quad_segment7_1|segment7:second_segment7 ; work         ;
+;       |segment7:third_segment7|    ; 7 (7)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |pwm_led|quad_segment7:quad_segment7_1|segment7:third_segment7  ; work         ;
++------------------------------------+-------------------+--------------+-------------------+------------+------+--------------+-----------------------------------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++-----------------------------------------------+
+; Analysis & Synthesis DSP Block Usage Summary  ;
++---------------------------------+-------------+
+; Statistic                       ; Number Used ;
++---------------------------------+-------------+
+; Independent 27x27               ; 10          ;
+; Total number of DSP blocks      ; 10          ;
+;                                 ;             ;
+; Fixed Point Unsigned Multiplier ; 10          ;
++---------------------------------+-------------+
+
+
++------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                           ;
++-----------------------------------------+------------------------------------+
+; Register name                           ; Reason for Removal                 ;
++-----------------------------------------+------------------------------------+
+; pwm:pwm_1|count[0][19]                  ; Merged with pwm:pwm_0|count[0][19] ;
+; pwm:pwm_2|count[0][19]                  ; Merged with pwm:pwm_0|count[0][19] ;
+; pwm:pwm_3|count[0][19]                  ; Merged with pwm:pwm_0|count[0][19] ;
+; pwm:pwm_4|count[0][19]                  ; Merged with pwm:pwm_0|count[0][19] ;
+; pwm:pwm_5|count[0][19]                  ; Merged with pwm:pwm_0|count[0][19] ;
+; pwm:pwm_6|count[0][19]                  ; Merged with pwm:pwm_0|count[0][19] ;
+; pwm:pwm_7|count[0][19]                  ; Merged with pwm:pwm_0|count[0][19] ;
+; pwm:pwm_8|count[0][19]                  ; Merged with pwm:pwm_0|count[0][19] ;
+; pwm:pwm_9|count[0][19]                  ; Merged with pwm:pwm_0|count[0][19] ;
+; pwm:pwm_1|count[0][18]                  ; Merged with pwm:pwm_0|count[0][18] ;
+; pwm:pwm_2|count[0][18]                  ; Merged with pwm:pwm_0|count[0][18] ;
+; pwm:pwm_3|count[0][18]                  ; Merged with pwm:pwm_0|count[0][18] ;
+; pwm:pwm_4|count[0][18]                  ; Merged with pwm:pwm_0|count[0][18] ;
+; pwm:pwm_5|count[0][18]                  ; Merged with pwm:pwm_0|count[0][18] ;
+; pwm:pwm_6|count[0][18]                  ; Merged with pwm:pwm_0|count[0][18] ;
+; pwm:pwm_7|count[0][18]                  ; Merged with pwm:pwm_0|count[0][18] ;
+; pwm:pwm_8|count[0][18]                  ; Merged with pwm:pwm_0|count[0][18] ;
+; pwm:pwm_9|count[0][18]                  ; Merged with pwm:pwm_0|count[0][18] ;
+; pwm:pwm_1|count[0][17]                  ; Merged with pwm:pwm_0|count[0][17] ;
+; pwm:pwm_2|count[0][17]                  ; Merged with pwm:pwm_0|count[0][17] ;
+; pwm:pwm_3|count[0][17]                  ; Merged with pwm:pwm_0|count[0][17] ;
+; pwm:pwm_4|count[0][17]                  ; Merged with pwm:pwm_0|count[0][17] ;
+; pwm:pwm_5|count[0][17]                  ; Merged with pwm:pwm_0|count[0][17] ;
+; pwm:pwm_6|count[0][17]                  ; Merged with pwm:pwm_0|count[0][17] ;
+; pwm:pwm_7|count[0][17]                  ; Merged with pwm:pwm_0|count[0][17] ;
+; pwm:pwm_8|count[0][17]                  ; Merged with pwm:pwm_0|count[0][17] ;
+; pwm:pwm_9|count[0][17]                  ; Merged with pwm:pwm_0|count[0][17] ;
+; pwm:pwm_1|count[0][16]                  ; Merged with pwm:pwm_0|count[0][16] ;
+; pwm:pwm_2|count[0][16]                  ; Merged with pwm:pwm_0|count[0][16] ;
+; pwm:pwm_3|count[0][16]                  ; Merged with pwm:pwm_0|count[0][16] ;
+; pwm:pwm_4|count[0][16]                  ; Merged with pwm:pwm_0|count[0][16] ;
+; pwm:pwm_5|count[0][16]                  ; Merged with pwm:pwm_0|count[0][16] ;
+; pwm:pwm_6|count[0][16]                  ; Merged with pwm:pwm_0|count[0][16] ;
+; pwm:pwm_7|count[0][16]                  ; Merged with pwm:pwm_0|count[0][16] ;
+; pwm:pwm_8|count[0][16]                  ; Merged with pwm:pwm_0|count[0][16] ;
+; pwm:pwm_9|count[0][16]                  ; Merged with pwm:pwm_0|count[0][16] ;
+; pwm:pwm_1|count[0][15]                  ; Merged with pwm:pwm_0|count[0][15] ;
+; pwm:pwm_2|count[0][15]                  ; Merged with pwm:pwm_0|count[0][15] ;
+; pwm:pwm_3|count[0][15]                  ; Merged with pwm:pwm_0|count[0][15] ;
+; pwm:pwm_4|count[0][15]                  ; Merged with pwm:pwm_0|count[0][15] ;
+; pwm:pwm_5|count[0][15]                  ; Merged with pwm:pwm_0|count[0][15] ;
+; pwm:pwm_6|count[0][15]                  ; Merged with pwm:pwm_0|count[0][15] ;
+; pwm:pwm_7|count[0][15]                  ; Merged with pwm:pwm_0|count[0][15] ;
+; pwm:pwm_8|count[0][15]                  ; Merged with pwm:pwm_0|count[0][15] ;
+; pwm:pwm_9|count[0][15]                  ; Merged with pwm:pwm_0|count[0][15] ;
+; pwm:pwm_1|count[0][14]                  ; Merged with pwm:pwm_0|count[0][14] ;
+; pwm:pwm_2|count[0][14]                  ; Merged with pwm:pwm_0|count[0][14] ;
+; pwm:pwm_3|count[0][14]                  ; Merged with pwm:pwm_0|count[0][14] ;
+; pwm:pwm_4|count[0][14]                  ; Merged with pwm:pwm_0|count[0][14] ;
+; pwm:pwm_5|count[0][14]                  ; Merged with pwm:pwm_0|count[0][14] ;
+; pwm:pwm_6|count[0][14]                  ; Merged with pwm:pwm_0|count[0][14] ;
+; pwm:pwm_7|count[0][14]                  ; Merged with pwm:pwm_0|count[0][14] ;
+; pwm:pwm_8|count[0][14]                  ; Merged with pwm:pwm_0|count[0][14] ;
+; pwm:pwm_9|count[0][14]                  ; Merged with pwm:pwm_0|count[0][14] ;
+; pwm:pwm_1|count[0][13]                  ; Merged with pwm:pwm_0|count[0][13] ;
+; pwm:pwm_2|count[0][13]                  ; Merged with pwm:pwm_0|count[0][13] ;
+; pwm:pwm_3|count[0][13]                  ; Merged with pwm:pwm_0|count[0][13] ;
+; pwm:pwm_4|count[0][13]                  ; Merged with pwm:pwm_0|count[0][13] ;
+; pwm:pwm_5|count[0][13]                  ; Merged with pwm:pwm_0|count[0][13] ;
+; pwm:pwm_6|count[0][13]                  ; Merged with pwm:pwm_0|count[0][13] ;
+; pwm:pwm_7|count[0][13]                  ; Merged with pwm:pwm_0|count[0][13] ;
+; pwm:pwm_8|count[0][13]                  ; Merged with pwm:pwm_0|count[0][13] ;
+; pwm:pwm_9|count[0][13]                  ; Merged with pwm:pwm_0|count[0][13] ;
+; pwm:pwm_1|count[0][12]                  ; Merged with pwm:pwm_0|count[0][12] ;
+; pwm:pwm_2|count[0][12]                  ; Merged with pwm:pwm_0|count[0][12] ;
+; pwm:pwm_3|count[0][12]                  ; Merged with pwm:pwm_0|count[0][12] ;
+; pwm:pwm_4|count[0][12]                  ; Merged with pwm:pwm_0|count[0][12] ;
+; pwm:pwm_5|count[0][12]                  ; Merged with pwm:pwm_0|count[0][12] ;
+; pwm:pwm_6|count[0][12]                  ; Merged with pwm:pwm_0|count[0][12] ;
+; pwm:pwm_7|count[0][12]                  ; Merged with pwm:pwm_0|count[0][12] ;
+; pwm:pwm_8|count[0][12]                  ; Merged with pwm:pwm_0|count[0][12] ;
+; pwm:pwm_9|count[0][12]                  ; Merged with pwm:pwm_0|count[0][12] ;
+; pwm:pwm_1|count[0][11]                  ; Merged with pwm:pwm_0|count[0][11] ;
+; pwm:pwm_2|count[0][11]                  ; Merged with pwm:pwm_0|count[0][11] ;
+; pwm:pwm_3|count[0][11]                  ; Merged with pwm:pwm_0|count[0][11] ;
+; pwm:pwm_4|count[0][11]                  ; Merged with pwm:pwm_0|count[0][11] ;
+; pwm:pwm_5|count[0][11]                  ; Merged with pwm:pwm_0|count[0][11] ;
+; pwm:pwm_6|count[0][11]                  ; Merged with pwm:pwm_0|count[0][11] ;
+; pwm:pwm_7|count[0][11]                  ; Merged with pwm:pwm_0|count[0][11] ;
+; pwm:pwm_8|count[0][11]                  ; Merged with pwm:pwm_0|count[0][11] ;
+; pwm:pwm_9|count[0][11]                  ; Merged with pwm:pwm_0|count[0][11] ;
+; pwm:pwm_1|count[0][10]                  ; Merged with pwm:pwm_0|count[0][10] ;
+; pwm:pwm_2|count[0][10]                  ; Merged with pwm:pwm_0|count[0][10] ;
+; pwm:pwm_3|count[0][10]                  ; Merged with pwm:pwm_0|count[0][10] ;
+; pwm:pwm_4|count[0][10]                  ; Merged with pwm:pwm_0|count[0][10] ;
+; pwm:pwm_5|count[0][10]                  ; Merged with pwm:pwm_0|count[0][10] ;
+; pwm:pwm_6|count[0][10]                  ; Merged with pwm:pwm_0|count[0][10] ;
+; pwm:pwm_7|count[0][10]                  ; Merged with pwm:pwm_0|count[0][10] ;
+; pwm:pwm_8|count[0][10]                  ; Merged with pwm:pwm_0|count[0][10] ;
+; pwm:pwm_9|count[0][10]                  ; Merged with pwm:pwm_0|count[0][10] ;
+; pwm:pwm_1|count[0][9]                   ; Merged with pwm:pwm_0|count[0][9]  ;
+; pwm:pwm_2|count[0][9]                   ; Merged with pwm:pwm_0|count[0][9]  ;
+; pwm:pwm_3|count[0][9]                   ; Merged with pwm:pwm_0|count[0][9]  ;
+; pwm:pwm_4|count[0][9]                   ; Merged with pwm:pwm_0|count[0][9]  ;
+; pwm:pwm_5|count[0][9]                   ; Merged with pwm:pwm_0|count[0][9]  ;
+; pwm:pwm_6|count[0][9]                   ; Merged with pwm:pwm_0|count[0][9]  ;
+; pwm:pwm_7|count[0][9]                   ; Merged with pwm:pwm_0|count[0][9]  ;
+; pwm:pwm_8|count[0][9]                   ; Merged with pwm:pwm_0|count[0][9]  ;
+; pwm:pwm_9|count[0][9]                   ; Merged with pwm:pwm_0|count[0][9]  ;
+; pwm:pwm_1|count[0][8]                   ; Merged with pwm:pwm_0|count[0][8]  ;
+; pwm:pwm_2|count[0][8]                   ; Merged with pwm:pwm_0|count[0][8]  ;
+; pwm:pwm_3|count[0][8]                   ; Merged with pwm:pwm_0|count[0][8]  ;
+; pwm:pwm_4|count[0][8]                   ; Merged with pwm:pwm_0|count[0][8]  ;
+; pwm:pwm_5|count[0][8]                   ; Merged with pwm:pwm_0|count[0][8]  ;
+; pwm:pwm_6|count[0][8]                   ; Merged with pwm:pwm_0|count[0][8]  ;
+; pwm:pwm_7|count[0][8]                   ; Merged with pwm:pwm_0|count[0][8]  ;
+; pwm:pwm_8|count[0][8]                   ; Merged with pwm:pwm_0|count[0][8]  ;
+; pwm:pwm_9|count[0][8]                   ; Merged with pwm:pwm_0|count[0][8]  ;
+; pwm:pwm_1|count[0][7]                   ; Merged with pwm:pwm_0|count[0][7]  ;
+; pwm:pwm_2|count[0][7]                   ; Merged with pwm:pwm_0|count[0][7]  ;
+; pwm:pwm_3|count[0][7]                   ; Merged with pwm:pwm_0|count[0][7]  ;
+; pwm:pwm_4|count[0][7]                   ; Merged with pwm:pwm_0|count[0][7]  ;
+; pwm:pwm_5|count[0][7]                   ; Merged with pwm:pwm_0|count[0][7]  ;
+; pwm:pwm_6|count[0][7]                   ; Merged with pwm:pwm_0|count[0][7]  ;
+; pwm:pwm_7|count[0][7]                   ; Merged with pwm:pwm_0|count[0][7]  ;
+; pwm:pwm_8|count[0][7]                   ; Merged with pwm:pwm_0|count[0][7]  ;
+; pwm:pwm_9|count[0][7]                   ; Merged with pwm:pwm_0|count[0][7]  ;
+; pwm:pwm_1|count[0][6]                   ; Merged with pwm:pwm_0|count[0][6]  ;
+; pwm:pwm_2|count[0][6]                   ; Merged with pwm:pwm_0|count[0][6]  ;
+; pwm:pwm_3|count[0][6]                   ; Merged with pwm:pwm_0|count[0][6]  ;
+; pwm:pwm_4|count[0][6]                   ; Merged with pwm:pwm_0|count[0][6]  ;
+; pwm:pwm_5|count[0][6]                   ; Merged with pwm:pwm_0|count[0][6]  ;
+; pwm:pwm_6|count[0][6]                   ; Merged with pwm:pwm_0|count[0][6]  ;
+; pwm:pwm_7|count[0][6]                   ; Merged with pwm:pwm_0|count[0][6]  ;
+; pwm:pwm_8|count[0][6]                   ; Merged with pwm:pwm_0|count[0][6]  ;
+; pwm:pwm_9|count[0][6]                   ; Merged with pwm:pwm_0|count[0][6]  ;
+; pwm:pwm_1|count[0][5]                   ; Merged with pwm:pwm_0|count[0][5]  ;
+; pwm:pwm_2|count[0][5]                   ; Merged with pwm:pwm_0|count[0][5]  ;
+; pwm:pwm_3|count[0][5]                   ; Merged with pwm:pwm_0|count[0][5]  ;
+; pwm:pwm_4|count[0][5]                   ; Merged with pwm:pwm_0|count[0][5]  ;
+; pwm:pwm_5|count[0][5]                   ; Merged with pwm:pwm_0|count[0][5]  ;
+; pwm:pwm_6|count[0][5]                   ; Merged with pwm:pwm_0|count[0][5]  ;
+; pwm:pwm_7|count[0][5]                   ; Merged with pwm:pwm_0|count[0][5]  ;
+; pwm:pwm_8|count[0][5]                   ; Merged with pwm:pwm_0|count[0][5]  ;
+; pwm:pwm_9|count[0][5]                   ; Merged with pwm:pwm_0|count[0][5]  ;
+; pwm:pwm_1|count[0][4]                   ; Merged with pwm:pwm_0|count[0][4]  ;
+; pwm:pwm_2|count[0][4]                   ; Merged with pwm:pwm_0|count[0][4]  ;
+; pwm:pwm_3|count[0][4]                   ; Merged with pwm:pwm_0|count[0][4]  ;
+; pwm:pwm_4|count[0][4]                   ; Merged with pwm:pwm_0|count[0][4]  ;
+; pwm:pwm_5|count[0][4]                   ; Merged with pwm:pwm_0|count[0][4]  ;
+; pwm:pwm_6|count[0][4]                   ; Merged with pwm:pwm_0|count[0][4]  ;
+; pwm:pwm_7|count[0][4]                   ; Merged with pwm:pwm_0|count[0][4]  ;
+; pwm:pwm_8|count[0][4]                   ; Merged with pwm:pwm_0|count[0][4]  ;
+; pwm:pwm_9|count[0][4]                   ; Merged with pwm:pwm_0|count[0][4]  ;
+; pwm:pwm_1|count[0][3]                   ; Merged with pwm:pwm_0|count[0][3]  ;
+; pwm:pwm_2|count[0][3]                   ; Merged with pwm:pwm_0|count[0][3]  ;
+; pwm:pwm_3|count[0][3]                   ; Merged with pwm:pwm_0|count[0][3]  ;
+; pwm:pwm_4|count[0][3]                   ; Merged with pwm:pwm_0|count[0][3]  ;
+; pwm:pwm_5|count[0][3]                   ; Merged with pwm:pwm_0|count[0][3]  ;
+; pwm:pwm_6|count[0][3]                   ; Merged with pwm:pwm_0|count[0][3]  ;
+; pwm:pwm_7|count[0][3]                   ; Merged with pwm:pwm_0|count[0][3]  ;
+; pwm:pwm_8|count[0][3]                   ; Merged with pwm:pwm_0|count[0][3]  ;
+; pwm:pwm_9|count[0][3]                   ; Merged with pwm:pwm_0|count[0][3]  ;
+; pwm:pwm_1|count[0][2]                   ; Merged with pwm:pwm_0|count[0][2]  ;
+; pwm:pwm_2|count[0][2]                   ; Merged with pwm:pwm_0|count[0][2]  ;
+; pwm:pwm_3|count[0][2]                   ; Merged with pwm:pwm_0|count[0][2]  ;
+; pwm:pwm_4|count[0][2]                   ; Merged with pwm:pwm_0|count[0][2]  ;
+; pwm:pwm_5|count[0][2]                   ; Merged with pwm:pwm_0|count[0][2]  ;
+; pwm:pwm_6|count[0][2]                   ; Merged with pwm:pwm_0|count[0][2]  ;
+; pwm:pwm_7|count[0][2]                   ; Merged with pwm:pwm_0|count[0][2]  ;
+; pwm:pwm_8|count[0][2]                   ; Merged with pwm:pwm_0|count[0][2]  ;
+; pwm:pwm_9|count[0][2]                   ; Merged with pwm:pwm_0|count[0][2]  ;
+; pwm:pwm_1|count[0][1]                   ; Merged with pwm:pwm_0|count[0][1]  ;
+; pwm:pwm_2|count[0][1]                   ; Merged with pwm:pwm_0|count[0][1]  ;
+; pwm:pwm_3|count[0][1]                   ; Merged with pwm:pwm_0|count[0][1]  ;
+; pwm:pwm_4|count[0][1]                   ; Merged with pwm:pwm_0|count[0][1]  ;
+; pwm:pwm_5|count[0][1]                   ; Merged with pwm:pwm_0|count[0][1]  ;
+; pwm:pwm_6|count[0][1]                   ; Merged with pwm:pwm_0|count[0][1]  ;
+; pwm:pwm_7|count[0][1]                   ; Merged with pwm:pwm_0|count[0][1]  ;
+; pwm:pwm_8|count[0][1]                   ; Merged with pwm:pwm_0|count[0][1]  ;
+; pwm:pwm_9|count[0][1]                   ; Merged with pwm:pwm_0|count[0][1]  ;
+; pwm:pwm_1|count[0][0]                   ; Merged with pwm:pwm_0|count[0][0]  ;
+; pwm:pwm_2|count[0][0]                   ; Merged with pwm:pwm_0|count[0][0]  ;
+; pwm:pwm_3|count[0][0]                   ; Merged with pwm:pwm_0|count[0][0]  ;
+; pwm:pwm_4|count[0][0]                   ; Merged with pwm:pwm_0|count[0][0]  ;
+; pwm:pwm_5|count[0][0]                   ; Merged with pwm:pwm_0|count[0][0]  ;
+; pwm:pwm_6|count[0][0]                   ; Merged with pwm:pwm_0|count[0][0]  ;
+; pwm:pwm_7|count[0][0]                   ; Merged with pwm:pwm_0|count[0][0]  ;
+; pwm:pwm_8|count[0][0]                   ; Merged with pwm:pwm_0|count[0][0]  ;
+; pwm:pwm_9|count[0][0]                   ; Merged with pwm:pwm_0|count[0][0]  ;
+; Total Number of Removed Registers = 180 ;                                    ;
++-----------------------------------------+------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 422   ;
+; Number of registers using Synchronous Clear  ; 210   ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 30    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 390   ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++--------------------------------------------------+
+; Inverted Register Statistics                     ;
++----------------------------------------+---------+
+; Inverted Register                      ; Fan out ;
++----------------------------------------+---------+
+; lastChangeup                           ; 1       ;
+; lastChangedown                         ; 10      ;
+; Total number of inverted registers = 2 ;         ;
++----------------------------------------+---------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+; 3:1                ; 10 bits   ; 20 LEs        ; 0 LEs                ; 20 LEs                 ; Yes        ; |pwm_led|led_value[6]      ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+
+
++--------------------------------------------------------+
+; Parameter Settings for User Entity Instance: pwm:pwm_0 ;
++-----------------+----------+---------------------------+
+; Parameter Name  ; Value    ; Type                      ;
++-----------------+----------+---------------------------+
+; sys_clk         ; 50000000 ; Signed Integer            ;
+; pwm_freq        ; 50       ; Signed Integer            ;
+; bits_resolution ; 8        ; Signed Integer            ;
+; phases          ; 1        ; Signed Integer            ;
++-----------------+----------+---------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------+
+; Parameter Settings for User Entity Instance: pwm:pwm_1 ;
++-----------------+----------+---------------------------+
+; Parameter Name  ; Value    ; Type                      ;
++-----------------+----------+---------------------------+
+; sys_clk         ; 50000000 ; Signed Integer            ;
+; pwm_freq        ; 50       ; Signed Integer            ;
+; bits_resolution ; 8        ; Signed Integer            ;
+; phases          ; 1        ; Signed Integer            ;
++-----------------+----------+---------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------+
+; Parameter Settings for User Entity Instance: pwm:pwm_2 ;
++-----------------+----------+---------------------------+
+; Parameter Name  ; Value    ; Type                      ;
++-----------------+----------+---------------------------+
+; sys_clk         ; 50000000 ; Signed Integer            ;
+; pwm_freq        ; 50       ; Signed Integer            ;
+; bits_resolution ; 8        ; Signed Integer            ;
+; phases          ; 1        ; Signed Integer            ;
++-----------------+----------+---------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------+
+; Parameter Settings for User Entity Instance: pwm:pwm_3 ;
++-----------------+----------+---------------------------+
+; Parameter Name  ; Value    ; Type                      ;
++-----------------+----------+---------------------------+
+; sys_clk         ; 50000000 ; Signed Integer            ;
+; pwm_freq        ; 50       ; Signed Integer            ;
+; bits_resolution ; 8        ; Signed Integer            ;
+; phases          ; 1        ; Signed Integer            ;
++-----------------+----------+---------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------+
+; Parameter Settings for User Entity Instance: pwm:pwm_4 ;
++-----------------+----------+---------------------------+
+; Parameter Name  ; Value    ; Type                      ;
++-----------------+----------+---------------------------+
+; sys_clk         ; 50000000 ; Signed Integer            ;
+; pwm_freq        ; 50       ; Signed Integer            ;
+; bits_resolution ; 8        ; Signed Integer            ;
+; phases          ; 1        ; Signed Integer            ;
++-----------------+----------+---------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------+
+; Parameter Settings for User Entity Instance: pwm:pwm_5 ;
++-----------------+----------+---------------------------+
+; Parameter Name  ; Value    ; Type                      ;
++-----------------+----------+---------------------------+
+; sys_clk         ; 50000000 ; Signed Integer            ;
+; pwm_freq        ; 50       ; Signed Integer            ;
+; bits_resolution ; 8        ; Signed Integer            ;
+; phases          ; 1        ; Signed Integer            ;
++-----------------+----------+---------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------+
+; Parameter Settings for User Entity Instance: pwm:pwm_6 ;
++-----------------+----------+---------------------------+
+; Parameter Name  ; Value    ; Type                      ;
++-----------------+----------+---------------------------+
+; sys_clk         ; 50000000 ; Signed Integer            ;
+; pwm_freq        ; 50       ; Signed Integer            ;
+; bits_resolution ; 8        ; Signed Integer            ;
+; phases          ; 1        ; Signed Integer            ;
++-----------------+----------+---------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------+
+; Parameter Settings for User Entity Instance: pwm:pwm_7 ;
++-----------------+----------+---------------------------+
+; Parameter Name  ; Value    ; Type                      ;
++-----------------+----------+---------------------------+
+; sys_clk         ; 50000000 ; Signed Integer            ;
+; pwm_freq        ; 50       ; Signed Integer            ;
+; bits_resolution ; 8        ; Signed Integer            ;
+; phases          ; 1        ; Signed Integer            ;
++-----------------+----------+---------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------+
+; Parameter Settings for User Entity Instance: pwm:pwm_8 ;
++-----------------+----------+---------------------------+
+; Parameter Name  ; Value    ; Type                      ;
++-----------------+----------+---------------------------+
+; sys_clk         ; 50000000 ; Signed Integer            ;
+; pwm_freq        ; 50       ; Signed Integer            ;
+; bits_resolution ; 8        ; Signed Integer            ;
+; phases          ; 1        ; Signed Integer            ;
++-----------------+----------+---------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------+
+; Parameter Settings for User Entity Instance: pwm:pwm_9 ;
++-----------------+----------+---------------------------+
+; Parameter Name  ; Value    ; Type                      ;
++-----------------+----------+---------------------------+
+; sys_clk         ; 50000000 ; Signed Integer            ;
+; pwm_freq        ; 50       ; Signed Integer            ;
+; bits_resolution ; 8        ; Signed Integer            ;
+; phases          ; 1        ; Signed Integer            ;
++-----------------+----------+---------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "quad_segment7:quad_segment7_1|segment7:MSB_segment7"                                 ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                             ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; input ; Input  ; Info     ; Stuck at GND                                                                        ;
+; cout  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "quad_segment7:quad_segment7_1|segment7:third_segment7"                               ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                             ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; input ; Input  ; Info     ; Stuck at GND                                                                        ;
+; cout  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "quad_segment7:quad_segment7_1|segment7:second_segment7"                              ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                             ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; input ; Input  ; Info     ; Stuck at GND                                                                        ;
+; cout  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "quad_segment7:quad_segment7_1|segment7:LSB_segment7"                                 ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                             ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; input ; Input  ; Info     ; Stuck at GND                                                                        ;
+; cout  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "quad_segment7:quad_segment7_1"                                                                ;
++----------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port           ; Type   ; Severity ; Details                                                                             ;
++----------------+--------+----------+-------------------------------------------------------------------------------------+
+; number[15..10] ; Input  ; Info     ; Stuck at GND                                                                        ;
+; input          ; Input  ; Info     ; Stuck at GND                                                                        ;
+; cout           ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "pwm:pwm_9"                                                                               ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                                             ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; pwm_n_out ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "pwm:pwm_8"                                                                               ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                                             ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; pwm_n_out ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "pwm:pwm_7"                                                                               ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                                             ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; pwm_n_out ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "pwm:pwm_6"                                                                               ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                                             ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; pwm_n_out ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "pwm:pwm_5"                                                                               ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                                             ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; pwm_n_out ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "pwm:pwm_4"                                                                               ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                                             ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; pwm_n_out ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "pwm:pwm_3"                                                                               ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                                             ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; pwm_n_out ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "pwm:pwm_2"                                                                               ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                                             ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; pwm_n_out ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "pwm:pwm_1"                                                                               ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                                             ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; pwm_n_out ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "pwm:pwm_0"                                                                               ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                                             ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; pwm_n_out ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; arriav_ff             ; 422                         ;
+;     CLR               ; 10                          ;
+;     CLR SCLR          ; 20                          ;
+;     ENA               ; 200                         ;
+;     ENA SCLR          ; 190                         ;
+;     plain             ; 2                           ;
+; arriav_lcell_comb     ; 491                         ;
+;     arith             ; 220                         ;
+;         0 data inputs ; 10                          ;
+;         1 data inputs ; 191                         ;
+;         2 data inputs ; 10                          ;
+;         3 data inputs ; 9                           ;
+;     normal            ; 271                         ;
+;         0 data inputs ; 2                           ;
+;         1 data inputs ; 5                           ;
+;         2 data inputs ; 20                          ;
+;         3 data inputs ; 7                           ;
+;         4 data inputs ; 56                          ;
+;         5 data inputs ; 64                          ;
+;         6 data inputs ; 117                         ;
+; arriav_mac            ; 10                          ;
+; boundary_port         ; 43                          ;
+;                       ;                             ;
+; Max LUT depth         ; 5.10                        ;
+; Average LUT depth     ; 2.95                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:04     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Analysis & Synthesis
+    Info: Version 15.0.0 Build 145 04/22/2015 SJ Web Edition
+    Info: Processing started: Tue Dec 08 12:57:21 2015
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off pwm_led -c pwm_led
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 2 design units, including 1 entities, in source file /users/daichi/hubic/eln/fpga/projects/pwm/pwm.vhd
+    Info (12022): Found design unit 1: pwm-logic
+    Info (12023): Found entity 1: pwm
+Info (12021): Found 4 design units, including 1 entities, in source file /users/daichi/hubic/eln/fpga/projects/segment7/segment7.vhd
+    Info (12022): Found design unit 1: segment7-digit_single
+    Info (12022): Found design unit 2: segment7-add_counter_single
+    Info (12022): Found design unit 3: segment7-sub_counter_single
+    Info (12023): Found entity 1: segment7
+Info (12021): Found 6 design units, including 1 entities, in source file /users/daichi/hubic/eln/fpga/projects/quad_segment7/quad_segment7.vhd
+    Info (12022): Found design unit 1: quad_segment7-digit_quad
+    Info (12022): Found design unit 2: quad_segment7-counter_quad
+    Info (12022): Found design unit 3: digit_quad_cfg
+    Info (12022): Found design unit 4: add_counter_quad_cfg
+    Info (12022): Found design unit 5: sub_counter_quad_cfg
+    Info (12023): Found entity 1: quad_segment7
+Info (12021): Found 3 design units, including 1 entities, in source file pwm_led.vhd
+    Info (12022): Found design unit 1: pwm_led-Behavioral
+    Info (12022): Found design unit 2: Behavioral_cfg
+    Info (12023): Found entity 1: pwm_led
+Info (12127): Elaborating entity "pwm_led" for the top level hierarchy
+Warning (10492): VHDL Process Statement warning at pwm_led.vhd(156): signal "led_value" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at pwm_led.vhd(162): signal "led_value" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at pwm_led.vhd(168): signal "led_value" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at pwm_led.vhd(174): signal "led_value" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at pwm_led.vhd(180): signal "led_value" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at pwm_led.vhd(186): signal "led_value" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at pwm_led.vhd(192): signal "led_value" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at pwm_led.vhd(198): signal "led_value" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at pwm_led.vhd(204): signal "led_value" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at pwm_led.vhd(210): signal "led_value" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at pwm_led.vhd(216): signal "duty_value_0" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at pwm_led.vhd(217): signal "duty_value_1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at pwm_led.vhd(218): signal "duty_value_2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at pwm_led.vhd(219): signal "duty_value_3" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at pwm_led.vhd(220): signal "duty_value_4" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at pwm_led.vhd(222): signal "duty_value_5" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at pwm_led.vhd(223): signal "duty_value_6" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at pwm_led.vhd(224): signal "duty_value_7" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at pwm_led.vhd(225): signal "duty_value_8" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at pwm_led.vhd(226): signal "duty_value_9" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at pwm_led.vhd(228): signal "led_value" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Info (12128): Elaborating entity "pwm" for hierarchy "pwm:pwm_0"
+Info (12129): Elaborating entity "quad_segment7" using architecture "C:digit_quad_cfg" for hierarchy "quad_segment7:quad_segment7_1"
+Warning (10873): Using initial value X (don't care) for net "cout" at quad_segment7.vhd(10)
+Info (12129): Elaborating entity "segment7" using architecture "A:digit_single" for hierarchy "quad_segment7:quad_segment7_1|segment7:LSB_segment7"
+Warning (10873): Using initial value X (don't care) for net "cout" at segment7.vhd(10)
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "HEX31" is stuck at GND
+    Warning (13410): Pin "HEX32" is stuck at GND
+    Warning (13410): Pin "HEX36" is stuck at VCC
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 919 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 5 input pins
+    Info (21059): Implemented 38 output pins
+    Info (21061): Implemented 866 logic cells
+    Info (21062): Implemented 10 DSP elements
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 28 warnings
+    Info: Peak virtual memory: 794 megabytes
+    Info: Processing ended: Tue Dec 08 12:57:42 2015
+    Info: Elapsed time: 00:00:21
+    Info: Total CPU time (on all processors): 00:00:43
+
+

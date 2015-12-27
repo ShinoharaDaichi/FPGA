@@ -1,5 +1,5 @@
 Flow report for segment7
-Tue Oct 13 12:07:59 2015
+Tue Dec 15 12:18:28 2015
 Quartus II 64-Bit Version 15.0.0 Build 145 04/22/2015 SJ Web Edition
 
 
@@ -41,7 +41,7 @@ agreement for further details.
 +------------------------------------------------------------------------------+
 ; Flow Summary                                                                 ;
 +---------------------------------+--------------------------------------------+
-; Flow Status                     ; Successful - Tue Oct 13 12:07:59 2015      ;
+; Flow Status                     ; Successful - Tue Dec 15 12:18:28 2015      ;
 ; Quartus II 64-Bit Version       ; 15.0.0 Build 145 04/22/2015 SJ Web Edition ;
 ; Revision Name                   ; segment7                                   ;
 ; Top-level Entity Name           ; segment7                                   ;
@@ -49,8 +49,8 @@ agreement for further details.
 ; Device                          ; 5CGXFC5C6F27C7                             ;
 ; Timing Models                   ; Final                                      ;
 ; Logic utilization (in ALMs)     ; 7 / 29,080 ( < 1 % )                       ;
-; Total registers                 ; 8                                          ;
-; Total pins                      ; 9 / 364 ( 2 % )                            ;
+; Total registers                 ; 9                                          ;
+; Total pins                      ; 13 / 364 ( 4 % )                           ;
 ; Total virtual pins              ; 0                                          ;
 ; Total block memory bits         ; 0 / 4,567,040 ( 0 % )                      ;
 ; Total DSP Blocks                ; 0 / 150 ( 0 % )                            ;
@@ -68,7 +68,7 @@ agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 10/13/2015 12:06:49 ;
+; Start date & time ; 12/15/2015 12:17:14 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; segment7            ;
 +-------------------+---------------------+
@@ -79,7 +79,7 @@ agreement for further details.
 +-------------------------------------+---------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                           ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+---------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 242467513541643.144473080810072 ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 242467513541643.145017823309168 ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                            ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (VHDL)          ; <None>        ; --          ; --             ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                              ; --            ; --          ; --             ;
@@ -96,12 +96,12 @@ agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:12     ; 1.0                     ; 784 MB              ; 00:00:28                           ;
-; Fitter                    ; 00:00:34     ; 1.0                     ; 1849 MB             ; 00:00:36                           ;
-; Assembler                 ; 00:00:09     ; 1.0                     ; 746 MB              ; 00:00:09                           ;
-; TimeQuest Timing Analyzer ; 00:00:06     ; 1.0                     ; 985 MB              ; 00:00:06                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 660 MB              ; 00:00:02                           ;
-; Total                     ; 00:01:02     ; --                      ; --                  ; 00:01:21                           ;
+; Analysis & Synthesis      ; 00:00:12     ; 1.0                     ; 781 MB              ; 00:00:28                           ;
+; Fitter                    ; 00:00:36     ; 1.0                     ; 1849 MB             ; 00:00:38                           ;
+; Assembler                 ; 00:00:09     ; 1.0                     ; 750 MB              ; 00:00:09                           ;
+; TimeQuest Timing Analyzer ; 00:00:07     ; 1.0                     ; 1032 MB             ; 00:00:07                           ;
+; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 662 MB              ; 00:00:02                           ;
+; Total                     ; 00:01:06     ; --                      ; --                  ; 00:01:24                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

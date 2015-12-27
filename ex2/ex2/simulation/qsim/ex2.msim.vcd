@@ -3,19 +3,21 @@ $comment
 		vcd file ex2.msim.vcd -direction
 $end
 $date
-	Fri Sep 18 14:21:12 2015
+	Tue Dec 08 13:31:48 2015
 $end
 $version
-	ModelSim Version 10.1d
+	ModelSim Version 10.3d
 $end
 $timescale
 	1ps
 $end
+
 $scope module ex2_vlg_vec_tst $end
 $var reg 1 ! x $end
 $var reg 1 " y $end
 $var wire 1 # f $end
 $var wire 1 $ sampler $end
+
 $scope module i1 $end
 $var wire 1 % gnd $end
 $var wire 1 & vcc $end

@@ -1,0 +1,90 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Daichi/hubiC/ELN/FPGA/Projects/counter8bit/simulation/qsim
+vcounter8bit
+Z1 !s110 1450360011
+!i10b 1
+!s100 `9jzkI_mTdkJl5MlhmH]m2
+IeiUR9c:gl]J`G^D6OzOY`1
+Z2 V`JN@9S9cnhjKRR_L]QIcM3
+R0
+w1450360008
+8counter8bit.vo
+Fcounter8bit.vo
+L0 32
+Z3 OV;L;10.3d;59
+r1
+!s85 0
+31
+!s108 1450360011.317000
+!s107 counter8bit.vo|
+!s90 -work|work|counter8bit.vo|
+!i113 1
+Z4 o-work work
+vcounter8bit_vlg_check_tst
+R1
+!i10b 1
+!s100 Obnd_>1_kOiXP36CkJ:^82
+IQ<RYABQYIEjZQbZAcO5UB0
+R2
+R0
+Z5 w1450360005
+Z6 8Waveform.vwf.vt
+Z7 FWaveform.vwf.vt
+L0 62
+R3
+r1
+!s85 0
+31
+Z8 !s108 1450360011.518000
+Z9 !s107 Waveform.vwf.vt|
+Z10 !s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R4
+vcounter8bit_vlg_sample_tst
+R1
+!i10b 1
+!s100 ZRcj:::6ak6T_9gmJ=5=a3
+ITJ`SQFDXkMM<fT2mVB51U3
+R2
+R0
+R5
+R6
+R7
+L0 30
+R3
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R4
+vcounter8bit_vlg_vec_tst
+R1
+!i10b 1
+!s100 5cJ7I@cZ37oB6nXYTWY6?0
+Io;^H<=hYLTChHD[?RBD`?3
+R2
+R0
+R5
+R6
+R7
+L0 282
+R3
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R4

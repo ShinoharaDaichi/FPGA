@@ -67,4 +67,5 @@ set_location_assignment PIN_AE19 -to ena
 set_location_assignment PIN_P11 -to reset_n
 set_location_assignment PIN_AC9 -to duty[0]
 set_global_assignment -name CDF_FILE output_files/Chain1.cdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE output_files/Waveform.vwf
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

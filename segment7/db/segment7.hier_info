@@ -1,16 +1,20 @@
 |segment7
-add => cout~reg0.CLK
-add => s_decimal[0].CLK
-add => s_decimal[1].CLK
-add => s_decimal[2].CLK
-add => s_decimal[3].CLK
+input => cout~reg0.CLK
+input => decimal[0].CLK
+input => decimal[1].CLK
+input => decimal[2].CLK
+input => decimal[3].CLK
+digit[0] => ~NO_FANOUT~
+digit[1] => ~NO_FANOUT~
+digit[2] => ~NO_FANOUT~
+digit[3] => ~NO_FANOUT~
 cout << cout~reg0.DB_MAX_OUTPUT_PORT_TYPE
-HEX00 << Mux0.DB_MAX_OUTPUT_PORT_TYPE
-HEX01 << Mux1.DB_MAX_OUTPUT_PORT_TYPE
-HEX02 << Mux2.DB_MAX_OUTPUT_PORT_TYPE
-HEX03 << Mux3.DB_MAX_OUTPUT_PORT_TYPE
-HEX04 << Mux4.DB_MAX_OUTPUT_PORT_TYPE
-HEX05 << Mux5.DB_MAX_OUTPUT_PORT_TYPE
-HEX06 << Mux6.DB_MAX_OUTPUT_PORT_TYPE
+HEX[0] << Mux6.DB_MAX_OUTPUT_PORT_TYPE
+HEX[1] << Mux5.DB_MAX_OUTPUT_PORT_TYPE
+HEX[2] << Mux4.DB_MAX_OUTPUT_PORT_TYPE
+HEX[3] << Mux3.DB_MAX_OUTPUT_PORT_TYPE
+HEX[4] << Mux2.DB_MAX_OUTPUT_PORT_TYPE
+HEX[5] << Mux1.DB_MAX_OUTPUT_PORT_TYPE
+HEX[6] << Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 

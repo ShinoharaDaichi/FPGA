@@ -1,0 +1,149 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1100mV 85C Model Setup 'clk'
+Slack : -7.208
+TNS   : -741.553
+
+Type  : Slow 1100mV 85C Model Setup 'adc_sck~reg0'
+Slack : -4.700
+TNS   : -183.795
+
+Type  : Slow 1100mV 85C Model Setup 'send_sck'
+Slack : -4.022
+TNS   : -131.033
+
+Type  : Slow 1100mV 85C Model Hold 'clk'
+Slack : -0.060
+TNS   : -0.156
+
+Type  : Slow 1100mV 85C Model Hold 'send_sck'
+Slack : 0.643
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'adc_sck~reg0'
+Slack : 0.791
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clk'
+Slack : -0.652
+TNS   : -142.068
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'adc_sck~reg0'
+Slack : -0.538
+TNS   : -40.911
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'send_sck'
+Slack : -0.538
+TNS   : -27.995
+
+Type  : Slow 1100mV 0C Model Setup 'clk'
+Slack : -7.583
+TNS   : -734.163
+
+Type  : Slow 1100mV 0C Model Setup 'adc_sck~reg0'
+Slack : -4.641
+TNS   : -182.407
+
+Type  : Slow 1100mV 0C Model Setup 'send_sck'
+Slack : -3.869
+TNS   : -127.016
+
+Type  : Slow 1100mV 0C Model Hold 'clk'
+Slack : -0.474
+TNS   : -19.913
+
+Type  : Slow 1100mV 0C Model Hold 'send_sck'
+Slack : 0.637
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'adc_sck~reg0'
+Slack : 0.790
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clk'
+Slack : -0.745
+TNS   : -146.229
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'adc_sck~reg0'
+Slack : -0.538
+TNS   : -40.499
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'send_sck'
+Slack : -0.538
+TNS   : -27.929
+
+Type  : Fast 1100mV 85C Model Setup 'clk'
+Slack : -4.568
+TNS   : -312.475
+
+Type  : Fast 1100mV 85C Model Setup 'adc_sck~reg0'
+Slack : -2.168
+TNS   : -78.232
+
+Type  : Fast 1100mV 85C Model Setup 'send_sck'
+Slack : -1.669
+TNS   : -52.798
+
+Type  : Fast 1100mV 85C Model Hold 'clk'
+Slack : -0.039
+TNS   : -1.230
+
+Type  : Fast 1100mV 85C Model Hold 'send_sck'
+Slack : 0.244
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'adc_sck~reg0'
+Slack : 0.348
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clk'
+Slack : -0.651
+TNS   : -20.386
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'adc_sck~reg0'
+Slack : 0.013
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'send_sck'
+Slack : 0.114
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'clk'
+Slack : -3.969
+TNS   : -267.148
+
+Type  : Fast 1100mV 0C Model Setup 'adc_sck~reg0'
+Slack : -1.921
+TNS   : -68.863
+
+Type  : Fast 1100mV 0C Model Setup 'send_sck'
+Slack : -1.455
+TNS   : -46.078
+
+Type  : Fast 1100mV 0C Model Hold 'clk'
+Slack : -0.236
+TNS   : -9.973
+
+Type  : Fast 1100mV 0C Model Hold 'send_sck'
+Slack : 0.218
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'adc_sck~reg0'
+Slack : 0.317
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clk'
+Slack : -0.644
+TNS   : -19.619
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'adc_sck~reg0'
+Slack : 0.042
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'send_sck'
+Slack : 0.123
+TNS   : 0.000
+
+------------------------------------------------------------

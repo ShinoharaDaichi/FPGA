@@ -1,0 +1,72 @@
+# do pwm.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 15:47:38 on Dec 12,2015
+# vlog -work work pwm.vo 
+# -- Compiling module pwm
+# 
+# Top level modules:
+# 	pwm
+# End time: 15:47:38 on Dec 12,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 15:47:38 on Dec 12,2015
+# vlog -work work Waveform.vwf.vt 
+# -- Compiling module pwm_vlg_sample_tst
+# -- Compiling module pwm_vlg_check_tst
+# -- Compiling module pwm_vlg_vec_tst
+# 
+# Top level modules:
+# 	pwm_vlg_vec_tst
+# End time: 15:47:38 on Dec 12,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -c -do "pwm.do" 
+# Start time: 15:47:38 on Dec 12,2015
+# Loading work.pwm_vlg_vec_tst
+# Loading work.pwm
+# Loading altera_ver.dffeas
+# Loading work.pwm_vlg_sample_tst
+# Loading work.pwm_vlg_check_tst
+# Loading altera_ver.PRIM_GDFF_LOW
+# ** Warning: (vsim-3016) pwm.vo(941): Port type is incompatible with connection (port 'ay').
+# 
+#         Region: /pwm_vlg_vec_tst/i1/\Mult0~8 
+# ** Warning: (vsim-3016) pwm.vo(941): Port type is incompatible with connection (port 'ay').
+# 
+#         Region: /pwm_vlg_vec_tst/i1/\Mult0~8 
+# ** Warning: (vsim-3016) pwm.vo(941): Port type is incompatible with connection (port 'ay').
+# 
+#         Region: /pwm_vlg_vec_tst/i1/\Mult0~8 
+# ** Warning: (vsim-3016) pwm.vo(941): Port type is incompatible with connection (port 'ay').
+# 
+#         Region: /pwm_vlg_vec_tst/i1/\Mult0~8 
+# ** Warning: (vsim-3016) pwm.vo(941): Port type is incompatible with connection (port 'ay').
+# 
+#         Region: /pwm_vlg_vec_tst/i1/\Mult0~8 
+# ** Warning: (vsim-3016) pwm.vo(941): Port type is incompatible with connection (port 'ay').
+# 
+#         Region: /pwm_vlg_vec_tst/i1/\Mult0~8 
+# ** Warning: (vsim-3015) pwm.vo(941): [PCDPC] - Port size (1) does not match connection size (26) for port 'az'. The port definition is at: nofile(38).
+# 
+#         Region: /pwm_vlg_vec_tst/i1/\Mult0~8 
+# ** Warning: (vsim-3015) pwm.vo(941): [PCDPC] - Port size (16) does not match connection size (18) for port 'bx'. The port definition is at: nofile(38).
+# 
+#         Region: /pwm_vlg_vec_tst/i1/\Mult0~8 
+# ** Warning: (vsim-3015) pwm.vo(941): [PCDPC] - Port size (16) does not match connection size (19) for port 'by'. The port definition is at: nofile(38).
+# 
+#         Region: /pwm_vlg_vec_tst/i1/\Mult0~8 
+# ** Warning: (vsim-3015) pwm.vo(941): [PCDPC] - Port size (1) does not match connection size (18) for port 'bz'. The port definition is at: nofile(38).
+# 
+#         Region: /pwm_vlg_vec_tst/i1/\Mult0~8 
+# ** Warning: (vsim-3015) pwm.vo(941): [PCDPC] - Port size (11) does not match connection size (27) for port 'scanin'. The port definition is at: nofile(38).
+# 
+#         Region: /pwm_vlg_vec_tst/i1/\Mult0~8 
+# ** Warning: (vsim-3015) pwm.vo(941): [PCDPC] - Port size (64) does not match connection size (1) for port 'chainin'. The port definition is at: nofile(38).
+# 
+#         Region: /pwm_vlg_vec_tst/i1/\Mult0~8 
+# Simulation passed !
+# ** Note: $finish    : Waveform.vwf.vt(182)
+#    Time: 1 us  Iteration: 0  Instance: /pwm_vlg_vec_tst/tb_out
+# End time: 15:47:38 on Dec 12,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 12

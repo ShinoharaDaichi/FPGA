@@ -1,0 +1,117 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, the Altera Quartus II License Agreement,
+# the Altera MegaCore Function License Agreement, or other 
+# applicable license agreement, including, without limitation, 
+# that your use is for the sole purpose of programming logic 
+# devices manufactured by Altera and sold by Altera or its 
+# authorized distributors.  Please refer to the applicable 
+# agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II 64-Bit
+# Version 15.0.0 Build 145 04/22/2015 SJ Web Edition
+# Date created = 11:27:40  December 15, 2015
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		chenillard_pwm_adc_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone V"
+set_global_assignment -name DEVICE 5CGXFC5C6F27C7
+set_global_assignment -name TOP_LEVEL_ENTITY chenillard_pwm_adc
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 15.0.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "11:27:40  DECEMBER 15, 2015"
+set_global_assignment -name LAST_QUARTUS_VERSION 15.0.0
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 256
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (VHDL)"
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT VHDL -section_id eda_simulation
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name VHDL_FILE ../single_pwm/single_pwm.vhd
+set_global_assignment -name VHDL_FILE ../segment7/segment7.vhd
+set_global_assignment -name VHDL_FILE ../quad_segment7/quad_segment7.vhd
+set_global_assignment -name VHDL_FILE ../chenillard_pwm/chenillard_pwm.vhd
+set_global_assignment -name VHDL_FILE ../adc/adc.vhd
+set_global_assignment -name VHDL_FILE chenillard_pwm_adc.vhd
+set_location_assignment PIN_V19 -to HEX0[0]
+set_location_assignment PIN_V18 -to HEX0[1]
+set_location_assignment PIN_V17 -to HEX0[2]
+set_location_assignment PIN_W18 -to HEX0[3]
+set_location_assignment PIN_Y20 -to HEX0[4]
+set_location_assignment PIN_Y19 -to HEX0[5]
+set_location_assignment PIN_Y18 -to HEX0[6]
+set_location_assignment PIN_AA18 -to HEX1[0]
+set_location_assignment PIN_AD26 -to HEX1[1]
+set_location_assignment PIN_AB19 -to HEX1[2]
+set_location_assignment PIN_AE26 -to HEX1[3]
+set_location_assignment PIN_AE25 -to HEX1[4]
+set_location_assignment PIN_AC19 -to HEX1[5]
+set_location_assignment PIN_AF24 -to HEX1[6]
+set_location_assignment PIN_AD7 -to HEX2[0]
+set_location_assignment PIN_AD6 -to HEX2[1]
+set_location_assignment PIN_U20 -to HEX2[2]
+set_location_assignment PIN_V22 -to HEX2[3]
+set_location_assignment PIN_V20 -to HEX2[4]
+set_location_assignment PIN_W21 -to HEX2[5]
+set_location_assignment PIN_W20 -to HEX2[6]
+set_location_assignment PIN_Y24 -to HEX3[0]
+set_location_assignment PIN_Y23 -to HEX3[1]
+set_location_assignment PIN_AA23 -to HEX3[2]
+set_location_assignment PIN_AA22 -to HEX3[3]
+set_location_assignment PIN_AC24 -to HEX3[4]
+set_location_assignment PIN_AC23 -to HEX3[5]
+set_location_assignment PIN_AC22 -to HEX3[6]
+set_location_assignment PIN_F7 -to leds_output[0]
+set_location_assignment PIN_F6 -to leds_output[1]
+set_location_assignment PIN_G6 -to leds_output[2]
+set_location_assignment PIN_G7 -to leds_output[3]
+set_location_assignment PIN_J8 -to leds_output[4]
+set_location_assignment PIN_J7 -to leds_output[5]
+set_location_assignment PIN_K10 -to leds_output[6]
+set_location_assignment PIN_K8 -to leds_output[7]
+set_location_assignment PIN_H7 -to leds_output[8]
+set_location_assignment PIN_J10 -to leds_output[9]
+set_location_assignment PIN_Y10 -to adc_sdi
+set_location_assignment PIN_W10 -to adc_sdo
+set_location_assignment PIN_H12 -to clk
+set_location_assignment PIN_AB22 -to convst
+set_location_assignment PIN_AE19 -to ena
+set_location_assignment PIN_P11 -to reset_n
+set_location_assignment PIN_AA21 -to adc_sck
+set_global_assignment -name CDF_FILE Chain1.cdf
+set_location_assignment PIN_H8 -to leds_output2[1]
+set_location_assignment PIN_B6 -to leds_output2[2]
+set_location_assignment PIN_A5 -to leds_output2[3]
+set_location_assignment PIN_E9 -to leds_output2[4]
+set_location_assignment PIN_D8 -to leds_output2[5]
+set_location_assignment PIN_K6 -to leds_output2[6]
+set_location_assignment PIN_L7 -to leds_output2[7]
+set_location_assignment PIN_H9 -to leds_output2[0]
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

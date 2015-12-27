@@ -1,10 +1,10 @@
-onerror {quit -f}
+onerror {exit -code 1}
 vlib work
 vlog -work work timer.vo
-vlog -work work timer.vt
-vsim -novopt -c -t 1ps -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate work.timer_vlg_vec_tst
+vlog -work work ex4.vwf.vt
+vsim -novopt -c -t 1ps -L cyclonev_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.timer_vlg_vec_tst -voptargs="+acc"
 vcd file -direction timer.msim.vcd
 vcd add -internal timer_vlg_vec_tst/*
 vcd add -internal timer_vlg_vec_tst/i1/*
-add wave /*
 run -all
+quit -f

@@ -1,0 +1,36 @@
+# do single_pwm.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 15:51:37 on Dec 12,2015
+# vlog -work work single_pwm.vo 
+# -- Compiling module single_pwm
+# 
+# Top level modules:
+# 	single_pwm
+# End time: 15:51:37 on Dec 12,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 15:51:37 on Dec 12,2015
+# vlog -work work Waveform.vwf.vt 
+# -- Compiling module single_pwm_vlg_sample_tst
+# -- Compiling module single_pwm_vlg_check_tst
+# -- Compiling module single_pwm_vlg_vec_tst
+# 
+# Top level modules:
+# 	single_pwm_vlg_vec_tst
+# End time: 15:51:37 on Dec 12,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -c -do "single_pwm.do" 
+# Start time: 15:51:37 on Dec 12,2015
+# Loading work.single_pwm_vlg_vec_tst
+# Loading work.single_pwm
+# Loading altera_ver.dffeas
+# Loading work.single_pwm_vlg_sample_tst
+# Loading work.single_pwm_vlg_check_tst
+# Loading altera_ver.PRIM_GDFF_LOW
+# Simulation passed !
+# ** Note: $finish    : Waveform.vwf.vt(155)
+#    Time: 10 us  Iteration: 0  Instance: /single_pwm_vlg_vec_tst/tb_out
+# End time: 15:51:37 on Dec 12,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0

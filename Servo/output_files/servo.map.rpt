@@ -1,5 +1,5 @@
 Analysis & Synthesis report for servo
-Fri Oct 16 20:52:45 2015
+Tue Dec 15 15:11:21 2015
 Quartus II 64-Bit Version 15.0.0 Build 145 04/22/2015 SJ Web Edition
 
 
@@ -15,16 +15,15 @@ Quartus II 64-Bit Version 15.0.0 Build 145 04/22/2015 SJ Web Edition
   7. Analysis & Synthesis Resource Utilization by Entity
   8. Analysis & Synthesis DSP Block Usage Summary
   9. General Register Statistics
- 10. Parameter Settings for User Entity Instance: pwm:pwm_1
+ 10. Parameter Settings for User Entity Instance: single_pwm:pwm_1
  11. Port Connectivity Checks: "quad_segment7:quad_segment7_1|segment7:MSB_segment7"
  12. Port Connectivity Checks: "quad_segment7:quad_segment7_1|segment7:third_segment7"
  13. Port Connectivity Checks: "quad_segment7:quad_segment7_1|segment7:second_segment7"
  14. Port Connectivity Checks: "quad_segment7:quad_segment7_1|segment7:LSB_segment7"
  15. Port Connectivity Checks: "quad_segment7:quad_segment7_1"
- 16. Port Connectivity Checks: "pwm:pwm_1"
- 17. Post-Synthesis Netlist Statistics for Top Partition
- 18. Elapsed Time Per Partition
- 19. Analysis & Synthesis Messages
+ 16. Post-Synthesis Netlist Statistics for Top Partition
+ 17. Elapsed Time Per Partition
+ 18. Analysis & Synthesis Messages
 
 
 
@@ -51,13 +50,13 @@ agreement for further details.
 +------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                 ;
 +---------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Fri Oct 16 20:52:45 2015      ;
+; Analysis & Synthesis Status     ; Successful - Tue Dec 15 15:11:21 2015      ;
 ; Quartus II 64-Bit Version       ; 15.0.0 Build 145 04/22/2015 SJ Web Edition ;
 ; Revision Name                   ; servo                                      ;
 ; Top-level Entity Name           ; servo                                      ;
 ; Family                          ; Cyclone V                                  ;
 ; Logic utilization (in ALMs)     ; N/A                                        ;
-; Total registers                 ; 59                                         ;
+; Total registers                 ; 17                                         ;
 ; Total pins                      ; 42                                         ;
 ; Total virtual pins              ; 0                                          ;
 ; Total block memory bits         ; 0                                          ;
@@ -176,8 +175,8 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +------------------------------------+-----------------+-----------------+-------------------------------------------------------------------------+---------+
 ; File Name with User-Entered Path   ; Used in Netlist ; File Type       ; File Name with Absolute Path                                            ; Library ;
 +------------------------------------+-----------------+-----------------+-------------------------------------------------------------------------+---------+
+; ../single_pwm/single_pwm.vhd       ; yes             ; User VHDL File  ; C:/Users/Daichi/hubiC/ELN/FPGA/Projects/single_pwm/single_pwm.vhd       ;         ;
 ; ../segment7/segment7.vhd           ; yes             ; User VHDL File  ; C:/Users/Daichi/hubiC/ELN/FPGA/Projects/segment7/segment7.vhd           ;         ;
-; ../PWM/pwm.vhd                     ; yes             ; User VHDL File  ; C:/Users/Daichi/hubiC/ELN/FPGA/Projects/PWM/pwm.vhd                     ;         ;
 ; ../quad_segment7/quad_segment7.vhd ; yes             ; User VHDL File  ; C:/Users/Daichi/hubiC/ELN/FPGA/Projects/quad_segment7/quad_segment7.vhd ;         ;
 ; servo.vhd                          ; yes             ; User VHDL File  ; C:/Users/Daichi/hubiC/ELN/FPGA/Projects/Servo/servo.vhd                 ;         ;
 +------------------------------------+-----------------+-----------------+-------------------------------------------------------------------------+---------+
@@ -188,25 +187,25 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimate of Logic utilization (ALMs needed) ; 60        ;
+; Estimate of Logic utilization (ALMs needed) ; 33        ;
 ;                                             ;           ;
-; Combinational ALUT usage for logic          ; 90        ;
+; Combinational ALUT usage for logic          ; 48        ;
 ;     -- 7 input functions                    ; 0         ;
-;     -- 6 input functions                    ; 25        ;
-;     -- 5 input functions                    ; 11        ;
-;     -- 4 input functions                    ; 15        ;
-;     -- <=3 input functions                  ; 39        ;
+;     -- 6 input functions                    ; 17        ;
+;     -- 5 input functions                    ; 7         ;
+;     -- 4 input functions                    ; 17        ;
+;     -- <=3 input functions                  ; 7         ;
 ;                                             ;           ;
-; Dedicated logic registers                   ; 59        ;
+; Dedicated logic registers                   ; 17        ;
 ;                                             ;           ;
 ; I/O pins                                    ; 42        ;
 ;                                             ;           ;
 ; Total DSP Blocks                            ; 1         ;
 ;                                             ;           ;
 ; Maximum fan-out node                        ; clk~input ;
-; Maximum fan-out                             ; 59        ;
-; Total fan-out                               ; 628       ;
-; Average fan-out                             ; 2.68      ;
+; Maximum fan-out                             ; 17        ;
+; Total fan-out                               ; 341       ;
+; Average fan-out                             ; 2.27      ;
 +---------------------------------------------+-----------+
 
 
@@ -215,12 +214,12 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +------------------------------------+-------------------+--------------+-------------------+------------+------+--------------+---------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node         ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                           ; Library Name ;
 +------------------------------------+-------------------+--------------+-------------------+------------+------+--------------+---------------------------------------------------------------+--------------+
-; |servo                             ; 90 (0)            ; 59 (0)       ; 0                 ; 1          ; 42   ; 0            ; |servo                                                        ; work         ;
-;    |pwm:pwm_1|                     ; 62 (62)           ; 59 (59)      ; 0                 ; 1          ; 0    ; 0            ; |servo|pwm:pwm_1                                              ; work         ;
+; |servo                             ; 48 (0)            ; 17 (0)       ; 0                 ; 1          ; 42   ; 0            ; |servo                                                        ; work         ;
 ;    |quad_segment7:quad_segment7_1| ; 28 (11)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |servo|quad_segment7:quad_segment7_1                          ; work         ;
 ;       |segment7:LSB_segment7|      ; 7 (7)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |servo|quad_segment7:quad_segment7_1|segment7:LSB_segment7    ; work         ;
 ;       |segment7:second_segment7|   ; 7 (7)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |servo|quad_segment7:quad_segment7_1|segment7:second_segment7 ; work         ;
 ;       |segment7:third_segment7|    ; 3 (3)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |servo|quad_segment7:quad_segment7_1|segment7:third_segment7  ; work         ;
+;    |single_pwm:pwm_1|              ; 20 (20)           ; 17 (17)      ; 0                 ; 1          ; 0    ; 0            ; |servo|single_pwm:pwm_1                                       ; work         ;
 +------------------------------------+-------------------+--------------+-------------------+------------+------+--------------+---------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -230,7 +229,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------+-------------+
 ; Statistic                       ; Number Used ;
 +---------------------------------+-------------+
-; Independent 27x27               ; 1           ;
+; Independent 9x9                 ; 1           ;
 ; Total number of DSP blocks      ; 1           ;
 ;                                 ;             ;
 ; Fixed Point Unsigned Multiplier ; 1           ;
@@ -242,26 +241,25 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 59    ;
-; Number of registers using Synchronous Clear  ; 39    ;
+; Total registers                              ; 17    ;
+; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 21    ;
+; Number of registers using Asynchronous Clear ; 7     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 38    ;
+; Number of registers using Clock Enable       ; 10    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+--------------------------------------------------------+
-; Parameter Settings for User Entity Instance: pwm:pwm_1 ;
-+-----------------+----------+---------------------------+
-; Parameter Name  ; Value    ; Type                      ;
-+-----------------+----------+---------------------------+
-; sys_clk         ; 50000000 ; Signed Integer            ;
-; pwm_freq        ; 50       ; Signed Integer            ;
-; bits_resolution ; 8        ; Signed Integer            ;
-; phases          ; 1        ; Signed Integer            ;
-+-----------------+----------+---------------------------+
++---------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: single_pwm:pwm_1 ;
++-----------------+----------+----------------------------------+
+; Parameter Name  ; Value    ; Type                             ;
++-----------------+----------+----------------------------------+
+; sys_clk         ; 50000000 ; Signed Integer                   ;
+; pwm_freq        ; 1000000  ; Signed Integer                   ;
+; bits_resolution ; 8        ; Signed Integer                   ;
++-----------------+----------+----------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -316,41 +314,28 @@ Note: In order to hide this table in the UI and the text report file, please set
 +---------------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "pwm:pwm_1"                                                                               ;
-+-----------+--------+----------+-------------------------------------------------------------------------------------+
-; Port      ; Type   ; Severity ; Details                                                                             ;
-+-----------+--------+----------+-------------------------------------------------------------------------------------+
-; pwm_n_out ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+-----------+--------+----------+-------------------------------------------------------------------------------------+
-
-
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 59                          ;
-;     CLR               ; 1                           ;
-;     CLR SCLR          ; 20                          ;
-;     ENA               ; 19                          ;
-;     ENA SCLR          ; 19                          ;
-; arriav_lcell_comb     ; 96                          ;
-;     arith             ; 39                          ;
-;         0 data inputs ; 1                           ;
-;         1 data inputs ; 37                          ;
-;         2 data inputs ; 1                           ;
-;     normal            ; 57                          ;
+; arriav_ff             ; 17                          ;
+;     CLR               ; 7                           ;
+;     ENA               ; 10                          ;
+; arriav_lcell_comb     ; 54                          ;
+;     normal            ; 54                          ;
 ;         0 data inputs ; 2                           ;
-;         1 data inputs ; 4                           ;
-;         4 data inputs ; 15                          ;
-;         5 data inputs ; 11                          ;
-;         6 data inputs ; 25                          ;
+;         1 data inputs ; 5                           ;
+;         2 data inputs ; 5                           ;
+;         3 data inputs ; 1                           ;
+;         4 data inputs ; 17                          ;
+;         5 data inputs ; 7                           ;
+;         6 data inputs ; 17                          ;
 ; arriav_mac            ; 1                           ;
 ; boundary_port         ; 42                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 5.00                        ;
-; Average LUT depth     ; 2.80                        ;
+; Max LUT depth         ; 4.00                        ;
+; Average LUT depth     ; 2.23                        ;
 +-----------------------+-----------------------------+
 
 
@@ -369,17 +354,24 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 15.0.0 Build 145 04/22/2015 SJ Web Edition
-    Info: Processing started: Fri Oct 16 20:52:33 2015
+    Info: Processing started: Tue Dec 15 15:11:09 2015
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off servo -c servo
 Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 2 design units, including 1 entities, in source file /users/daichi/hubic/eln/fpga/projects/single_pwm/single_pwm.vhd
+    Info (12022): Found design unit 1: single_pwm-pwm_arch
+    Info (12023): Found entity 1: single_pwm
+Info (12021): Found 6 design units, including 1 entities, in source file /users/daichi/hubic/eln/fpga/projects/servo2/double_segment7.vhd
+    Info (12022): Found design unit 1: double_segment7-digit_double
+    Info (12022): Found design unit 2: double_segment7-counter_double
+    Info (12022): Found design unit 3: digit_double_cfg
+    Info (12022): Found design unit 4: add_counter_double_cfg
+    Info (12022): Found design unit 5: sub_counter_double_cfg
+    Info (12023): Found entity 1: double_segment7
 Info (12021): Found 4 design units, including 1 entities, in source file /users/daichi/hubic/eln/fpga/projects/segment7/segment7.vhd
     Info (12022): Found design unit 1: segment7-digit_single
     Info (12022): Found design unit 2: segment7-add_counter_single
     Info (12022): Found design unit 3: segment7-sub_counter_single
     Info (12023): Found entity 1: segment7
-Info (12021): Found 2 design units, including 1 entities, in source file /users/daichi/hubic/eln/fpga/projects/pwm/pwm.vhd
-    Info (12022): Found design unit 1: pwm-logic
-    Info (12023): Found entity 1: pwm
 Info (12021): Found 6 design units, including 1 entities, in source file /users/daichi/hubic/eln/fpga/projects/quad_segment7/quad_segment7.vhd
     Info (12022): Found design unit 1: quad_segment7-digit_quad
     Info (12022): Found design unit 2: quad_segment7-counter_quad
@@ -387,41 +379,47 @@ Info (12021): Found 6 design units, including 1 entities, in source file /users/
     Info (12022): Found design unit 4: add_counter_quad_cfg
     Info (12022): Found design unit 5: sub_counter_quad_cfg
     Info (12023): Found entity 1: quad_segment7
-Info (12021): Found 4 design units, including 1 entities, in source file servo.vhd
-    Info (12022): Found design unit 1: servo-servo_arch1
-    Info (12022): Found design unit 2: servo-servo_arch2
-    Info (12022): Found design unit 3: servo_cfg
+Info (12021): Found 9 design units, including 1 entities, in source file servo.vhd
+    Info (12022): Found design unit 1: servo-servo_parallel_input_quad_segment
+    Info (12022): Found design unit 2: servo-servo_incremental_input_quad_segment
+    Info (12022): Found design unit 3: servo-servo_parallel_input_double_segment
+    Info (12022): Found design unit 4: servo-servo_incremental_input_double_segment
+    Info (12022): Found design unit 5: servo_parallel_input_quad_segment_cfg
+    Info (12022): Found design unit 6: servo_incremental_input_quad_segment_cfg
+    Info (12022): Found design unit 7: servo_parallel_input_double_segment_cfg
+    Info (12022): Found design unit 8: servo_incremental_input_double_segment_cfg
     Info (12023): Found entity 1: servo
 Info (12127): Elaborating entity "servo" for the top level hierarchy
-Info (12128): Elaborating entity "pwm" for hierarchy "pwm:pwm_1"
+Info (12128): Elaborating entity "single_pwm" for hierarchy "single_pwm:pwm_1"
 Info (12129): Elaborating entity "quad_segment7" using architecture "C:digit_quad_cfg" for hierarchy "quad_segment7:quad_segment7_1"
 Warning (10873): Using initial value X (don't care) for net "cout" at quad_segment7.vhd(10)
 Info (12129): Elaborating entity "segment7" using architecture "A:digit_single" for hierarchy "quad_segment7:quad_segment7_1|segment7:LSB_segment7"
 Warning (10873): Using initial value X (don't care) for net "cout" at segment7.vhd(10)
+Warning (12069): Ignored assignment(s) for "pwm_output[0]" because "pwm_output" is not a bus or array
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "HEX21" is stuck at GND
-    Warning (13410): Pin "HEX30" is stuck at GND
-    Warning (13410): Pin "HEX31" is stuck at GND
-    Warning (13410): Pin "HEX32" is stuck at GND
-    Warning (13410): Pin "HEX33" is stuck at GND
-    Warning (13410): Pin "HEX34" is stuck at GND
-    Warning (13410): Pin "HEX35" is stuck at GND
-    Warning (13410): Pin "HEX36" is stuck at VCC
+    Warning (13410): Pin "HEX2[1]" is stuck at GND
+    Warning (13410): Pin "HEX3[0]" is stuck at GND
+    Warning (13410): Pin "HEX3[1]" is stuck at GND
+    Warning (13410): Pin "HEX3[2]" is stuck at GND
+    Warning (13410): Pin "HEX3[3]" is stuck at GND
+    Warning (13410): Pin "HEX3[4]" is stuck at GND
+    Warning (13410): Pin "HEX3[5]" is stuck at GND
+    Warning (13410): Pin "HEX3[6]" is stuck at VCC
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 2 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "increase"
-    Warning (15610): No output dependent on input pin "decrease"
-Info (21057): Implemented 171 device resources after synthesis - the final resource count might be different
+    Warning (15610): No output dependent on input pin "changeup"
+    Warning (15610): No output dependent on input pin "changedown"
+Info (21057): Implemented 96 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 13 input pins
     Info (21059): Implemented 29 output pins
-    Info (21061): Implemented 128 logic cells
+    Info (21061): Implemented 53 logic cells
     Info (21062): Implemented 1 DSP elements
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 15 warnings
-    Info: Peak virtual memory: 793 megabytes
-    Info: Processing ended: Fri Oct 16 20:52:45 2015
-    Info: Elapsed time: 00:00:12
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 16 warnings
+    Info: Peak virtual memory: 790 megabytes
+    Info: Processing ended: Tue Dec 15 15:11:22 2015
+    Info: Elapsed time: 00:00:13
     Info: Total CPU time (on all processors): 00:00:26
 
 

@@ -1,0 +1,22 @@
+#include "io.h"
+#include "system.h"
+
+/**
+ * Gets led_pattern as parameter in order to write to the register.
+ */
+void set_led(unsigned char led_pattern) {
+    IOWR(LED_BASE, 0, led_pattern);               // writes register
+}
+
+/**
+ * Gets LEDs pattern from switchers.
+ * Sets LEDs register according to the pattern.
+ **/
+void main() {
+    unsigned char led_pattern = 0x00;
+
+    while (1) {                                   // infinite loop
+        led_pattern = IORD(SWITCHER_BASE, 0);     // gets LEDs
+        set_led(led_pattern);                     // sets LEDs
+    }
+}

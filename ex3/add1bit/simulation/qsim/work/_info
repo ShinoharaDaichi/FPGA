@@ -1,81 +1,86 @@
 m255
 K3
+z0
 13
 cModel Technology
-Z0 dG:\Hubic\ELN\FPGA\Projects\ex3\add1bit\simulation\qsim
+dG:\Hubic\ELN\FPGA\Projects\ex3\add1bit\simulation\qsim
 vadd1bit
-Z1 IFTlF8F:ERiXnbNfF]BSWf3
-Z2 VPjc4Ed`IVTIgR5>NjTlLF0
-Z3 dG:\Hubic\ELN\FPGA\Projects\ex3\add1bit\simulation\qsim
-Z4 w1442580214
-Z5 8add1bit.vo
-Z6 Fadd1bit.vo
-L0 31
-Z7 OV;L;10.1d;51
-r1
-31
-Z8 o-work work -O0
+Z0 !s110 1449579291
 !i10b 1
-Z9 !s100 Go]NA>A2H^YXeJBZNOVbB1
+!s100 Tle2O89_?9[54]`Rgfnej1
+I?>XUOzCnbKf6S<7PKd8?92
+Z1 V`JN@9S9cnhjKRR_L]QIcM3
+Z2 dC:/Users/Daichi/hubiC/ELN/FPGA/Projects/ex3/add1bit/simulation/qsim
+w1449579290
+8add1bit.vo
+Fadd1bit.vo
+L0 32
+Z3 OV;L;10.3d;59
+r1
 !s85 0
-Z10 !s108 1442580217.587000
-Z11 !s107 add1bit.vo|
-Z12 !s90 -work|work|add1bit.vo|
-!s101 -O0
+31
+!s108 1449579291.768000
+!s107 add1bit.vo|
+!s90 -work|work|add1bit.vo|
+!i113 1
+Z4 o-work work
 vadd1bit_vlg_check_tst
+R0
 !i10b 1
-!s100 [<FU>9b_lUA^n0>6mf;C52
-Ihn_e<dGPC<cTAiOoLiWlP2
-Vmh5K[D[Vz`nzBgZhJ<=MQ3
+!s100 gFOc@RJ4AD7PT0QdLo=F:1
+I9HaSc;0[VO;Tk@L]h@M220
+R1
+R2
+Z5 w1449579288
+Z6 8add1bit.vwf.vt
+Z7 Fadd1bit.vwf.vt
+L0 62
 R3
-Z13 w1442580211
-Z14 8add1bit.vt
-Z15 Fadd1bit.vt
-L0 61
-R7
 r1
 !s85 0
 31
-Z16 !s108 1442580217.760000
-Z17 !s107 add1bit.vt|
-Z18 !s90 -work|work|add1bit.vt|
-!s101 -O0
-R8
+Z8 !s108 1449579291.831000
+Z9 !s107 add1bit.vwf.vt|
+Z10 !s90 -work|work|add1bit.vwf.vt|
+!i113 1
+R4
 vadd1bit_vlg_sample_tst
+R0
 !i10b 1
-!s100 AK1dbofDin<c8jW:hXU453
-IcS`ZK0hS0kDfX@zb^8Bmo2
-V>5eB_UzUFiaGHc7A04WQF0
-R3
-R13
-R14
-R15
-L0 29
+!s100 ZmRHYY6lcgb^a8hlmBYzi2
+I^Q;Qi7WGoZ:NkQmXlZWe<1
+R1
+R2
+R5
+R6
 R7
+L0 30
+R3
 r1
 !s85 0
 31
-R16
-R17
-R18
-!s101 -O0
 R8
+R9
+R10
+!i113 1
+R4
 vadd1bit_vlg_vec_tst
+R0
 !i10b 1
-!s100 A3Y_7L60LjkRYGGc:k9XB2
-IZ8FV9JicD_5InT^]izIVJ1
-Vm2jNe2?[fiJOYokEUhje_1
-R3
-R13
-R14
-R15
-L0 183
+!s100 N3ikXU6R4?JJDS9JZPU=[1
+IR3^MHk7z5c=;bV?n1z_?C0
+R1
+R2
+R5
+R6
 R7
+L0 186
+R3
 r1
 !s85 0
 31
-R16
-R17
-R18
-!s101 -O0
 R8
+R9
+R10
+!i113 1
+R4

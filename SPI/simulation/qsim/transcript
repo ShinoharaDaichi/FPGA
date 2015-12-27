@@ -1,0 +1,36 @@
+# do spi.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 13:29:09 on Dec 10,2015
+# vlog -work work spi.vo 
+# -- Compiling module spi
+# 
+# Top level modules:
+# 	spi
+# End time: 13:29:09 on Dec 10,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 13:29:09 on Dec 10,2015
+# vlog -work work Waveform.vwf.vt 
+# -- Compiling module spi_vlg_sample_tst
+# -- Compiling module spi_vlg_check_tst
+# -- Compiling module spi_vlg_vec_tst
+# 
+# Top level modules:
+# 	spi_vlg_vec_tst
+# End time: 13:29:09 on Dec 10,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -c -do "spi.do" 
+# Start time: 13:29:09 on Dec 10,2015
+# Loading work.spi_vlg_vec_tst
+# Loading work.spi
+# Loading altera_ver.dffeas
+# Loading work.spi_vlg_sample_tst
+# Loading work.spi_vlg_check_tst
+# Loading altera_ver.PRIM_GDFF_LOW
+# Simulation passed !
+# ** Note: $finish    : Waveform.vwf.vt(470)
+#    Time: 100 us  Iteration: 0  Instance: /spi_vlg_vec_tst/tb_out
+# End time: 13:29:10 on Dec 10,2015, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0

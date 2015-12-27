@@ -1,0 +1,15 @@
+
+State Machine - |servo2_chenillard_adc|chenillard_pwm_adc:chenillard_pwm_adc_entity|adc:adc_entity|state
+Name state.wait_between_sent state.wait_while_busy state.send state.start_conversion state.wait_input state.initial 
+state.initial 0 0 0 0 0 0 
+state.wait_input 0 0 0 0 1 1 
+state.start_conversion 0 0 0 1 0 1 
+state.send 0 0 1 0 0 1 
+state.wait_while_busy 0 1 0 0 0 1 
+state.wait_between_sent 1 0 0 0 0 1 
+
+State Machine - |servo2_chenillard_adc|chenillard_pwm_adc:chenillard_pwm_adc_entity|chenillard_pwm:chenillard_pwm_entity|state
+Name state.wait_state state.go_state state.calculate_duty_state 
+state.calculate_duty_state 0 0 0 
+state.go_state 0 1 1 
+state.wait_state 1 0 1 

@@ -54,10 +54,6 @@ set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_global_assignment -name VHDL_FILE ../segment7/segment7.vhd
-set_global_assignment -name VHDL_FILE ../PWM/pwm.vhd
-set_global_assignment -name VHDL_FILE ../quad_segment7/quad_segment7.vhd
-set_global_assignment -name VHDL_FILE servo.vhd
 set_location_assignment PIN_V19 -to HEX00
 set_location_assignment PIN_V18 -to HEX01
 set_location_assignment PIN_V17 -to HEX02
@@ -86,22 +82,29 @@ set_location_assignment PIN_AA22 -to HEX33
 set_location_assignment PIN_AC24 -to HEX34
 set_location_assignment PIN_AC23 -to HEX35
 set_location_assignment PIN_AC22 -to HEX36
-set_location_assignment PIN_AE10 -to duty[1]
-set_location_assignment PIN_AD13 -to duty[2]
-set_location_assignment PIN_AC8 -to duty[3]
-set_location_assignment PIN_W11 -to duty[4]
+set_location_assignment PIN_D26 -to duty[1]
+set_location_assignment PIN_K25 -to duty[2]
+set_location_assignment PIN_E26 -to duty[3]
+set_location_assignment PIN_K26 -to duty[4]
 set_location_assignment PIN_AB10 -to duty[5]
 set_location_assignment PIN_V10 -to duty[6]
 set_location_assignment PIN_AC10 -to duty[7]
 set_location_assignment PIN_H12 -to clk
-set_location_assignment PIN_AC9 -to duty[0]
-set_location_assignment PIN_D26 -to pwm_output[0]
+set_location_assignment PIN_T21 -to duty[0]
+set_location_assignment PIN_M26 -to pwm_output[0]
 set_location_assignment PIN_AE19 -to enable_pwm
-set_global_assignment -name CDF_FILE output_files/Chain2.cdf
 set_location_assignment PIN_P11 -to reset_pwm
 set_global_assignment -name VHDL_INPUT_VERSION VHDL_2008
 set_global_assignment -name VHDL_SHOW_LMF_MAPPING_MESSAGES OFF
 set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
-set_location_assignment PIN_P12 -to increase
-set_location_assignment PIN_Y15 -to decrease
+set_location_assignment PIN_P12 -to change
+set_location_assignment PIN_Y11 -to direction
+set_location_assignment PIN_Y15 -to changeup
+set_location_assignment PIN_Y16 -to changedown
+set_global_assignment -name VHDL_FILE ../single_pwm/single_pwm.vhd
+set_global_assignment -name VHDL_FILE ../Servo2/double_segment7.vhd
+set_global_assignment -name VHDL_FILE ../segment7/segment7.vhd
+set_global_assignment -name VHDL_FILE ../quad_segment7/quad_segment7.vhd
+set_global_assignment -name VHDL_FILE servo.vhd
+set_global_assignment -name CDF_FILE output_files/Chain1.cdf
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

@@ -1,0 +1,444 @@
+// Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, the Altera Quartus II License Agreement,
+// the Altera MegaCore Function License Agreement, or other 
+// applicable license agreement, including, without limitation, 
+// that your use is for the sole purpose of programming logic 
+// devices manufactured by Altera and sold by Altera or its 
+// authorized distributors.  Please refer to the applicable 
+// agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench with test vectors .The test vectors  
+// are exported from a vector file in the Quartus Waveform Editor and apply to  
+// the top level entity of the current Quartus project .The user can use this   
+// testbench to simulate his design using a third-party simulation tool .       
+// *****************************************************************************
+// Generated on "12/02/2015 11:49:11"
+                                                                        
+// Verilog Self-Checking Test Bench (with test vectors) for design :    servo2
+// 
+// Simulation tool : 3rd Party
+// 
+
+`timescale 1 ps/ 1 ps
+module servo2_vlg_sample_tst(
+	change,
+	clk,
+	direction,
+	duty,
+	enable_pwm,
+	reset_pwm,
+	sampler_tx
+);
+input  change;
+input  clk;
+input  direction;
+input [7:0] duty;
+input  enable_pwm;
+input  reset_pwm;
+output sampler_tx;
+
+reg sample;
+time current_time;
+always @(change or clk or direction or duty or enable_pwm or reset_pwm)
+                                                                                
+begin                                                 
+ if ($realtime > 0)                                   
+ begin                                                
+    if ($realtime == 0 || $realtime != current_time)  
+    begin                                             
+        if (sample === 1'bx)                          
+            sample = 0;                               
+        else                                          
+            sample = ~sample;                         
+    end                                               
+    current_time = $realtime;                         
+ end                                                  
+end                                                   
+
+assign sampler_tx = sample;
+endmodule
+
+module servo2_vlg_check_tst (
+	HEX00,
+	HEX01,
+	HEX02,
+	HEX03,
+	HEX04,
+	HEX05,
+	HEX06,
+	HEX10,
+	HEX11,
+	HEX12,
+	HEX13,
+	HEX14,
+	HEX15,
+	HEX16,
+	HEX20,
+	HEX21,
+	HEX22,
+	HEX23,
+	HEX24,
+	HEX25,
+	HEX26,
+	HEX30,
+	HEX31,
+	HEX32,
+	HEX33,
+	HEX34,
+	HEX35,
+	HEX36,
+	pwm_output_incremental,
+	pwm_output_parallel,
+	sampler_rx
+);
+input  HEX00;
+input  HEX01;
+input  HEX02;
+input  HEX03;
+input  HEX04;
+input  HEX05;
+input  HEX06;
+input  HEX10;
+input  HEX11;
+input  HEX12;
+input  HEX13;
+input  HEX14;
+input  HEX15;
+input  HEX16;
+input  HEX20;
+input  HEX21;
+input  HEX22;
+input  HEX23;
+input  HEX24;
+input  HEX25;
+input  HEX26;
+input  HEX30;
+input  HEX31;
+input  HEX32;
+input  HEX33;
+input  HEX34;
+input  HEX35;
+input  HEX36;
+input [0:0] pwm_output_incremental;
+input [0:0] pwm_output_parallel;
+input sampler_rx;
+
+reg  HEX00_expected;
+reg  HEX01_expected;
+reg  HEX02_expected;
+reg  HEX03_expected;
+reg  HEX04_expected;
+reg  HEX05_expected;
+reg  HEX06_expected;
+reg  HEX10_expected;
+reg  HEX11_expected;
+reg  HEX12_expected;
+reg  HEX13_expected;
+reg  HEX14_expected;
+reg  HEX15_expected;
+reg  HEX16_expected;
+reg  HEX20_expected;
+reg  HEX21_expected;
+reg  HEX22_expected;
+reg  HEX23_expected;
+reg  HEX24_expected;
+reg  HEX25_expected;
+reg  HEX26_expected;
+reg  HEX30_expected;
+reg  HEX31_expected;
+reg  HEX32_expected;
+reg  HEX33_expected;
+reg  HEX34_expected;
+reg  HEX35_expected;
+reg  HEX36_expected;
+reg [0:0] pwm_output_incremental_expected;
+reg [0:0] pwm_output_parallel_expected;
+
+reg  HEX00_prev;
+reg  HEX01_prev;
+reg  HEX02_prev;
+reg  HEX03_prev;
+reg  HEX04_prev;
+reg  HEX05_prev;
+reg  HEX06_prev;
+reg  HEX10_prev;
+reg  HEX11_prev;
+reg  HEX12_prev;
+reg  HEX13_prev;
+reg  HEX14_prev;
+reg  HEX15_prev;
+reg  HEX16_prev;
+reg  HEX20_prev;
+reg  HEX21_prev;
+reg  HEX22_prev;
+reg  HEX23_prev;
+reg  HEX24_prev;
+reg  HEX25_prev;
+reg  HEX26_prev;
+reg  HEX30_prev;
+reg  HEX31_prev;
+reg  HEX32_prev;
+reg  HEX33_prev;
+reg  HEX34_prev;
+reg  HEX35_prev;
+reg  HEX36_prev;
+reg [0:0] pwm_output_incremental_prev;
+reg [0:0] pwm_output_parallel_prev;
+
+reg  HEX33_expected_prev;
+
+reg  last_HEX33_exp;
+
+reg trigger;
+
+integer i;
+integer nummismatches;
+
+reg [1:30] on_first_change ;
+
+
+initial
+begin
+trigger = 0;
+i = 0;
+nummismatches = 0;
+on_first_change = 30'b1;
+end
+
+// update real /o prevs
+
+always @(trigger)
+begin
+	HEX00_prev = HEX00;
+	HEX01_prev = HEX01;
+	HEX02_prev = HEX02;
+	HEX03_prev = HEX03;
+	HEX04_prev = HEX04;
+	HEX05_prev = HEX05;
+	HEX06_prev = HEX06;
+	HEX10_prev = HEX10;
+	HEX11_prev = HEX11;
+	HEX12_prev = HEX12;
+	HEX13_prev = HEX13;
+	HEX14_prev = HEX14;
+	HEX15_prev = HEX15;
+	HEX16_prev = HEX16;
+	HEX20_prev = HEX20;
+	HEX21_prev = HEX21;
+	HEX22_prev = HEX22;
+	HEX23_prev = HEX23;
+	HEX24_prev = HEX24;
+	HEX25_prev = HEX25;
+	HEX26_prev = HEX26;
+	HEX30_prev = HEX30;
+	HEX31_prev = HEX31;
+	HEX32_prev = HEX32;
+	HEX33_prev = HEX33;
+	HEX34_prev = HEX34;
+	HEX35_prev = HEX35;
+	HEX36_prev = HEX36;
+	pwm_output_incremental_prev = pwm_output_incremental;
+	pwm_output_parallel_prev = pwm_output_parallel;
+end
+
+// update expected /o prevs
+
+always @(trigger)
+begin
+	HEX33_expected_prev = HEX33_expected;
+end
+
+
+
+// expected HEX33
+initial
+begin
+	HEX33_expected = 1'bX;
+end 
+// generate trigger
+always @(HEX00_expected or HEX00 or HEX01_expected or HEX01 or HEX02_expected or HEX02 or HEX03_expected or HEX03 or HEX04_expected or HEX04 or HEX05_expected or HEX05 or HEX06_expected or HEX06 or HEX10_expected or HEX10 or HEX11_expected or HEX11 or HEX12_expected or HEX12 or HEX13_expected or HEX13 or HEX14_expected or HEX14 or HEX15_expected or HEX15 or HEX16_expected or HEX16 or HEX20_expected or HEX20 or HEX21_expected or HEX21 or HEX22_expected or HEX22 or HEX23_expected or HEX23 or HEX24_expected or HEX24 or HEX25_expected or HEX25 or HEX26_expected or HEX26 or HEX30_expected or HEX30 or HEX31_expected or HEX31 or HEX32_expected or HEX32 or HEX33_expected or HEX33 or HEX34_expected or HEX34 or HEX35_expected or HEX35 or HEX36_expected or HEX36 or pwm_output_incremental_expected or pwm_output_incremental or pwm_output_parallel_expected or pwm_output_parallel)
+begin
+	trigger <= ~trigger;
+end
+
+always @(posedge sampler_rx or negedge sampler_rx)
+begin
+`ifdef debug_tbench
+	$display("Scanning pattern %d @time = %t",i,$realtime );
+	i = i + 1;
+	$display("| expected HEX00 = %b | expected HEX01 = %b | expected HEX02 = %b | expected HEX03 = %b | expected HEX04 = %b | expected HEX05 = %b | expected HEX06 = %b | expected HEX10 = %b | expected HEX11 = %b | expected HEX12 = %b | expected HEX13 = %b | expected HEX14 = %b | expected HEX15 = %b | expected HEX16 = %b | expected HEX20 = %b | expected HEX21 = %b | expected HEX22 = %b | expected HEX23 = %b | expected HEX24 = %b | expected HEX25 = %b | expected HEX26 = %b | expected HEX30 = %b | expected HEX31 = %b | expected HEX32 = %b | expected HEX33 = %b | expected HEX34 = %b | expected HEX35 = %b | expected HEX36 = %b | expected pwm_output_incremental = %b | expected pwm_output_parallel = %b | ",HEX00_expected_prev,HEX01_expected_prev,HEX02_expected_prev,HEX03_expected_prev,HEX04_expected_prev,HEX05_expected_prev,HEX06_expected_prev,HEX10_expected_prev,HEX11_expected_prev,HEX12_expected_prev,HEX13_expected_prev,HEX14_expected_prev,HEX15_expected_prev,HEX16_expected_prev,HEX20_expected_prev,HEX21_expected_prev,HEX22_expected_prev,HEX23_expected_prev,HEX24_expected_prev,HEX25_expected_prev,HEX26_expected_prev,HEX30_expected_prev,HEX31_expected_prev,HEX32_expected_prev,HEX33_expected_prev,HEX34_expected_prev,HEX35_expected_prev,HEX36_expected_prev,pwm_output_incremental_expected_prev,pwm_output_parallel_expected_prev);
+	$display("| real HEX00 = %b | real HEX01 = %b | real HEX02 = %b | real HEX03 = %b | real HEX04 = %b | real HEX05 = %b | real HEX06 = %b | real HEX10 = %b | real HEX11 = %b | real HEX12 = %b | real HEX13 = %b | real HEX14 = %b | real HEX15 = %b | real HEX16 = %b | real HEX20 = %b | real HEX21 = %b | real HEX22 = %b | real HEX23 = %b | real HEX24 = %b | real HEX25 = %b | real HEX26 = %b | real HEX30 = %b | real HEX31 = %b | real HEX32 = %b | real HEX33 = %b | real HEX34 = %b | real HEX35 = %b | real HEX36 = %b | real pwm_output_incremental = %b | real pwm_output_parallel = %b | ",HEX00_prev,HEX01_prev,HEX02_prev,HEX03_prev,HEX04_prev,HEX05_prev,HEX06_prev,HEX10_prev,HEX11_prev,HEX12_prev,HEX13_prev,HEX14_prev,HEX15_prev,HEX16_prev,HEX20_prev,HEX21_prev,HEX22_prev,HEX23_prev,HEX24_prev,HEX25_prev,HEX26_prev,HEX30_prev,HEX31_prev,HEX32_prev,HEX33_prev,HEX34_prev,HEX35_prev,HEX36_prev,pwm_output_incremental_prev,pwm_output_parallel_prev);
+`endif
+	if (
+		( HEX33_expected_prev !== 1'bx ) && ( HEX33_prev !== HEX33_expected_prev )
+		&& ((HEX33_expected_prev !== last_HEX33_exp) ||
+			on_first_change[25])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port HEX33 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", HEX33_expected_prev);
+		$display ("     Real value = %b", HEX33_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[25] = 1'b0;
+		last_HEX33_exp = HEX33_expected_prev;
+	end
+
+	trigger <= ~trigger;
+end
+initial 
+
+begin 
+$timeformat(-12,3," ps",6);
+#1000000;
+if (nummismatches > 0)
+	$display ("%d mismatched vectors : Simulation failed !",nummismatches);
+else
+	$display ("Simulation passed !");
+$finish;
+end 
+endmodule
+
+module servo2_vlg_vec_tst();
+// constants                                           
+// general purpose registers
+reg change;
+reg clk;
+reg direction;
+reg [7:0] duty;
+reg enable_pwm;
+reg reset_pwm;
+// wires                                               
+wire HEX00;
+wire HEX01;
+wire HEX02;
+wire HEX03;
+wire HEX04;
+wire HEX05;
+wire HEX06;
+wire HEX10;
+wire HEX11;
+wire HEX12;
+wire HEX13;
+wire HEX14;
+wire HEX15;
+wire HEX16;
+wire HEX20;
+wire HEX21;
+wire HEX22;
+wire HEX23;
+wire HEX24;
+wire HEX25;
+wire HEX26;
+wire HEX30;
+wire HEX31;
+wire HEX32;
+wire HEX33;
+wire HEX34;
+wire HEX35;
+wire HEX36;
+wire [0:0] pwm_output_incremental;
+wire [0:0] pwm_output_parallel;
+
+wire sampler;                             
+
+// assign statements (if any)                          
+servo2 i1 (
+// port map - connection between master ports and signals/registers   
+	.change(change),
+	.clk(clk),
+	.direction(direction),
+	.duty(duty),
+	.enable_pwm(enable_pwm),
+	.HEX00(HEX00),
+	.HEX01(HEX01),
+	.HEX02(HEX02),
+	.HEX03(HEX03),
+	.HEX04(HEX04),
+	.HEX05(HEX05),
+	.HEX06(HEX06),
+	.HEX10(HEX10),
+	.HEX11(HEX11),
+	.HEX12(HEX12),
+	.HEX13(HEX13),
+	.HEX14(HEX14),
+	.HEX15(HEX15),
+	.HEX16(HEX16),
+	.HEX20(HEX20),
+	.HEX21(HEX21),
+	.HEX22(HEX22),
+	.HEX23(HEX23),
+	.HEX24(HEX24),
+	.HEX25(HEX25),
+	.HEX26(HEX26),
+	.HEX30(HEX30),
+	.HEX31(HEX31),
+	.HEX32(HEX32),
+	.HEX33(HEX33),
+	.HEX34(HEX34),
+	.HEX35(HEX35),
+	.HEX36(HEX36),
+	.pwm_output_incremental(pwm_output_incremental),
+	.pwm_output_parallel(pwm_output_parallel),
+	.reset_pwm(reset_pwm)
+);
+
+// clk
+initial
+begin
+	clk = 1'b0;
+	clk = #140000 1'b1;
+	clk = #300000 1'b0;
+end 
+
+servo2_vlg_sample_tst tb_sample (
+	.change(change),
+	.clk(clk),
+	.direction(direction),
+	.duty(duty),
+	.enable_pwm(enable_pwm),
+	.reset_pwm(reset_pwm),
+	.sampler_tx(sampler)
+);
+
+servo2_vlg_check_tst tb_out(
+	.HEX00(HEX00),
+	.HEX01(HEX01),
+	.HEX02(HEX02),
+	.HEX03(HEX03),
+	.HEX04(HEX04),
+	.HEX05(HEX05),
+	.HEX06(HEX06),
+	.HEX10(HEX10),
+	.HEX11(HEX11),
+	.HEX12(HEX12),
+	.HEX13(HEX13),
+	.HEX14(HEX14),
+	.HEX15(HEX15),
+	.HEX16(HEX16),
+	.HEX20(HEX20),
+	.HEX21(HEX21),
+	.HEX22(HEX22),
+	.HEX23(HEX23),
+	.HEX24(HEX24),
+	.HEX25(HEX25),
+	.HEX26(HEX26),
+	.HEX30(HEX30),
+	.HEX31(HEX31),
+	.HEX32(HEX32),
+	.HEX33(HEX33),
+	.HEX34(HEX34),
+	.HEX35(HEX35),
+	.HEX36(HEX36),
+	.pwm_output_incremental(pwm_output_incremental),
+	.pwm_output_parallel(pwm_output_parallel),
+	.sampler_rx(sampler)
+);
+endmodule
+

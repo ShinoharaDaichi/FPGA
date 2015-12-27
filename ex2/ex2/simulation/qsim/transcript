@@ -1,17 +1,28 @@
-# do ex2.do 
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# do ex2.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 13:31:48 on Dec 08,2015
+# vlog -work work ex2.vo 
 # -- Compiling module ex2
 # 
 # Top level modules:
 # 	ex2
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# End time: 13:31:48 on Dec 08,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 13:31:48 on Dec 08,2015
+# vlog -work work ex2.vwf.vt 
 # -- Compiling module ex2_vlg_sample_tst
 # -- Compiling module ex2_vlg_check_tst
 # -- Compiling module ex2_vlg_vec_tst
 # 
 # Top level modules:
 # 	ex2_vlg_vec_tst
-# vsim -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -t 1ps -novopt work.ex2_vlg_vec_tst 
+# End time: 13:31:48 on Dec 08,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -c -do "ex2.do" 
+# Start time: 13:31:48 on Dec 08,2015
 # Loading work.ex2_vlg_vec_tst
 # Loading work.ex2
 # Loading cycloneive_ver.cycloneive_io_obuf
@@ -20,5 +31,7 @@
 # Loading work.ex2_vlg_sample_tst
 # Loading work.ex2_vlg_check_tst
 # Simulation passed !
-# ** Note: $finish    : ex2.vt(150)
+# ** Note: $finish    : ex2.vwf.vt(151)
 #    Time: 200 ns  Iteration: 0  Instance: /ex2_vlg_vec_tst/tb_out
+# End time: 13:31:48 on Dec 08,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0

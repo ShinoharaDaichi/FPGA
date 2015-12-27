@@ -1,22 +1,23 @@
-// Copyright (C) 1991-2013 Altera Corporation
+// Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
 // Your use of Altera Corporation's design tools, logic functions 
 // and other software and tools, and its AMPP partner logic 
 // functions, and any output files from any of the foregoing 
 // (including device programming or simulation files), and any 
 // associated documentation or information are expressly subject 
 // to the terms and conditions of the Altera Program License 
-// Subscription Agreement, Altera MegaCore Function License 
-// Agreement, or other applicable license agreement, including, 
-// without limitation, that your use is for the sole purpose of 
-// programming logic devices manufactured by Altera and sold by 
-// Altera or its authorized distributors.  Please refer to the 
-// applicable agreement for further details.
+// Subscription Agreement, the Altera Quartus II License Agreement,
+// the Altera MegaCore Function License Agreement, or other 
+// applicable license agreement, including, without limitation, 
+// that your use is for the sole purpose of programming logic 
+// devices manufactured by Altera and sold by Altera or its 
+// authorized distributors.  Please refer to the applicable 
+// agreement for further details.
 
 // VENDOR "Altera"
-// PROGRAM "Quartus II 32-bit"
-// VERSION "Version 13.0.0 Build 156 04/24/2013 SJ Web Edition"
+// PROGRAM "Quartus II 64-Bit"
+// VERSION "Version 15.0.0 Build 145 04/22/2015 SJ Web Edition"
 
-// DATE "09/18/2015 15:20:42"
+// DATE "12/08/2015 14:30:29"
 
 // 
 // Device: Altera EP4CE22F17C6 Package FBGA256
@@ -51,7 +52,6 @@ assign unknown = 1'bx;
 tri1 devclrn;
 tri1 devpor;
 tri1 devoe;
-wire \b[0]~input_o ;
 wire \somme[0]~output_o ;
 wire \somme[1]~output_o ;
 wire \somme[2]~output_o ;
@@ -59,6 +59,7 @@ wire \somme[3]~output_o ;
 wire \cout~output_o ;
 wire \cin~input_o ;
 wire \a[0]~input_o ;
+wire \b[0]~input_o ;
 wire \fourAdders:0:add|somme~1_cout ;
 wire \fourAdders:0:add|somme~2_combout ;
 wire \b[1]~input_o ;
@@ -76,15 +77,6 @@ wire \fourAdders:0:add|somme~8_combout ;
 wire \fourAdders:0:add|somme~9 ;
 wire \fourAdders:0:add|somme~10_combout ;
 
-
-cycloneive_io_ibuf \b[0]~input (
-	.i(b[0]),
-	.ibar(gnd),
-	.o(\b[0]~input_o ));
-// synopsys translate_off
-defparam \b[0]~input .bus_hold = "false";
-defparam \b[0]~input .simulate_z_as = "z";
-// synopsys translate_on
 
 cycloneive_io_obuf \somme[0]~output (
 	.i(\fourAdders:0:add|somme~2_combout ),
@@ -162,6 +154,15 @@ cycloneive_io_ibuf \a[0]~input (
 // synopsys translate_off
 defparam \a[0]~input .bus_hold = "false";
 defparam \a[0]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cycloneive_io_ibuf \b[0]~input (
+	.i(b[0]),
+	.ibar(gnd),
+	.o(\b[0]~input_o ));
+// synopsys translate_off
+defparam \b[0]~input .bus_hold = "false";
+defparam \b[0]~input .simulate_z_as = "z";
 // synopsys translate_on
 
 cycloneive_lcell_comb \fourAdders:0:add|somme~1 (

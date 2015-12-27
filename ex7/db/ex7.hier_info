@@ -1,0 +1,26 @@
+|ex7
+x => nand_gate:nand2.x1
+x => nand_gate:nand1.x1
+y => nand_gate:nand1.x2
+y => nand_gate:nand2.x2
+f <= nand_gate:nand3.f
+
+
+|ex7|nand_gate:nand1
+x1 => f.IN0
+x2 => f.IN1
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ex7|nand_gate:nand2
+x1 => f.IN0
+x2 => f.IN1
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ex7|nand_gate:nand3
+x1 => process_0.IN0
+x2 => process_0.IN1
+f <= process_0.DB_MAX_OUTPUT_PORT_TYPE
+
+

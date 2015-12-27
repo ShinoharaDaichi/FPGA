@@ -1,5 +1,5 @@
 Analysis & Synthesis report for pwm
-Fri Oct 16 19:10:41 2015
+Sat Dec 12 15:47:30 2015
 Quartus II 64-Bit Version 15.0.0 Build 145 04/22/2015 SJ Web Edition
 
 
@@ -45,13 +45,13 @@ agreement for further details.
 +------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                 ;
 +---------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Fri Oct 16 19:10:41 2015      ;
+; Analysis & Synthesis Status     ; Successful - Sat Dec 12 15:47:30 2015      ;
 ; Quartus II 64-Bit Version       ; 15.0.0 Build 145 04/22/2015 SJ Web Edition ;
 ; Revision Name                   ; pwm                                        ;
 ; Top-level Entity Name           ; pwm                                        ;
 ; Family                          ; Cyclone V                                  ;
 ; Logic utilization (in ALMs)     ; N/A                                        ;
-; Total registers                 ; 27                                         ;
+; Total registers                 ; 33                                         ;
 ; Total pins                      ; 13                                         ;
 ; Total virtual pins              ; 0                                          ;
 ; Total block memory bits         ; 0                                          ;
@@ -178,25 +178,25 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimate of Logic utilization (ALMs needed) ; 20        ;
+; Estimate of Logic utilization (ALMs needed) ; 24        ;
 ;                                             ;           ;
-; Combinational ALUT usage for logic          ; 29        ;
+; Combinational ALUT usage for logic          ; 36        ;
 ;     -- 7 input functions                    ; 0         ;
-;     -- 6 input functions                    ; 5         ;
-;     -- 5 input functions                    ; 6         ;
-;     -- 4 input functions                    ; 1         ;
-;     -- <=3 input functions                  ; 17        ;
+;     -- 6 input functions                    ; 7         ;
+;     -- 5 input functions                    ; 3         ;
+;     -- 4 input functions                    ; 5         ;
+;     -- <=3 input functions                  ; 21        ;
 ;                                             ;           ;
-; Dedicated logic registers                   ; 27        ;
+; Dedicated logic registers                   ; 33        ;
 ;                                             ;           ;
 ; I/O pins                                    ; 13        ;
 ;                                             ;           ;
 ; Total DSP Blocks                            ; 1         ;
 ;                                             ;           ;
 ; Maximum fan-out node                        ; clk~input ;
-; Maximum fan-out                             ; 27        ;
-; Total fan-out                               ; 217       ;
-; Average fan-out                             ; 2.61      ;
+; Maximum fan-out                             ; 33        ;
+; Total fan-out                               ; 260       ;
+; Average fan-out                             ; 2.71      ;
 +---------------------------------------------+-----------+
 
 
@@ -205,7 +205,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+-------------------+--------------+-------------------+------------+------+--------------+---------------------+--------------+
 ; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
 +----------------------------+-------------------+--------------+-------------------+------------+------+--------------+---------------------+--------------+
-; |pwm                       ; 29 (29)           ; 27 (27)      ; 0                 ; 1          ; 13   ; 0            ; |pwm                ; work         ;
+; |pwm                       ; 36 (36)           ; 33 (33)      ; 0                 ; 1          ; 13   ; 0            ; |pwm                ; work         ;
 +----------------------------+-------------------+--------------+-------------------+------------+------+--------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -215,7 +215,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------+-------------+
 ; Statistic                       ; Number Used ;
 +---------------------------------+-------------+
-; Independent 9x9                 ; 1           ;
+; Independent 18x18               ; 1           ;
 ; Total number of DSP blocks      ; 1           ;
 ;                                 ;             ;
 ; Fixed Point Unsigned Multiplier ; 1           ;
@@ -227,26 +227,26 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 27    ;
-; Number of registers using Synchronous Clear  ; 17    ;
+; Total registers                              ; 33    ;
+; Number of registers using Synchronous Clear  ; 21    ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 11    ;
+; Number of registers using Asynchronous Clear ; 13    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 16    ;
+; Number of registers using Clock Enable       ; 20    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
 +---------------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: Top-level Entity: |pwm ;
-+-----------------+----------+----------------------------------------+
-; Parameter Name  ; Value    ; Type                                   ;
-+-----------------+----------+----------------------------------------+
-; sys_clk         ; 50000000 ; Signed Integer                         ;
-; pwm_freq        ; 100000   ; Signed Integer                         ;
-; bits_resolution ; 8        ; Signed Integer                         ;
-; phases          ; 1        ; Signed Integer                         ;
-+-----------------+----------+----------------------------------------+
++-----------------+-----------+---------------------------------------+
+; Parameter Name  ; Value     ; Type                                  ;
++-----------------+-----------+---------------------------------------+
+; sys_clk         ; 200000000 ; Signed Integer                        ;
+; pwm_freq        ; 100000    ; Signed Integer                        ;
+; bits_resolution ; 8         ; Signed Integer                        ;
+; phases          ; 1         ; Signed Integer                        ;
++-----------------+-----------+---------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -255,25 +255,25 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 27                          ;
+; arriav_ff             ; 33                          ;
 ;     CLR               ; 2                           ;
-;     CLR SCLR          ; 9                           ;
-;     ENA               ; 8                           ;
-;     ENA SCLR          ; 8                           ;
-; arriav_lcell_comb     ; 29                          ;
-;     arith             ; 17                          ;
+;     CLR SCLR          ; 11                          ;
+;     ENA               ; 10                          ;
+;     ENA SCLR          ; 10                          ;
+; arriav_lcell_comb     ; 36                          ;
+;     arith             ; 21                          ;
 ;         0 data inputs ; 1                           ;
-;         1 data inputs ; 15                          ;
+;         1 data inputs ; 19                          ;
 ;         2 data inputs ; 1                           ;
-;     normal            ; 12                          ;
-;         4 data inputs ; 1                           ;
-;         5 data inputs ; 6                           ;
-;         6 data inputs ; 5                           ;
+;     normal            ; 15                          ;
+;         4 data inputs ; 5                           ;
+;         5 data inputs ; 3                           ;
+;         6 data inputs ; 7                           ;
 ; arriav_mac            ; 1                           ;
 ; boundary_port         ; 13                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 3.70                        ;
-; Average LUT depth     ; 1.91                        ;
+; Max LUT depth         ; 3.90                        ;
+; Average LUT depth     ; 2.03                        ;
 +-----------------------+-----------------------------+
 
 
@@ -292,7 +292,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 15.0.0 Build 145 04/22/2015 SJ Web Edition
-    Info: Processing started: Fri Oct 16 19:10:27 2015
+    Info: Processing started: Sat Dec 12 15:47:18 2015
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off pwm -c pwm
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file pwm.vhd
@@ -302,15 +302,15 @@ Info (12127): Elaborating entity "pwm" for the top level hierarchy
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 59 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 70 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 11 input pins
     Info (21059): Implemented 2 output pins
-    Info (21061): Implemented 45 logic cells
+    Info (21061): Implemented 56 logic cells
     Info (21062): Implemented 1 DSP elements
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 784 megabytes
-    Info: Processing ended: Fri Oct 16 19:10:41 2015
-    Info: Elapsed time: 00:00:14
-    Info: Total CPU time (on all processors): 00:00:30
+    Info: Peak virtual memory: 785 megabytes
+    Info: Processing ended: Sat Dec 12 15:47:30 2015
+    Info: Elapsed time: 00:00:12
+    Info: Total CPU time (on all processors): 00:00:27
 
 

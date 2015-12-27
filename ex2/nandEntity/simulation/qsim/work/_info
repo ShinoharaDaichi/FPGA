@@ -1,0 +1,94 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Daichi/hubiC/ELN/FPGA/Projects/ex2/nandEntity/simulation/qsim
+vnandEntity
+!s110 1449577580
+!i10b 1
+!s100 O[BkF<ZQmJ^j2oaoI3iPA3
+IFZ9XS?HHN<mBEjd8>R5A91
+Z1 V`JN@9S9cnhjKRR_L]QIcM3
+R0
+w1449577579
+8nandEntity.vo
+FnandEntity.vo
+L0 32
+Z2 OV;L;10.3d;59
+r1
+!s85 0
+31
+!s108 1449577580.959000
+!s107 nandEntity.vo|
+!s90 -work|work|nandEntity.vo|
+!i113 1
+Z3 o-work work
+nnand@entity
+vnandEntity_vlg_check_tst
+Z4 !s110 1449577581
+!i10b 1
+!s100 Oo_l;MCFL9fUf75SATia;2
+IB@RiIR]:AY7LiNEV6c6Wn2
+R1
+R0
+Z5 w1449577576
+Z6 8Waveform.vwf.vt
+Z7 FWaveform.vwf.vt
+L0 60
+R2
+r1
+!s85 0
+31
+Z8 !s108 1449577581.073000
+Z9 !s107 Waveform.vwf.vt|
+Z10 !s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R3
+nnand@entity_vlg_check_tst
+vnandEntity_vlg_sample_tst
+R4
+!i10b 1
+!s100 U>FdFf0D^T3mXd<5FjZV90
+IPO6zdB4>>F=Ll6P64E6J_0
+R1
+R0
+R5
+R6
+R7
+L0 30
+R2
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R3
+nnand@entity_vlg_sample_tst
+vnandEntity_vlg_vec_tst
+R4
+!i10b 1
+!s100 KWgh58lGIZh:eDJg>VWQ@2
+IOl<d<>>FQPAj6o8C0Vfl32
+R1
+R0
+R5
+R6
+R7
+L0 155
+R2
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R3
+nnand@entity_vlg_vec_tst

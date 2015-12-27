@@ -1,0 +1,6 @@
+
+State Machine - |chenillard_pwm|state
+Name state.wait_state state.go_state state.calculate_duty_state 
+state.calculate_duty_state 0 0 0 
+state.go_state 0 1 1 
+state.wait_state 1 0 1 

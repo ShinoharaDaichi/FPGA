@@ -1,0 +1,51 @@
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name FAMILY "Cyclone V"
+set_global_assignment -name DEVICE 5CGXFC5C6F27C7
+set_global_assignment -name TOP_LEVEL_ENTITY pwm_led
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 15.0.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "11:55:37  DECEMBER 08, 2015"
+set_global_assignment -name LAST_QUARTUS_VERSION 15.0.0
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 256
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (VHDL)"
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT VHDL -section_id eda_simulation
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name VHDL_FILE ../PWM/pwm.vhd
+set_global_assignment -name VHDL_FILE ../segment7/segment7.vhd
+set_global_assignment -name VHDL_FILE ../quad_segment7/quad_segment7.vhd
+set_global_assignment -name VHDL_FILE pwm_led.vhd
+
+set_location_assignment PIN_V19 -to HEX00
+set_location_assignment PIN_V18 -to HEX01
+set_location_assignment PIN_V17 -to HEX02
+set_location_assignment PIN_W18 -to HEX03
+set_location_assignment PIN_Y20 -to HEX04
+set_location_assignment PIN_Y19 -to HEX05
+set_location_assignment PIN_Y18 -to HEX06
+set_location_assignment PIN_AA18 -to HEX10
+set_location_assignment PIN_AD26 -to HEX11
+set_location_assignment PIN_AB19 -to HEX12
+set_location_assignment PIN_AE26 -to HEX13
+set_location_assignment PIN_AE25 -to HEX14
+set_location_assignment PIN_AC19 -to HEX15
+set_location_assignment PIN_AF24 -to HEX16
+set_location_assignment PIN_AD7 -to HEX20
+set_location_assignment PIN_AD6 -to HEX21
+set_location_assignment PIN_U20 -to HEX22
+set_location_assignment PIN_V22 -to HEX23
+set_location_assignment PIN_V20 -to HEX24
+set_location_assignment PIN_W21 -to HEX25
+set_location_assignment PIN_W20 -to HEX26
+set_location_assignment PIN_Y24 -to HEX30
+set_location_assignment PIN_Y23 -to HEX31
+set_location_assignment PIN_AA23 -to HEX32
+set_location_assignment PIN_AA22 -to HEX33
+set_location_assignment PIN_AC24 -to HEX34
+set_location_assignment PIN_AC23 -to HEX35
+set_location_assignment PIN_AC22 -to HEX36

@@ -1,0 +1,90 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Daichi/hubiC/ELN/FPGA/Projects/Servo2/simulation/qsim
+vservo2
+Z1 !s110 1449053356
+!i10b 1
+!s100 NPoQ3Cj8?0<=`[6X0aMzB3
+IRN[22bWHQ>L;GO5zP=XBF2
+Z2 V`JN@9S9cnhjKRR_L]QIcM3
+R0
+w1449053354
+8servo2.vo
+Fservo2.vo
+L0 32
+Z3 OV;L;10.3d;59
+r1
+!s85 0
+31
+!s108 1449053356.161000
+!s107 servo2.vo|
+!s90 -work|work|servo2.vo|
+!i113 1
+Z4 o-work work
+vservo2_vlg_check_tst
+R1
+!i10b 1
+!s100 aY^CSzdU8:eP_4koPi]Z63
+IVG^L>nTQmBWodmP]75Mbc0
+R2
+R0
+Z5 w1449053351
+Z6 8servo2.vwf.vt
+Z7 Fservo2.vwf.vt
+L0 68
+R3
+r1
+!s85 0
+31
+Z8 !s108 1449053356.337000
+Z9 !s107 servo2.vwf.vt|
+Z10 !s90 -work|work|servo2.vwf.vt|
+!i113 1
+R4
+vservo2_vlg_sample_tst
+R1
+!i10b 1
+!s100 9X>2hVRA8;<9[Zk:RIaCD3
+I8jiHNkZQgcUk0Kfn0=MF91
+R2
+R0
+R5
+R6
+R7
+L0 30
+R3
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R4
+vservo2_vlg_vec_tst
+R1
+!i10b 1
+!s100 UbCIXM6PPldYS2`mV9Jfk2
+IaZcmD=Y[lGAY[GLM[P0R20
+R2
+R0
+R5
+R6
+R7
+L0 308
+R3
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R4

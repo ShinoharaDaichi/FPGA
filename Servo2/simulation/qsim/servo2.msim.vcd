@@ -1,0 +1,1368 @@
+$comment
+	File created using the following command:
+		vcd file servo2.msim.vcd -direction
+$end
+$date
+	Wed Dec 02 11:49:16 2015
+$end
+$version
+	ModelSim Version 10.3d
+$end
+$timescale
+	1ps
+$end
+
+$scope module servo2_vlg_vec_tst $end
+$var reg 1 ! change $end
+$var reg 1 " clk $end
+$var reg 1 # direction $end
+$var reg 8 $ duty [7:0] $end
+$var reg 1 % enable_pwm $end
+$var reg 1 & reset_pwm $end
+$var wire 1 ' HEX00 $end
+$var wire 1 ( HEX01 $end
+$var wire 1 ) HEX02 $end
+$var wire 1 * HEX03 $end
+$var wire 1 + HEX04 $end
+$var wire 1 , HEX05 $end
+$var wire 1 - HEX06 $end
+$var wire 1 . HEX10 $end
+$var wire 1 / HEX11 $end
+$var wire 1 0 HEX12 $end
+$var wire 1 1 HEX13 $end
+$var wire 1 2 HEX14 $end
+$var wire 1 3 HEX15 $end
+$var wire 1 4 HEX16 $end
+$var wire 1 5 HEX20 $end
+$var wire 1 6 HEX21 $end
+$var wire 1 7 HEX22 $end
+$var wire 1 8 HEX23 $end
+$var wire 1 9 HEX24 $end
+$var wire 1 : HEX25 $end
+$var wire 1 ; HEX26 $end
+$var wire 1 < HEX30 $end
+$var wire 1 = HEX31 $end
+$var wire 1 > HEX32 $end
+$var wire 1 ? HEX33 $end
+$var wire 1 @ HEX34 $end
+$var wire 1 A HEX35 $end
+$var wire 1 B HEX36 $end
+$var wire 1 C pwm_output_incremental [0] $end
+$var wire 1 D pwm_output_parallel [0] $end
+$var wire 1 E sampler $end
+
+$scope module i1 $end
+$var wire 1 F gnd $end
+$var wire 1 G vcc $end
+$var wire 1 H unknown $end
+$var tri1 1 I devclrn $end
+$var tri1 1 J devpor $end
+$var tri1 1 K devoe $end
+$var wire 1 L servo_parallel_input|pwm_1|Mult0~8_resulta $end
+$var wire 1 M servo_parallel_input|pwm_1|Mult0~9 $end
+$var wire 1 N servo_parallel_input|pwm_1|Mult0~10 $end
+$var wire 1 O servo_parallel_input|pwm_1|Mult0~11 $end
+$var wire 1 P servo_parallel_input|pwm_1|Mult0~12 $end
+$var wire 1 Q servo_parallel_input|pwm_1|Mult0~13 $end
+$var wire 1 R servo_parallel_input|pwm_1|Mult0~14 $end
+$var wire 1 S servo_parallel_input|pwm_1|Mult0~15 $end
+$var wire 1 T servo_parallel_input|pwm_1|Mult0~16 $end
+$var wire 1 U servo_parallel_input|pwm_1|Mult0~36 $end
+$var wire 1 V servo_parallel_input|pwm_1|Mult0~37 $end
+$var wire 1 W servo_parallel_input|pwm_1|Mult0~38 $end
+$var wire 1 X servo_parallel_input|pwm_1|Mult0~39 $end
+$var wire 1 Y servo_parallel_input|pwm_1|Mult0~40 $end
+$var wire 1 Z servo_parallel_input|pwm_1|Mult0~41 $end
+$var wire 1 [ servo_parallel_input|pwm_1|Mult0~42 $end
+$var wire 1 \ servo_parallel_input|pwm_1|Mult0~43 $end
+$var wire 1 ] servo_parallel_input|pwm_1|Mult0~44 $end
+$var wire 1 ^ servo_parallel_input|pwm_1|Mult0~45 $end
+$var wire 1 _ servo_parallel_input|pwm_1|Mult0~46 $end
+$var wire 1 ` servo_parallel_input|pwm_1|Mult0~47 $end
+$var wire 1 a servo_parallel_input|pwm_1|Mult0~48 $end
+$var wire 1 b servo_parallel_input|pwm_1|Mult0~49 $end
+$var wire 1 c servo_parallel_input|pwm_1|Mult0~50 $end
+$var wire 1 d servo_parallel_input|pwm_1|Mult0~51 $end
+$var wire 1 e servo_parallel_input|pwm_1|Mult0~52 $end
+$var wire 1 f servo_parallel_input|pwm_1|Mult0~53 $end
+$var wire 1 g servo_parallel_input|pwm_1|Mult0~54 $end
+$var wire 1 h servo_parallel_input|pwm_1|Mult0~55 $end
+$var wire 1 i servo_parallel_input|pwm_1|Mult0~56 $end
+$var wire 1 j servo_parallel_input|pwm_1|Mult0~57 $end
+$var wire 1 k servo_parallel_input|pwm_1|Mult0~58 $end
+$var wire 1 l servo_parallel_input|pwm_1|Mult0~59 $end
+$var wire 1 m servo_parallel_input|pwm_1|Mult0~60 $end
+$var wire 1 n servo_parallel_input|pwm_1|Mult0~61 $end
+$var wire 1 o servo_parallel_input|pwm_1|Mult0~62 $end
+$var wire 1 p servo_parallel_input|pwm_1|Mult0~63 $end
+$var wire 1 q servo_parallel_input|pwm_1|Mult0~64 $end
+$var wire 1 r servo_parallel_input|pwm_1|Mult0~65 $end
+$var wire 1 s servo_parallel_input|pwm_1|Mult0~66 $end
+$var wire 1 t servo_parallel_input|pwm_1|Mult0~67 $end
+$var wire 1 u servo_parallel_input|pwm_1|Mult0~68 $end
+$var wire 1 v servo_parallel_input|pwm_1|Mult0~69 $end
+$var wire 1 w servo_parallel_input|pwm_1|Mult0~70 $end
+$var wire 1 x servo_parallel_input|pwm_1|Mult0~71 $end
+$var wire 1 y servo_incremental_input|pwm_1|Mult0~8_resulta $end
+$var wire 1 z servo_incremental_input|pwm_1|Mult0~9 $end
+$var wire 1 { servo_incremental_input|pwm_1|Mult0~10 $end
+$var wire 1 | servo_incremental_input|pwm_1|Mult0~11 $end
+$var wire 1 } servo_incremental_input|pwm_1|Mult0~12 $end
+$var wire 1 ~ servo_incremental_input|pwm_1|Mult0~13 $end
+$var wire 1 !! servo_incremental_input|pwm_1|Mult0~14 $end
+$var wire 1 "! servo_incremental_input|pwm_1|Mult0~15 $end
+$var wire 1 #! servo_incremental_input|pwm_1|Mult0~16 $end
+$var wire 1 $! servo_incremental_input|pwm_1|Mult0~36 $end
+$var wire 1 %! servo_incremental_input|pwm_1|Mult0~37 $end
+$var wire 1 &! servo_incremental_input|pwm_1|Mult0~38 $end
+$var wire 1 '! servo_incremental_input|pwm_1|Mult0~39 $end
+$var wire 1 (! servo_incremental_input|pwm_1|Mult0~40 $end
+$var wire 1 )! servo_incremental_input|pwm_1|Mult0~41 $end
+$var wire 1 *! servo_incremental_input|pwm_1|Mult0~42 $end
+$var wire 1 +! servo_incremental_input|pwm_1|Mult0~43 $end
+$var wire 1 ,! servo_incremental_input|pwm_1|Mult0~44 $end
+$var wire 1 -! servo_incremental_input|pwm_1|Mult0~45 $end
+$var wire 1 .! servo_incremental_input|pwm_1|Mult0~46 $end
+$var wire 1 /! servo_incremental_input|pwm_1|Mult0~47 $end
+$var wire 1 0! servo_incremental_input|pwm_1|Mult0~48 $end
+$var wire 1 1! servo_incremental_input|pwm_1|Mult0~49 $end
+$var wire 1 2! servo_incremental_input|pwm_1|Mult0~50 $end
+$var wire 1 3! servo_incremental_input|pwm_1|Mult0~51 $end
+$var wire 1 4! servo_incremental_input|pwm_1|Mult0~52 $end
+$var wire 1 5! servo_incremental_input|pwm_1|Mult0~53 $end
+$var wire 1 6! servo_incremental_input|pwm_1|Mult0~54 $end
+$var wire 1 7! servo_incremental_input|pwm_1|Mult0~55 $end
+$var wire 1 8! servo_incremental_input|pwm_1|Mult0~56 $end
+$var wire 1 9! servo_incremental_input|pwm_1|Mult0~57 $end
+$var wire 1 :! servo_incremental_input|pwm_1|Mult0~58 $end
+$var wire 1 ;! servo_incremental_input|pwm_1|Mult0~59 $end
+$var wire 1 <! servo_incremental_input|pwm_1|Mult0~60 $end
+$var wire 1 =! servo_incremental_input|pwm_1|Mult0~61 $end
+$var wire 1 >! servo_incremental_input|pwm_1|Mult0~62 $end
+$var wire 1 ?! servo_incremental_input|pwm_1|Mult0~63 $end
+$var wire 1 @! servo_incremental_input|pwm_1|Mult0~64 $end
+$var wire 1 A! servo_incremental_input|pwm_1|Mult0~65 $end
+$var wire 1 B! servo_incremental_input|pwm_1|Mult0~66 $end
+$var wire 1 C! servo_incremental_input|pwm_1|Mult0~67 $end
+$var wire 1 D! servo_incremental_input|pwm_1|Mult0~68 $end
+$var wire 1 E! servo_incremental_input|pwm_1|Mult0~69 $end
+$var wire 1 F! servo_incremental_input|pwm_1|Mult0~70 $end
+$var wire 1 G! servo_incremental_input|pwm_1|Mult0~71 $end
+$var wire 1 H! ~QUARTUS_CREATED_GND~I_combout $end
+$var wire 1 I! clk~input_o $end
+$var wire 1 J! clk~inputCLKENA0_outclk $end
+$var wire 1 K! servo_incremental_input|pwm_1|Add0~61_sumout $end
+$var wire 1 L! reset_pwm~input_o $end
+$var wire 1 M! servo_parallel_input|pwm_1|Equal0~2_combout $end
+$var wire 1 N! servo_incremental_input|pwm_1|Add0~30 $end
+$var wire 1 O! servo_incremental_input|pwm_1|Add0~33_sumout $end
+$var wire 1 P! servo_incremental_input|pwm_1|count[0][15]~q $end
+$var wire 1 Q! servo_incremental_input|pwm_1|Add0~34 $end
+$var wire 1 R! servo_incremental_input|pwm_1|Add0~21_sumout $end
+$var wire 1 S! servo_incremental_input|pwm_1|count[0][16]~q $end
+$var wire 1 T! servo_incremental_input|pwm_1|Add0~22 $end
+$var wire 1 U! servo_incremental_input|pwm_1|Add0~25_sumout $end
+$var wire 1 V! servo_incremental_input|pwm_1|count[0][17]~q $end
+$var wire 1 W! servo_incremental_input|pwm_1|Add0~26 $end
+$var wire 1 X! servo_incremental_input|pwm_1|Add0~5_sumout $end
+$var wire 1 Y! servo_incremental_input|pwm_1|count[0][18]~q $end
+$var wire 1 Z! servo_incremental_input|pwm_1|Add0~6 $end
+$var wire 1 [! servo_incremental_input|pwm_1|Add0~1_sumout $end
+$var wire 1 \! servo_incremental_input|pwm_1|count[0][19]~q $end
+$var wire 1 ]! servo_incremental_input|pwm_1|count[0][18]~DUPLICATE_q $end
+$var wire 1 ^! servo_incremental_input|pwm_1|count[0][12]~DUPLICATE_q $end
+$var wire 1 _! servo_parallel_input|pwm_1|Equal0~0_combout $end
+$var wire 1 `! servo_incremental_input|pwm_1|count[0][6]~DUPLICATE_q $end
+$var wire 1 a! servo_parallel_input|pwm_1|Equal0~1_combout $end
+$var wire 1 b! servo_parallel_input|pwm_1|Equal0~3_combout $end
+$var wire 1 c! servo_incremental_input|pwm_1|count[0][0]~q $end
+$var wire 1 d! servo_incremental_input|pwm_1|Add0~62 $end
+$var wire 1 e! servo_incremental_input|pwm_1|Add0~65_sumout $end
+$var wire 1 f! servo_incremental_input|pwm_1|count[0][1]~q $end
+$var wire 1 g! servo_incremental_input|pwm_1|Add0~66 $end
+$var wire 1 h! servo_incremental_input|pwm_1|Add0~69_sumout $end
+$var wire 1 i! servo_incremental_input|pwm_1|count[0][2]~q $end
+$var wire 1 j! servo_incremental_input|pwm_1|Add0~70 $end
+$var wire 1 k! servo_incremental_input|pwm_1|Add0~37_sumout $end
+$var wire 1 l! servo_incremental_input|pwm_1|count[0][3]~q $end
+$var wire 1 m! servo_incremental_input|pwm_1|Add0~38 $end
+$var wire 1 n! servo_incremental_input|pwm_1|Add0~41_sumout $end
+$var wire 1 o! servo_incremental_input|pwm_1|count[0][4]~q $end
+$var wire 1 p! servo_incremental_input|pwm_1|Add0~42 $end
+$var wire 1 q! servo_incremental_input|pwm_1|Add0~45_sumout $end
+$var wire 1 r! servo_incremental_input|pwm_1|count[0][5]~q $end
+$var wire 1 s! servo_incremental_input|pwm_1|Add0~46 $end
+$var wire 1 t! servo_incremental_input|pwm_1|Add0~9_sumout $end
+$var wire 1 u! servo_incremental_input|pwm_1|count[0][6]~q $end
+$var wire 1 v! servo_incremental_input|pwm_1|Add0~10 $end
+$var wire 1 w! servo_incremental_input|pwm_1|Add0~13_sumout $end
+$var wire 1 x! servo_incremental_input|pwm_1|count[0][7]~q $end
+$var wire 1 y! servo_incremental_input|pwm_1|Add0~14 $end
+$var wire 1 z! servo_incremental_input|pwm_1|Add0~17_sumout $end
+$var wire 1 {! servo_incremental_input|pwm_1|count[0][8]~q $end
+$var wire 1 |! servo_incremental_input|pwm_1|Add0~18 $end
+$var wire 1 }! servo_incremental_input|pwm_1|Add0~73_sumout $end
+$var wire 1 ~! servo_incremental_input|pwm_1|count[0][9]~q $end
+$var wire 1 !" servo_incremental_input|pwm_1|Add0~74 $end
+$var wire 1 "" servo_incremental_input|pwm_1|Add0~77_sumout $end
+$var wire 1 #" servo_incremental_input|pwm_1|count[0][10]~q $end
+$var wire 1 $" servo_incremental_input|pwm_1|Add0~78 $end
+$var wire 1 %" servo_incremental_input|pwm_1|Add0~53_sumout $end
+$var wire 1 &" servo_incremental_input|pwm_1|count[0][11]~q $end
+$var wire 1 '" servo_incremental_input|pwm_1|Add0~54 $end
+$var wire 1 (" servo_incremental_input|pwm_1|Add0~57_sumout $end
+$var wire 1 )" servo_incremental_input|pwm_1|count[0][12]~q $end
+$var wire 1 *" servo_incremental_input|pwm_1|Add0~58 $end
+$var wire 1 +" servo_incremental_input|pwm_1|Add0~49_sumout $end
+$var wire 1 ," servo_incremental_input|pwm_1|count[0][13]~q $end
+$var wire 1 -" servo_incremental_input|pwm_1|Add0~50 $end
+$var wire 1 ." servo_incremental_input|pwm_1|Add0~29_sumout $end
+$var wire 1 /" servo_incremental_input|pwm_1|count[0][14]~q $end
+$var wire 1 0" servo_incremental_input|pwm_1|count[0][15]~DUPLICATE_q $end
+$var wire 1 1" duty[0]~input_o $end
+$var wire 1 2" duty[1]~input_o $end
+$var wire 1 3" duty[2]~input_o $end
+$var wire 1 4" duty[3]~input_o $end
+$var wire 1 5" duty[4]~input_o $end
+$var wire 1 6" duty[5]~input_o $end
+$var wire 1 7" duty[6]~input_o $end
+$var wire 1 8" duty[7]~input_o $end
+$var wire 1 9" servo_parallel_input|pwm_1|Mult0~32 $end
+$var wire 1 :" servo_parallel_input|pwm_1|half_duty_new[15]~feeder_combout $end
+$var wire 1 ;" enable_pwm~input_o $end
+$var wire 1 <" servo_parallel_input|pwm_1|half_duty[0][1]~0_combout $end
+$var wire 1 =" servo_parallel_input|pwm_1|half_duty[0][15]~q $end
+$var wire 1 >" servo_parallel_input|pwm_1|Mult0~33 $end
+$var wire 1 ?" servo_parallel_input|pwm_1|half_duty[0][16]~q $end
+$var wire 1 @" servo_parallel_input|pwm_1|Mult0~31 $end
+$var wire 1 A" servo_parallel_input|pwm_1|half_duty[0][14]~q $end
+$var wire 1 B" servo_parallel_input|pwm_1|Equal1~1_combout $end
+$var wire 1 C" servo_parallel_input|pwm_1|Mult0~29 $end
+$var wire 1 D" servo_parallel_input|pwm_1|half_duty[0][12]~q $end
+$var wire 1 E" servo_parallel_input|pwm_1|Mult0~30 $end
+$var wire 1 F" servo_parallel_input|pwm_1|half_duty_new[13]~feeder_combout $end
+$var wire 1 G" servo_parallel_input|pwm_1|half_duty[0][13]~q $end
+$var wire 1 H" servo_parallel_input|pwm_1|Mult0~28 $end
+$var wire 1 I" servo_parallel_input|pwm_1|half_duty[0][11]~q $end
+$var wire 1 J" servo_parallel_input|pwm_1|Equal1~2_combout $end
+$var wire 1 K" servo_parallel_input|pwm_1|Mult0~25 $end
+$var wire 1 L" servo_parallel_input|pwm_1|half_duty_new[8]~feeder_combout $end
+$var wire 1 M" servo_parallel_input|pwm_1|half_duty[0][8]~q $end
+$var wire 1 N" servo_parallel_input|pwm_1|Mult0~26 $end
+$var wire 1 O" servo_parallel_input|pwm_1|half_duty[0][9]~q $end
+$var wire 1 P" servo_parallel_input|pwm_1|Mult0~27 $end
+$var wire 1 Q" servo_parallel_input|pwm_1|half_duty[0][10]~q $end
+$var wire 1 R" servo_parallel_input|pwm_1|Equal1~3_combout $end
+$var wire 1 S" servo_parallel_input|pwm_1|Mult0~21 $end
+$var wire 1 T" servo_parallel_input|pwm_1|half_duty[0][4]~q $end
+$var wire 1 U" servo_parallel_input|pwm_1|Mult0~20 $end
+$var wire 1 V" servo_parallel_input|pwm_1|half_duty[0][3]~q $end
+$var wire 1 W" servo_parallel_input|pwm_1|Mult0~19 $end
+$var wire 1 X" servo_parallel_input|pwm_1|half_duty_new[2]~feeder_combout $end
+$var wire 1 Y" servo_parallel_input|pwm_1|half_duty[0][2]~q $end
+$var wire 1 Z" servo_parallel_input|pwm_1|Equal1~6_combout $end
+$var wire 1 [" servo_parallel_input|pwm_1|Mult0~18 $end
+$var wire 1 \" servo_parallel_input|pwm_1|half_duty[0][1]~feeder_combout $end
+$var wire 1 ]" servo_parallel_input|pwm_1|half_duty[0][1]~q $end
+$var wire 1 ^" servo_parallel_input|pwm_1|Mult0~17 $end
+$var wire 1 _" servo_parallel_input|pwm_1|half_duty[0][0]~q $end
+$var wire 1 `" servo_parallel_input|pwm_1|Equal1~5_combout $end
+$var wire 1 a" servo_parallel_input|pwm_1|Mult0~24 $end
+$var wire 1 b" servo_parallel_input|pwm_1|half_duty_new[7]~feeder_combout $end
+$var wire 1 c" servo_parallel_input|pwm_1|half_duty[0][7]~q $end
+$var wire 1 d" servo_parallel_input|pwm_1|Mult0~23 $end
+$var wire 1 e" servo_parallel_input|pwm_1|half_duty[0][6]~q $end
+$var wire 1 f" servo_parallel_input|pwm_1|Mult0~22 $end
+$var wire 1 g" servo_parallel_input|pwm_1|half_duty_new[5]~feeder_combout $end
+$var wire 1 h" servo_parallel_input|pwm_1|half_duty[0][5]~q $end
+$var wire 1 i" servo_parallel_input|pwm_1|Equal1~4_combout $end
+$var wire 1 j" servo_parallel_input|pwm_1|Equal1~7_combout $end
+$var wire 1 k" servo_parallel_input|pwm_1|Mult0~34 $end
+$var wire 1 l" servo_parallel_input|pwm_1|half_duty_new[17]~feeder_combout $end
+$var wire 1 m" servo_parallel_input|pwm_1|half_duty[0][17]~q $end
+$var wire 1 n" servo_parallel_input|pwm_1|Mult0~35 $end
+$var wire 1 o" servo_parallel_input|pwm_1|half_duty_new[18]~feeder_combout $end
+$var wire 1 p" servo_parallel_input|pwm_1|half_duty[0][18]~q $end
+$var wire 1 q" servo_incremental_input|pwm_1|count[0][17]~DUPLICATE_q $end
+$var wire 1 r" servo_parallel_input|pwm_1|Equal1~0_combout $end
+$var wire 1 s" servo_parallel_input|pwm_1|Equal1~8_combout $end
+$var wire 1 t" servo_parallel_input|pwm_1|Add1~62 $end
+$var wire 1 u" servo_parallel_input|pwm_1|Add1~66 $end
+$var wire 1 v" servo_parallel_input|pwm_1|Add1~38 $end
+$var wire 1 w" servo_parallel_input|pwm_1|Add1~42 $end
+$var wire 1 x" servo_parallel_input|pwm_1|Add1~46 $end
+$var wire 1 y" servo_parallel_input|pwm_1|Add1~10 $end
+$var wire 1 z" servo_parallel_input|pwm_1|Add1~14 $end
+$var wire 1 {" servo_parallel_input|pwm_1|Add1~18 $end
+$var wire 1 |" servo_parallel_input|pwm_1|Add1~70 $end
+$var wire 1 }" servo_parallel_input|pwm_1|Add1~74 $end
+$var wire 1 ~" servo_parallel_input|pwm_1|Add1~50 $end
+$var wire 1 !# servo_parallel_input|pwm_1|Add1~54 $end
+$var wire 1 "# servo_parallel_input|pwm_1|Add1~57_sumout $end
+$var wire 1 ## servo_parallel_input|pwm_1|Add1~53_sumout $end
+$var wire 1 $# servo_parallel_input|pwm_1|Add1~65_sumout $end
+$var wire 1 %# servo_parallel_input|pwm_1|Add1~61_sumout $end
+$var wire 1 &# servo_parallel_input|pwm_1|pwm_out~5_combout $end
+$var wire 1 '# servo_parallel_input|pwm_1|Add1~69_sumout $end
+$var wire 1 (# servo_parallel_input|pwm_1|Add1~73_sumout $end
+$var wire 1 )# servo_parallel_input|pwm_1|Add1~49_sumout $end
+$var wire 1 *# servo_parallel_input|pwm_1|pwm_out~8_combout $end
+$var wire 1 +# servo_parallel_input|pwm_1|pwm_out~6_combout $end
+$var wire 1 ,# servo_parallel_input|pwm_1|Add1~58 $end
+$var wire 1 -# servo_parallel_input|pwm_1|Add1~30 $end
+$var wire 1 .# servo_parallel_input|pwm_1|Add1~34 $end
+$var wire 1 /# servo_parallel_input|pwm_1|Add1~22 $end
+$var wire 1 0# servo_parallel_input|pwm_1|Add1~26 $end
+$var wire 1 1# servo_parallel_input|pwm_1|Add1~1_sumout $end
+$var wire 1 2# servo_parallel_input|pwm_1|Add1~9_sumout $end
+$var wire 1 3# servo_parallel_input|pwm_1|Add1~17_sumout $end
+$var wire 1 4# servo_parallel_input|pwm_1|Add1~13_sumout $end
+$var wire 1 5# servo_parallel_input|pwm_1|pwm_out~0_combout $end
+$var wire 1 6# servo_parallel_input|pwm_1|Add1~2 $end
+$var wire 1 7# servo_parallel_input|pwm_1|Add1~5_sumout $end
+$var wire 1 8# servo_parallel_input|pwm_1|pwm_out~1_combout $end
+$var wire 1 9# servo_parallel_input|pwm_1|Add1~29_sumout $end
+$var wire 1 :# servo_parallel_input|pwm_1|Add1~37_sumout $end
+$var wire 1 ;# servo_parallel_input|pwm_1|Add1~45_sumout $end
+$var wire 1 <# servo_parallel_input|pwm_1|Add1~41_sumout $end
+$var wire 1 =# servo_parallel_input|pwm_1|pwm_out~3_combout $end
+$var wire 1 ># servo_parallel_input|pwm_1|Add1~33_sumout $end
+$var wire 1 ?# servo_parallel_input|pwm_1|pwm_out~4_combout $end
+$var wire 1 @# servo_parallel_input|pwm_1|Add1~21_sumout $end
+$var wire 1 A# servo_parallel_input|pwm_1|Add1~25_sumout $end
+$var wire 1 B# servo_parallel_input|pwm_1|pwm_out~2_combout $end
+$var wire 1 C# servo_parallel_input|pwm_1|pwm_out~7_combout $end
+$var wire 1 D# change~input_o $end
+$var wire 1 E# change~inputCLKENA0_outclk $end
+$var wire 1 F# servo_incremental_input|duty_value[0]~_Duplicate_1_q $end
+$var wire 1 G# servo_incremental_input|duty_value[0]~0_combout $end
+$var wire 1 H# servo_incremental_input|duty_value[0]~_Duplicate_1DUPLICATE_q $end
+$var wire 1 I# direction~input_o $end
+$var wire 1 J# servo_incremental_input|duty_value[1]~_Duplicate_1_q $end
+$var wire 1 K# servo_incremental_input|Add0~30_cout $end
+$var wire 1 L# servo_incremental_input|Add0~1_sumout $end
+$var wire 1 M# servo_incremental_input|duty_value[2]~_Duplicate_1_q $end
+$var wire 1 N# servo_incremental_input|Add0~2 $end
+$var wire 1 O# servo_incremental_input|Add0~5_sumout $end
+$var wire 1 P# servo_incremental_input|duty_value[3]~_Duplicate_1feeder_combout $end
+$var wire 1 Q# servo_incremental_input|duty_value[3]~_Duplicate_1_q $end
+$var wire 1 R# servo_incremental_input|Add0~6 $end
+$var wire 1 S# servo_incremental_input|Add0~9_sumout $end
+$var wire 1 T# servo_incremental_input|duty_value[4]~_Duplicate_1_q $end
+$var wire 1 U# servo_incremental_input|Add0~10 $end
+$var wire 1 V# servo_incremental_input|Add0~13_sumout $end
+$var wire 1 W# servo_incremental_input|duty_value[5]~_Duplicate_1_q $end
+$var wire 1 X# servo_incremental_input|Add0~14 $end
+$var wire 1 Y# servo_incremental_input|Add0~17_sumout $end
+$var wire 1 Z# servo_incremental_input|duty_value[6]~_Duplicate_1_q $end
+$var wire 1 [# servo_incremental_input|Add0~18 $end
+$var wire 1 \# servo_incremental_input|Add0~25_sumout $end
+$var wire 1 ]# servo_incremental_input|duty_value[7]~_Duplicate_1feeder_combout $end
+$var wire 1 ^# servo_incremental_input|duty_value[7]~_Duplicate_1_q $end
+$var wire 1 _# servo_incremental_input|Add0~26 $end
+$var wire 1 `# servo_incremental_input|Add0~21_sumout $end
+$var wire 1 a# servo_incremental_input|pwm_1|Mult0~27 $end
+$var wire 1 b# servo_incremental_input|pwm_1|half_duty[0][10]~q $end
+$var wire 1 c# servo_incremental_input|pwm_1|Mult0~26 $end
+$var wire 1 d# servo_incremental_input|pwm_1|half_duty[0][9]~q $end
+$var wire 1 e# servo_incremental_input|pwm_1|Mult0~25 $end
+$var wire 1 f# servo_incremental_input|pwm_1|half_duty_new[8]~feeder_combout $end
+$var wire 1 g# servo_incremental_input|pwm_1|half_duty[0][8]~q $end
+$var wire 1 h# servo_incremental_input|pwm_1|Equal1~3_combout $end
+$var wire 1 i# servo_incremental_input|pwm_1|Mult0~33 $end
+$var wire 1 j# servo_incremental_input|pwm_1|half_duty_new[16]~feeder_combout $end
+$var wire 1 k# servo_incremental_input|pwm_1|half_duty[0][16]~q $end
+$var wire 1 l# servo_incremental_input|pwm_1|Mult0~31 $end
+$var wire 1 m# servo_incremental_input|pwm_1|half_duty[0][14]~q $end
+$var wire 1 n# servo_incremental_input|pwm_1|Mult0~32 $end
+$var wire 1 o# servo_incremental_input|pwm_1|half_duty_new[15]~feeder_combout $end
+$var wire 1 p# servo_incremental_input|pwm_1|half_duty[0][15]~q $end
+$var wire 1 q# servo_incremental_input|pwm_1|Equal1~1_combout $end
+$var wire 1 r# servo_incremental_input|pwm_1|Mult0~35 $end
+$var wire 1 s# servo_incremental_input|pwm_1|half_duty_new[18]~feeder_combout $end
+$var wire 1 t# servo_incremental_input|pwm_1|half_duty[0][18]~q $end
+$var wire 1 u# servo_incremental_input|pwm_1|Mult0~34 $end
+$var wire 1 v# servo_incremental_input|pwm_1|half_duty_new[17]~feeder_combout $end
+$var wire 1 w# servo_incremental_input|pwm_1|half_duty[0][17]~q $end
+$var wire 1 x# servo_incremental_input|pwm_1|Equal1~0_combout $end
+$var wire 1 y# servo_incremental_input|pwm_1|Mult0~29 $end
+$var wire 1 z# servo_incremental_input|pwm_1|half_duty[0][12]~q $end
+$var wire 1 {# servo_incremental_input|pwm_1|Mult0~30 $end
+$var wire 1 |# servo_incremental_input|pwm_1|half_duty[0][13]~q $end
+$var wire 1 }# servo_incremental_input|pwm_1|Mult0~28 $end
+$var wire 1 ~# servo_incremental_input|pwm_1|half_duty[0][11]~q $end
+$var wire 1 !$ servo_incremental_input|pwm_1|Equal1~2_combout $end
+$var wire 1 "$ servo_incremental_input|pwm_1|Mult0~21 $end
+$var wire 1 #$ servo_incremental_input|pwm_1|half_duty[0][4]~q $end
+$var wire 1 $$ servo_incremental_input|pwm_1|Mult0~18 $end
+$var wire 1 %$ servo_incremental_input|pwm_1|half_duty_new[1]~feeder_combout $end
+$var wire 1 &$ servo_incremental_input|pwm_1|half_duty[0][1]~q $end
+$var wire 1 '$ servo_incremental_input|pwm_1|Mult0~17 $end
+$var wire 1 ($ servo_incremental_input|pwm_1|half_duty_new[0]~feeder_combout $end
+$var wire 1 )$ servo_incremental_input|pwm_1|half_duty[0][0]~q $end
+$var wire 1 *$ servo_incremental_input|pwm_1|Equal1~5_combout $end
+$var wire 1 +$ servo_incremental_input|pwm_1|Mult0~24 $end
+$var wire 1 ,$ servo_incremental_input|pwm_1|half_duty_new[7]~feeder_combout $end
+$var wire 1 -$ servo_incremental_input|pwm_1|half_duty[0][7]~q $end
+$var wire 1 .$ servo_incremental_input|pwm_1|Mult0~23 $end
+$var wire 1 /$ servo_incremental_input|pwm_1|half_duty_new[6]~feeder_combout $end
+$var wire 1 0$ servo_incremental_input|pwm_1|half_duty[0][6]~q $end
+$var wire 1 1$ servo_incremental_input|pwm_1|Mult0~22 $end
+$var wire 1 2$ servo_incremental_input|pwm_1|half_duty_new[5]~feeder_combout $end
+$var wire 1 3$ servo_incremental_input|pwm_1|half_duty[0][5]~q $end
+$var wire 1 4$ servo_incremental_input|pwm_1|count[0][5]~DUPLICATE_q $end
+$var wire 1 5$ servo_incremental_input|pwm_1|Equal1~4_combout $end
+$var wire 1 6$ servo_incremental_input|pwm_1|Mult0~20 $end
+$var wire 1 7$ servo_incremental_input|pwm_1|half_duty_new[3]~feeder_combout $end
+$var wire 1 8$ servo_incremental_input|pwm_1|half_duty[0][3]~q $end
+$var wire 1 9$ servo_incremental_input|pwm_1|Mult0~19 $end
+$var wire 1 :$ servo_incremental_input|pwm_1|half_duty[0][2]~q $end
+$var wire 1 ;$ servo_incremental_input|pwm_1|Equal1~6_combout $end
+$var wire 1 <$ servo_incremental_input|pwm_1|Equal1~7_combout $end
+$var wire 1 =$ servo_incremental_input|pwm_1|Equal1~8_combout $end
+$var wire 1 >$ servo_incremental_input|pwm_1|Add1~62 $end
+$var wire 1 ?$ servo_incremental_input|pwm_1|Add1~66 $end
+$var wire 1 @$ servo_incremental_input|pwm_1|Add1~38 $end
+$var wire 1 A$ servo_incremental_input|pwm_1|Add1~42 $end
+$var wire 1 B$ servo_incremental_input|pwm_1|Add1~46 $end
+$var wire 1 C$ servo_incremental_input|pwm_1|Add1~10 $end
+$var wire 1 D$ servo_incremental_input|pwm_1|Add1~14 $end
+$var wire 1 E$ servo_incremental_input|pwm_1|Add1~18 $end
+$var wire 1 F$ servo_incremental_input|pwm_1|Add1~70 $end
+$var wire 1 G$ servo_incremental_input|pwm_1|Add1~74 $end
+$var wire 1 H$ servo_incremental_input|pwm_1|Add1~50 $end
+$var wire 1 I$ servo_incremental_input|pwm_1|Add1~54 $end
+$var wire 1 J$ servo_incremental_input|pwm_1|Add1~57_sumout $end
+$var wire 1 K$ servo_incremental_input|pwm_1|Add1~53_sumout $end
+$var wire 1 L$ servo_incremental_input|pwm_1|Add1~65_sumout $end
+$var wire 1 M$ servo_incremental_input|pwm_1|Add1~61_sumout $end
+$var wire 1 N$ servo_incremental_input|pwm_1|pwm_out~5_combout $end
+$var wire 1 O$ servo_incremental_input|pwm_1|Add1~69_sumout $end
+$var wire 1 P$ servo_incremental_input|pwm_1|Add1~73_sumout $end
+$var wire 1 Q$ servo_incremental_input|pwm_1|Add1~49_sumout $end
+$var wire 1 R$ servo_incremental_input|pwm_1|pwm_out~8_combout $end
+$var wire 1 S$ servo_incremental_input|pwm_1|pwm_out~6_combout $end
+$var wire 1 T$ servo_incremental_input|pwm_1|Add1~45_sumout $end
+$var wire 1 U$ servo_incremental_input|pwm_1|Add1~37_sumout $end
+$var wire 1 V$ servo_incremental_input|pwm_1|Add1~41_sumout $end
+$var wire 1 W$ servo_incremental_input|pwm_1|pwm_out~3_combout $end
+$var wire 1 X$ servo_incremental_input|pwm_1|Add1~58 $end
+$var wire 1 Y$ servo_incremental_input|pwm_1|Add1~30 $end
+$var wire 1 Z$ servo_incremental_input|pwm_1|Add1~33_sumout $end
+$var wire 1 [$ servo_incremental_input|pwm_1|Add1~29_sumout $end
+$var wire 1 \$ servo_incremental_input|pwm_1|pwm_out~4_combout $end
+$var wire 1 ]$ servo_incremental_input|pwm_1|Add1~34 $end
+$var wire 1 ^$ servo_incremental_input|pwm_1|Add1~22 $end
+$var wire 1 _$ servo_incremental_input|pwm_1|Add1~26 $end
+$var wire 1 `$ servo_incremental_input|pwm_1|Add1~1_sumout $end
+$var wire 1 a$ servo_incremental_input|pwm_1|Add1~9_sumout $end
+$var wire 1 b$ servo_incremental_input|pwm_1|Add1~17_sumout $end
+$var wire 1 c$ servo_incremental_input|pwm_1|Add1~13_sumout $end
+$var wire 1 d$ servo_incremental_input|pwm_1|pwm_out~0_combout $end
+$var wire 1 e$ servo_incremental_input|pwm_1|Add1~2 $end
+$var wire 1 f$ servo_incremental_input|pwm_1|Add1~5_sumout $end
+$var wire 1 g$ servo_incremental_input|pwm_1|pwm_out~1_combout $end
+$var wire 1 h$ servo_incremental_input|pwm_1|Add1~25_sumout $end
+$var wire 1 i$ servo_incremental_input|pwm_1|Add1~21_sumout $end
+$var wire 1 j$ servo_incremental_input|pwm_1|pwm_out~2_combout $end
+$var wire 1 k$ servo_incremental_input|pwm_1|pwm_out~7_combout $end
+$var wire 1 l$ servo_parallel_input|quad_segment7_1|bcd~1_combout $end
+$var wire 1 m$ servo_parallel_input|quad_segment7_1|bcd~0_combout $end
+$var wire 1 n$ servo_parallel_input|quad_segment7_1|bcd~2_combout $end
+$var wire 1 o$ servo_parallel_input|quad_segment7_1|digit1[3]~2_combout $end
+$var wire 1 p$ servo_parallel_input|quad_segment7_1|digit1[2]~1_combout $end
+$var wire 1 q$ servo_parallel_input|quad_segment7_1|digit1[1]~0_combout $end
+$var wire 1 r$ servo_parallel_input|quad_segment7_1|LSB_segment7|Mux0~0_combout $end
+$var wire 1 s$ servo_parallel_input|quad_segment7_1|LSB_segment7|Mux1~0_combout $end
+$var wire 1 t$ servo_parallel_input|quad_segment7_1|LSB_segment7|Mux2~0_combout $end
+$var wire 1 u$ servo_parallel_input|quad_segment7_1|LSB_segment7|Mux3~0_combout $end
+$var wire 1 v$ servo_parallel_input|quad_segment7_1|LSB_segment7|Mux4~0_combout $end
+$var wire 1 w$ servo_parallel_input|quad_segment7_1|LSB_segment7|Mux5~0_combout $end
+$var wire 1 x$ servo_parallel_input|quad_segment7_1|LSB_segment7|Mux6~0_combout $end
+$var wire 1 y$ servo_parallel_input|quad_segment7_1|digit2[3]~3_combout $end
+$var wire 1 z$ servo_parallel_input|quad_segment7_1|digit2[1]~1_combout $end
+$var wire 1 {$ servo_parallel_input|quad_segment7_1|digit2[0]~0_combout $end
+$var wire 1 |$ servo_parallel_input|quad_segment7_1|digit2[2]~2_combout $end
+$var wire 1 }$ servo_parallel_input|quad_segment7_1|MSB_segment7|Mux0~0_combout $end
+$var wire 1 ~$ servo_parallel_input|quad_segment7_1|MSB_segment7|Mux1~0_combout $end
+$var wire 1 !% servo_parallel_input|quad_segment7_1|MSB_segment7|Mux2~0_combout $end
+$var wire 1 "% servo_parallel_input|quad_segment7_1|MSB_segment7|Mux3~0_combout $end
+$var wire 1 #% servo_parallel_input|quad_segment7_1|MSB_segment7|Mux4~0_combout $end
+$var wire 1 $% servo_parallel_input|quad_segment7_1|MSB_segment7|Mux5~0_combout $end
+$var wire 1 %% servo_parallel_input|quad_segment7_1|MSB_segment7|Mux6~0_combout $end
+$var wire 1 &% servo_incremental_input|quad_segment7_1|bcd~0_combout $end
+$var wire 1 '% servo_incremental_input|quad_segment7_1|bcd~1_combout $end
+$var wire 1 (% servo_incremental_input|quad_segment7_1|bcd~2_combout $end
+$var wire 1 )% servo_incremental_input|quad_segment7_1|digit1[1]~0_combout $end
+$var wire 1 *% servo_incremental_input|quad_segment7_1|digit1[3]~2_combout $end
+$var wire 1 +% servo_incremental_input|quad_segment7_1|digit1[2]~1_combout $end
+$var wire 1 ,% servo_incremental_input|quad_segment7_1|LSB_segment7|Mux0~0_combout $end
+$var wire 1 -% servo_incremental_input|quad_segment7_1|LSB_segment7|Mux1~0_combout $end
+$var wire 1 .% servo_incremental_input|quad_segment7_1|LSB_segment7|Mux2~0_combout $end
+$var wire 1 /% servo_incremental_input|quad_segment7_1|LSB_segment7|Mux3~0_combout $end
+$var wire 1 0% servo_incremental_input|quad_segment7_1|LSB_segment7|Mux4~0_combout $end
+$var wire 1 1% servo_incremental_input|quad_segment7_1|LSB_segment7|Mux5~0_combout $end
+$var wire 1 2% servo_incremental_input|quad_segment7_1|LSB_segment7|Mux6~0_combout $end
+$var wire 1 3% servo_incremental_input|quad_segment7_1|digit2[1]~1_combout $end
+$var wire 1 4% servo_incremental_input|quad_segment7_1|digit2[0]~0_combout $end
+$var wire 1 5% servo_incremental_input|quad_segment7_1|digit2[2]~2_combout $end
+$var wire 1 6% servo_incremental_input|quad_segment7_1|digit2[3]~3_combout $end
+$var wire 1 7% servo_incremental_input|quad_segment7_1|MSB_segment7|Mux0~0_combout $end
+$var wire 1 8% servo_incremental_input|quad_segment7_1|MSB_segment7|Mux1~0_combout $end
+$var wire 1 9% servo_incremental_input|quad_segment7_1|MSB_segment7|Mux2~0_combout $end
+$var wire 1 :% servo_incremental_input|quad_segment7_1|MSB_segment7|Mux3~0_combout $end
+$var wire 1 ;% servo_incremental_input|quad_segment7_1|MSB_segment7|Mux4~0_combout $end
+$var wire 1 <% servo_incremental_input|quad_segment7_1|MSB_segment7|Mux5~0_combout $end
+$var wire 1 =% servo_incremental_input|quad_segment7_1|MSB_segment7|Mux6~0_combout $end
+$var wire 1 >% servo_parallel_input|pwm_1|half_duty_new [18] $end
+$var wire 1 ?% servo_parallel_input|pwm_1|half_duty_new [17] $end
+$var wire 1 @% servo_parallel_input|pwm_1|half_duty_new [16] $end
+$var wire 1 A% servo_parallel_input|pwm_1|half_duty_new [15] $end
+$var wire 1 B% servo_parallel_input|pwm_1|half_duty_new [14] $end
+$var wire 1 C% servo_parallel_input|pwm_1|half_duty_new [13] $end
+$var wire 1 D% servo_parallel_input|pwm_1|half_duty_new [12] $end
+$var wire 1 E% servo_parallel_input|pwm_1|half_duty_new [11] $end
+$var wire 1 F% servo_parallel_input|pwm_1|half_duty_new [10] $end
+$var wire 1 G% servo_parallel_input|pwm_1|half_duty_new [9] $end
+$var wire 1 H% servo_parallel_input|pwm_1|half_duty_new [8] $end
+$var wire 1 I% servo_parallel_input|pwm_1|half_duty_new [7] $end
+$var wire 1 J% servo_parallel_input|pwm_1|half_duty_new [6] $end
+$var wire 1 K% servo_parallel_input|pwm_1|half_duty_new [5] $end
+$var wire 1 L% servo_parallel_input|pwm_1|half_duty_new [4] $end
+$var wire 1 M% servo_parallel_input|pwm_1|half_duty_new [3] $end
+$var wire 1 N% servo_parallel_input|pwm_1|half_duty_new [2] $end
+$var wire 1 O% servo_parallel_input|pwm_1|half_duty_new [1] $end
+$var wire 1 P% servo_parallel_input|pwm_1|half_duty_new [0] $end
+$var wire 1 Q% servo_incremental_input|pwm_1|pwm_out [0] $end
+$var wire 1 R% servo_incremental_input|pwm_1|half_duty_new [18] $end
+$var wire 1 S% servo_incremental_input|pwm_1|half_duty_new [17] $end
+$var wire 1 T% servo_incremental_input|pwm_1|half_duty_new [16] $end
+$var wire 1 U% servo_incremental_input|pwm_1|half_duty_new [15] $end
+$var wire 1 V% servo_incremental_input|pwm_1|half_duty_new [14] $end
+$var wire 1 W% servo_incremental_input|pwm_1|half_duty_new [13] $end
+$var wire 1 X% servo_incremental_input|pwm_1|half_duty_new [12] $end
+$var wire 1 Y% servo_incremental_input|pwm_1|half_duty_new [11] $end
+$var wire 1 Z% servo_incremental_input|pwm_1|half_duty_new [10] $end
+$var wire 1 [% servo_incremental_input|pwm_1|half_duty_new [9] $end
+$var wire 1 \% servo_incremental_input|pwm_1|half_duty_new [8] $end
+$var wire 1 ]% servo_incremental_input|pwm_1|half_duty_new [7] $end
+$var wire 1 ^% servo_incremental_input|pwm_1|half_duty_new [6] $end
+$var wire 1 _% servo_incremental_input|pwm_1|half_duty_new [5] $end
+$var wire 1 `% servo_incremental_input|pwm_1|half_duty_new [4] $end
+$var wire 1 a% servo_incremental_input|pwm_1|half_duty_new [3] $end
+$var wire 1 b% servo_incremental_input|pwm_1|half_duty_new [2] $end
+$var wire 1 c% servo_incremental_input|pwm_1|half_duty_new [1] $end
+$var wire 1 d% servo_incremental_input|pwm_1|half_duty_new [0] $end
+$var wire 1 e% servo_parallel_input|pwm_1|pwm_out [0] $end
+$var wire 1 f% servo_parallel_input|pwm_1|Mult0~8_RESULTA_bus [63] $end
+$var wire 1 g% servo_parallel_input|pwm_1|Mult0~8_RESULTA_bus [62] $end
+$var wire 1 h% servo_parallel_input|pwm_1|Mult0~8_RESULTA_bus [61] $end
+$var wire 1 i% servo_parallel_input|pwm_1|Mult0~8_RESULTA_bus [60] $end
+$var wire 1 j% servo_parallel_input|pwm_1|Mult0~8_RESULTA_bus [59] $end
+$var wire 1 k% servo_parallel_input|pwm_1|Mult0~8_RESULTA_bus [58] $end
+$var wire 1 l% servo_parallel_input|pwm_1|Mult0~8_RESULTA_bus [57] $end
+$var wire 1 m% servo_parallel_input|pwm_1|Mult0~8_RESULTA_bus [56] $end
+$var wire 1 n% servo_parallel_input|pwm_1|Mult0~8_RESULTA_bus [55] $end
+$var wire 1 o% servo_parallel_input|pwm_1|Mult0~8_RESULTA_bus [54] $end
+$var wire 1 p% servo_parallel_input|pwm_1|Mult0~8_RESULTA_bus [53] $end
+$var wire 1 q% servo_parallel_input|pwm_1|Mult0~8_RESULTA_bus [52] $end
+$var wire 1 r% servo_parallel_input|pwm_1|Mult0~8_RESULTA_bus [51] $end
+$var wire 1 s% servo_parallel_input|pwm_1|Mult0~8_RESULTA_bus [50] $end
+$var wire 1 t% servo_parallel_input|pwm_1|Mult0~8_RESULTA_bus [49] $end
+$var wire 1 u% servo_parallel_input|pwm_1|Mult0~8_RESULTA_bus [48] $end
+$var wire 1 v% servo_parallel_input|pwm_1|Mult0~8_RESULTA_bus [47] $end
+$var wire 1 w% servo_parallel_input|pwm_1|Mult0~8_RESULTA_bus [46] $end
+$var wire 1 x% servo_parallel_input|pwm_1|Mult0~8_RESULTA_bus [45] $end
+$var wire 1 y% servo_parallel_input|pwm_1|Mult0~8_RESULTA_bus [44] $end
+$var wire 1 z% servo_parallel_input|pwm_1|Mult0~8_RESULTA_bus [43] $end
+$var wire 1 {% servo_parallel_input|pwm_1|Mult0~8_RESULTA_bus [42] $end
+$var wire 1 |% servo_parallel_input|pwm_1|Mult0~8_RESULTA_bus [41] $end
+$var wire 1 }% servo_parallel_input|pwm_1|Mult0~8_RESULTA_bus [40] $end
+$var wire 1 ~% servo_parallel_input|pwm_1|Mult0~8_RESULTA_bus [39] $end
+$var wire 1 !& servo_parallel_input|pwm_1|Mult0~8_RESULTA_bus [38] $end
+$var wire 1 "& servo_parallel_input|pwm_1|Mult0~8_RESULTA_bus [37] $end
+$var wire 1 #& servo_parallel_input|pwm_1|Mult0~8_RESULTA_bus [36] $end
+$var wire 1 $& servo_parallel_input|pwm_1|Mult0~8_RESULTA_bus [35] $end
+$var wire 1 %& servo_parallel_input|pwm_1|Mult0~8_RESULTA_bus [34] $end
+$var wire 1 && servo_parallel_input|pwm_1|Mult0~8_RESULTA_bus [33] $end
+$var wire 1 '& servo_parallel_input|pwm_1|Mult0~8_RESULTA_bus [32] $end
+$var wire 1 (& servo_parallel_input|pwm_1|Mult0~8_RESULTA_bus [31] $end
+$var wire 1 )& servo_parallel_input|pwm_1|Mult0~8_RESULTA_bus [30] $end
+$var wire 1 *& servo_parallel_input|pwm_1|Mult0~8_RESULTA_bus [29] $end
+$var wire 1 +& servo_parallel_input|pwm_1|Mult0~8_RESULTA_bus [28] $end
+$var wire 1 ,& servo_parallel_input|pwm_1|Mult0~8_RESULTA_bus [27] $end
+$var wire 1 -& servo_parallel_input|pwm_1|Mult0~8_RESULTA_bus [26] $end
+$var wire 1 .& servo_parallel_input|pwm_1|Mult0~8_RESULTA_bus [25] $end
+$var wire 1 /& servo_parallel_input|pwm_1|Mult0~8_RESULTA_bus [24] $end
+$var wire 1 0& servo_parallel_input|pwm_1|Mult0~8_RESULTA_bus [23] $end
+$var wire 1 1& servo_parallel_input|pwm_1|Mult0~8_RESULTA_bus [22] $end
+$var wire 1 2& servo_parallel_input|pwm_1|Mult0~8_RESULTA_bus [21] $end
+$var wire 1 3& servo_parallel_input|pwm_1|Mult0~8_RESULTA_bus [20] $end
+$var wire 1 4& servo_parallel_input|pwm_1|Mult0~8_RESULTA_bus [19] $end
+$var wire 1 5& servo_parallel_input|pwm_1|Mult0~8_RESULTA_bus [18] $end
+$var wire 1 6& servo_parallel_input|pwm_1|Mult0~8_RESULTA_bus [17] $end
+$var wire 1 7& servo_parallel_input|pwm_1|Mult0~8_RESULTA_bus [16] $end
+$var wire 1 8& servo_parallel_input|pwm_1|Mult0~8_RESULTA_bus [15] $end
+$var wire 1 9& servo_parallel_input|pwm_1|Mult0~8_RESULTA_bus [14] $end
+$var wire 1 :& servo_parallel_input|pwm_1|Mult0~8_RESULTA_bus [13] $end
+$var wire 1 ;& servo_parallel_input|pwm_1|Mult0~8_RESULTA_bus [12] $end
+$var wire 1 <& servo_parallel_input|pwm_1|Mult0~8_RESULTA_bus [11] $end
+$var wire 1 =& servo_parallel_input|pwm_1|Mult0~8_RESULTA_bus [10] $end
+$var wire 1 >& servo_parallel_input|pwm_1|Mult0~8_RESULTA_bus [9] $end
+$var wire 1 ?& servo_parallel_input|pwm_1|Mult0~8_RESULTA_bus [8] $end
+$var wire 1 @& servo_parallel_input|pwm_1|Mult0~8_RESULTA_bus [7] $end
+$var wire 1 A& servo_parallel_input|pwm_1|Mult0~8_RESULTA_bus [6] $end
+$var wire 1 B& servo_parallel_input|pwm_1|Mult0~8_RESULTA_bus [5] $end
+$var wire 1 C& servo_parallel_input|pwm_1|Mult0~8_RESULTA_bus [4] $end
+$var wire 1 D& servo_parallel_input|pwm_1|Mult0~8_RESULTA_bus [3] $end
+$var wire 1 E& servo_parallel_input|pwm_1|Mult0~8_RESULTA_bus [2] $end
+$var wire 1 F& servo_parallel_input|pwm_1|Mult0~8_RESULTA_bus [1] $end
+$var wire 1 G& servo_parallel_input|pwm_1|Mult0~8_RESULTA_bus [0] $end
+$var wire 1 H& servo_incremental_input|pwm_1|Mult0~8_RESULTA_bus [63] $end
+$var wire 1 I& servo_incremental_input|pwm_1|Mult0~8_RESULTA_bus [62] $end
+$var wire 1 J& servo_incremental_input|pwm_1|Mult0~8_RESULTA_bus [61] $end
+$var wire 1 K& servo_incremental_input|pwm_1|Mult0~8_RESULTA_bus [60] $end
+$var wire 1 L& servo_incremental_input|pwm_1|Mult0~8_RESULTA_bus [59] $end
+$var wire 1 M& servo_incremental_input|pwm_1|Mult0~8_RESULTA_bus [58] $end
+$var wire 1 N& servo_incremental_input|pwm_1|Mult0~8_RESULTA_bus [57] $end
+$var wire 1 O& servo_incremental_input|pwm_1|Mult0~8_RESULTA_bus [56] $end
+$var wire 1 P& servo_incremental_input|pwm_1|Mult0~8_RESULTA_bus [55] $end
+$var wire 1 Q& servo_incremental_input|pwm_1|Mult0~8_RESULTA_bus [54] $end
+$var wire 1 R& servo_incremental_input|pwm_1|Mult0~8_RESULTA_bus [53] $end
+$var wire 1 S& servo_incremental_input|pwm_1|Mult0~8_RESULTA_bus [52] $end
+$var wire 1 T& servo_incremental_input|pwm_1|Mult0~8_RESULTA_bus [51] $end
+$var wire 1 U& servo_incremental_input|pwm_1|Mult0~8_RESULTA_bus [50] $end
+$var wire 1 V& servo_incremental_input|pwm_1|Mult0~8_RESULTA_bus [49] $end
+$var wire 1 W& servo_incremental_input|pwm_1|Mult0~8_RESULTA_bus [48] $end
+$var wire 1 X& servo_incremental_input|pwm_1|Mult0~8_RESULTA_bus [47] $end
+$var wire 1 Y& servo_incremental_input|pwm_1|Mult0~8_RESULTA_bus [46] $end
+$var wire 1 Z& servo_incremental_input|pwm_1|Mult0~8_RESULTA_bus [45] $end
+$var wire 1 [& servo_incremental_input|pwm_1|Mult0~8_RESULTA_bus [44] $end
+$var wire 1 \& servo_incremental_input|pwm_1|Mult0~8_RESULTA_bus [43] $end
+$var wire 1 ]& servo_incremental_input|pwm_1|Mult0~8_RESULTA_bus [42] $end
+$var wire 1 ^& servo_incremental_input|pwm_1|Mult0~8_RESULTA_bus [41] $end
+$var wire 1 _& servo_incremental_input|pwm_1|Mult0~8_RESULTA_bus [40] $end
+$var wire 1 `& servo_incremental_input|pwm_1|Mult0~8_RESULTA_bus [39] $end
+$var wire 1 a& servo_incremental_input|pwm_1|Mult0~8_RESULTA_bus [38] $end
+$var wire 1 b& servo_incremental_input|pwm_1|Mult0~8_RESULTA_bus [37] $end
+$var wire 1 c& servo_incremental_input|pwm_1|Mult0~8_RESULTA_bus [36] $end
+$var wire 1 d& servo_incremental_input|pwm_1|Mult0~8_RESULTA_bus [35] $end
+$var wire 1 e& servo_incremental_input|pwm_1|Mult0~8_RESULTA_bus [34] $end
+$var wire 1 f& servo_incremental_input|pwm_1|Mult0~8_RESULTA_bus [33] $end
+$var wire 1 g& servo_incremental_input|pwm_1|Mult0~8_RESULTA_bus [32] $end
+$var wire 1 h& servo_incremental_input|pwm_1|Mult0~8_RESULTA_bus [31] $end
+$var wire 1 i& servo_incremental_input|pwm_1|Mult0~8_RESULTA_bus [30] $end
+$var wire 1 j& servo_incremental_input|pwm_1|Mult0~8_RESULTA_bus [29] $end
+$var wire 1 k& servo_incremental_input|pwm_1|Mult0~8_RESULTA_bus [28] $end
+$var wire 1 l& servo_incremental_input|pwm_1|Mult0~8_RESULTA_bus [27] $end
+$var wire 1 m& servo_incremental_input|pwm_1|Mult0~8_RESULTA_bus [26] $end
+$var wire 1 n& servo_incremental_input|pwm_1|Mult0~8_RESULTA_bus [25] $end
+$var wire 1 o& servo_incremental_input|pwm_1|Mult0~8_RESULTA_bus [24] $end
+$var wire 1 p& servo_incremental_input|pwm_1|Mult0~8_RESULTA_bus [23] $end
+$var wire 1 q& servo_incremental_input|pwm_1|Mult0~8_RESULTA_bus [22] $end
+$var wire 1 r& servo_incremental_input|pwm_1|Mult0~8_RESULTA_bus [21] $end
+$var wire 1 s& servo_incremental_input|pwm_1|Mult0~8_RESULTA_bus [20] $end
+$var wire 1 t& servo_incremental_input|pwm_1|Mult0~8_RESULTA_bus [19] $end
+$var wire 1 u& servo_incremental_input|pwm_1|Mult0~8_RESULTA_bus [18] $end
+$var wire 1 v& servo_incremental_input|pwm_1|Mult0~8_RESULTA_bus [17] $end
+$var wire 1 w& servo_incremental_input|pwm_1|Mult0~8_RESULTA_bus [16] $end
+$var wire 1 x& servo_incremental_input|pwm_1|Mult0~8_RESULTA_bus [15] $end
+$var wire 1 y& servo_incremental_input|pwm_1|Mult0~8_RESULTA_bus [14] $end
+$var wire 1 z& servo_incremental_input|pwm_1|Mult0~8_RESULTA_bus [13] $end
+$var wire 1 {& servo_incremental_input|pwm_1|Mult0~8_RESULTA_bus [12] $end
+$var wire 1 |& servo_incremental_input|pwm_1|Mult0~8_RESULTA_bus [11] $end
+$var wire 1 }& servo_incremental_input|pwm_1|Mult0~8_RESULTA_bus [10] $end
+$var wire 1 ~& servo_incremental_input|pwm_1|Mult0~8_RESULTA_bus [9] $end
+$var wire 1 !' servo_incremental_input|pwm_1|Mult0~8_RESULTA_bus [8] $end
+$var wire 1 "' servo_incremental_input|pwm_1|Mult0~8_RESULTA_bus [7] $end
+$var wire 1 #' servo_incremental_input|pwm_1|Mult0~8_RESULTA_bus [6] $end
+$var wire 1 $' servo_incremental_input|pwm_1|Mult0~8_RESULTA_bus [5] $end
+$var wire 1 %' servo_incremental_input|pwm_1|Mult0~8_RESULTA_bus [4] $end
+$var wire 1 &' servo_incremental_input|pwm_1|Mult0~8_RESULTA_bus [3] $end
+$var wire 1 '' servo_incremental_input|pwm_1|Mult0~8_RESULTA_bus [2] $end
+$var wire 1 (' servo_incremental_input|pwm_1|Mult0~8_RESULTA_bus [1] $end
+$var wire 1 )' servo_incremental_input|pwm_1|Mult0~8_RESULTA_bus [0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+x!
+0"
+x#
+bx $
+x%
+x&
+x'
+x(
+x)
+x*
+x+
+x,
+x-
+x.
+x/
+x0
+x1
+x2
+x3
+x4
+05
+06
+07
+08
+09
+0:
+1;
+0<
+0=
+0>
+0?
+0@
+0A
+1B
+0C
+0D
+xE
+0F
+1G
+xH
+1I
+1J
+1K
+xL
+xM
+xN
+xO
+xP
+xQ
+xR
+xS
+xT
+xU
+xV
+xW
+xX
+xY
+xZ
+x[
+x\
+x]
+x^
+x_
+x`
+xa
+xb
+xc
+xd
+xe
+xf
+xg
+xh
+xi
+xj
+xk
+xl
+xm
+xn
+xo
+xp
+xq
+xr
+xs
+xt
+xu
+xv
+xw
+xx
+0y
+0z
+0{
+0|
+0}
+0~
+0!!
+0"!
+0#!
+0$!
+0%!
+0&!
+0'!
+0(!
+0)!
+0*!
+0+!
+0,!
+0-!
+0.!
+0/!
+00!
+01!
+02!
+03!
+04!
+05!
+06!
+07!
+08!
+09!
+0:!
+0;!
+0<!
+0=!
+0>!
+0?!
+0@!
+0A!
+0B!
+0C!
+0D!
+0E!
+0F!
+0G!
+0H!
+0I!
+0J!
+1K!
+xL!
+0M!
+0N!
+0O!
+0P!
+0Q!
+0R!
+0S!
+0T!
+0U!
+0V!
+0W!
+0X!
+0Y!
+0Z!
+0[!
+0\!
+0]!
+0^!
+0_!
+0`!
+0a!
+0b!
+0c!
+0d!
+0e!
+0f!
+0g!
+0h!
+0i!
+0j!
+0k!
+0l!
+0m!
+0n!
+0o!
+0p!
+0q!
+0r!
+0s!
+0t!
+0u!
+0v!
+0w!
+0x!
+0y!
+0z!
+0{!
+0|!
+0}!
+0~!
+0!"
+0""
+0#"
+0$"
+0%"
+0&"
+0'"
+0("
+0)"
+0*"
+0+"
+0,"
+0-"
+0."
+0/"
+00"
+x1"
+x2"
+x3"
+x4"
+x5"
+x6"
+x7"
+x8"
+x9"
+x:"
+x;"
+0<"
+0="
+x>"
+0?"
+x@"
+0A"
+1B"
+xC"
+0D"
+xE"
+xF"
+0G"
+xH"
+0I"
+1J"
+xK"
+xL"
+0M"
+xN"
+0O"
+xP"
+0Q"
+1R"
+xS"
+0T"
+xU"
+0V"
+xW"
+xX"
+0Y"
+1Z"
+x["
+0\"
+0]"
+x^"
+0_"
+1`"
+xa"
+xb"
+0c"
+xd"
+0e"
+xf"
+xg"
+0h"
+1i"
+1j"
+xk"
+xl"
+0m"
+xn"
+xo"
+0p"
+0q"
+1r"
+1s"
+1t"
+1u"
+1v"
+1w"
+1x"
+1y"
+1z"
+1{"
+1|"
+1}"
+1~"
+1!#
+0"#
+0##
+0$#
+0%#
+1&#
+1'#
+0(#
+0)#
+0*#
+0+#
+1,#
+1-#
+1.#
+1/#
+10#
+11#
+12#
+03#
+04#
+05#
+16#
+07#
+08#
+19#
+0:#
+0;#
+0<#
+1=#
+0>#
+0?#
+1@#
+1A#
+0B#
+0C#
+xD#
+xE#
+0F#
+1G#
+0H#
+xI#
+0J#
+0K#
+xL#
+0M#
+0N#
+xO#
+xP#
+0Q#
+0R#
+xS#
+0T#
+0U#
+xV#
+0W#
+0X#
+xY#
+0Z#
+0[#
+x\#
+x]#
+0^#
+0_#
+x`#
+0a#
+0b#
+0c#
+0d#
+0e#
+0f#
+0g#
+1h#
+0i#
+0j#
+0k#
+0l#
+0m#
+0n#
+0o#
+0p#
+1q#
+0r#
+0s#
+0t#
+0u#
+0v#
+0w#
+1x#
+0y#
+0z#
+0{#
+0|#
+0}#
+0~#
+1!$
+0"$
+0#$
+0$$
+0%$
+0&$
+0'$
+0($
+0)$
+1*$
+0+$
+0,$
+0-$
+0.$
+0/$
+00$
+01$
+02$
+03$
+04$
+15$
+06$
+07$
+08$
+09$
+0:$
+1;$
+1<$
+1=$
+1>$
+1?$
+1@$
+1A$
+1B$
+1C$
+1D$
+1E$
+1F$
+1G$
+1H$
+1I$
+0J$
+0K$
+0L$
+0M$
+1N$
+1O$
+0P$
+0Q$
+0R$
+0S$
+0T$
+0U$
+0V$
+1W$
+1X$
+1Y$
+0Z$
+1[$
+0\$
+1]$
+1^$
+1_$
+1`$
+1a$
+0b$
+0c$
+0d$
+1e$
+0f$
+0g$
+1h$
+1i$
+0j$
+0k$
+xl$
+xm$
+xn$
+xo$
+xp$
+xq$
+xr$
+xs$
+xt$
+xu$
+xv$
+xw$
+xx$
+xy$
+xz$
+x{$
+x|$
+x}$
+x~$
+x!%
+x"%
+x#%
+x$%
+x%%
+0&%
+0'%
+0(%
+0)%
+0*%
+0+%
+0,%
+0-%
+0.%
+0/%
+00%
+01%
+02%
+03%
+14%
+05%
+06%
+07%
+08%
+09%
+0:%
+0;%
+0<%
+0=%
+0P%
+0O%
+0N%
+0M%
+0L%
+0K%
+0J%
+0I%
+0H%
+0G%
+0F%
+0E%
+0D%
+0C%
+0B%
+0A%
+0@%
+0?%
+0>%
+0Q%
+0d%
+0c%
+0b%
+0a%
+0`%
+0_%
+0^%
+0]%
+0\%
+0[%
+0Z%
+0Y%
+0X%
+0W%
+0V%
+0U%
+0T%
+0S%
+0R%
+0e%
+xG&
+xF&
+xE&
+xD&
+xC&
+xB&
+xA&
+x@&
+x?&
+x>&
+x=&
+x<&
+x;&
+x:&
+x9&
+x8&
+x7&
+x6&
+x5&
+x4&
+x3&
+x2&
+x1&
+x0&
+x/&
+x.&
+x-&
+x,&
+x+&
+x*&
+x)&
+x(&
+x'&
+x&&
+x%&
+x$&
+x#&
+x"&
+x!&
+x~%
+x}%
+x|%
+x{%
+xz%
+xy%
+xx%
+xw%
+xv%
+xu%
+xt%
+xs%
+xr%
+xq%
+xp%
+xo%
+xn%
+xm%
+xl%
+xk%
+xj%
+xi%
+xh%
+xg%
+xf%
+0)'
+0('
+0''
+0&'
+0%'
+0$'
+0#'
+0"'
+0!'
+0~&
+0}&
+0|&
+0{&
+0z&
+0y&
+0x&
+0w&
+0v&
+0u&
+0t&
+0s&
+0r&
+0q&
+0p&
+0o&
+0n&
+0m&
+0l&
+0k&
+0j&
+0i&
+0h&
+0g&
+0f&
+0e&
+0d&
+0c&
+0b&
+0a&
+0`&
+0_&
+0^&
+0]&
+0\&
+0[&
+0Z&
+0Y&
+0X&
+0W&
+0V&
+0U&
+0T&
+0S&
+0R&
+0Q&
+0P&
+0O&
+0N&
+0M&
+0L&
+0K&
+0J&
+0I&
+0H&
+$end
+#140000
+1"
+1I!
+0E
+1J!
+#440000
+0"
+0I!
+1E
+0J!
+#1000000

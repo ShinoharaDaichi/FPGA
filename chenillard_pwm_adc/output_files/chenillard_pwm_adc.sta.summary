@@ -1,0 +1,149 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1100mV 85C Model Setup 'clk'
+Slack : -11.669
+TNS   : -2710.576
+
+Type  : Slow 1100mV 85C Model Setup 'adc:adc_entity|send_sck'
+Slack : -4.042
+TNS   : -129.880
+
+Type  : Slow 1100mV 85C Model Setup 'adc:adc_entity|adc_sck'
+Slack : -3.779
+TNS   : -187.584
+
+Type  : Slow 1100mV 85C Model Hold 'clk'
+Slack : -0.351
+TNS   : -0.868
+
+Type  : Slow 1100mV 85C Model Hold 'adc:adc_entity|send_sck'
+Slack : 0.731
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'adc:adc_entity|adc_sck'
+Slack : 0.779
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clk'
+Slack : -2.225
+TNS   : -454.886
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'adc:adc_entity|adc_sck'
+Slack : -0.538
+TNS   : -43.875
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'adc:adc_entity|send_sck'
+Slack : -0.538
+TNS   : -30.808
+
+Type  : Slow 1100mV 0C Model Setup 'clk'
+Slack : -11.852
+TNS   : -2723.695
+
+Type  : Slow 1100mV 0C Model Setup 'adc:adc_entity|send_sck'
+Slack : -3.971
+TNS   : -128.750
+
+Type  : Slow 1100mV 0C Model Setup 'adc:adc_entity|adc_sck'
+Slack : -3.759
+TNS   : -186.337
+
+Type  : Slow 1100mV 0C Model Hold 'clk'
+Slack : -0.711
+TNS   : -15.197
+
+Type  : Slow 1100mV 0C Model Hold 'adc:adc_entity|adc_sck'
+Slack : 0.785
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'adc:adc_entity|send_sck'
+Slack : 0.795
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clk'
+Slack : -2.225
+TNS   : -478.109
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'adc:adc_entity|adc_sck'
+Slack : -0.538
+TNS   : -43.421
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'adc:adc_entity|send_sck'
+Slack : -0.538
+TNS   : -30.446
+
+Type  : Fast 1100mV 85C Model Setup 'clk'
+Slack : -4.914
+TNS   : -1106.148
+
+Type  : Fast 1100mV 85C Model Setup 'adc:adc_entity|adc_sck'
+Slack : -1.866
+TNS   : -76.757
+
+Type  : Fast 1100mV 85C Model Setup 'adc:adc_entity|send_sck'
+Slack : -1.737
+TNS   : -53.750
+
+Type  : Fast 1100mV 85C Model Hold 'clk'
+Slack : -0.118
+TNS   : -2.514
+
+Type  : Fast 1100mV 85C Model Hold 'adc:adc_entity|send_sck'
+Slack : 0.284
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'adc:adc_entity|adc_sck'
+Slack : 0.311
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clk'
+Slack : -1.702
+TNS   : -67.509
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'adc:adc_entity|send_sck'
+Slack : -0.023
+TNS   : -0.336
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'adc:adc_entity|adc_sck'
+Slack : 0.006
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'clk'
+Slack : -4.586
+TNS   : -978.310
+
+Type  : Fast 1100mV 0C Model Setup 'adc:adc_entity|adc_sck'
+Slack : -1.610
+TNS   : -67.037
+
+Type  : Fast 1100mV 0C Model Setup 'adc:adc_entity|send_sck'
+Slack : -1.527
+TNS   : -47.354
+
+Type  : Fast 1100mV 0C Model Hold 'clk'
+Slack : -0.350
+TNS   : -12.842
+
+Type  : Fast 1100mV 0C Model Hold 'adc:adc_entity|adc_sck'
+Slack : 0.281
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'adc:adc_entity|send_sck'
+Slack : 0.292
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clk'
+Slack : -1.702
+TNS   : -67.803
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'adc:adc_entity|send_sck'
+Slack : 0.017
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'adc:adc_entity|adc_sck'
+Slack : 0.043
+TNS   : 0.000
+
+------------------------------------------------------------

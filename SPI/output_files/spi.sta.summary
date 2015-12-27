@@ -1,0 +1,197 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1100mV 85C Model Setup 'clk'
+Slack : -4.863
+TNS   : -299.386
+
+Type  : Slow 1100mV 85C Model Setup 'state.send_spi'
+Slack : -3.496
+TNS   : -3.496
+
+Type  : Slow 1100mV 85C Model Setup 'state.wait_input'
+Slack : -3.117
+TNS   : -6.343
+
+Type  : Slow 1100mV 85C Model Setup 'state.wait_between_sent'
+Slack : -1.740
+TNS   : -1.740
+
+Type  : Slow 1100mV 85C Model Hold 'clk'
+Slack : 0.059
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'state.wait_input'
+Slack : 0.743
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'state.wait_between_sent'
+Slack : 0.957
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'state.send_spi'
+Slack : 2.654
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clk'
+Slack : -0.538
+TNS   : -68.548
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'state.send_spi'
+Slack : 0.329
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'state.wait_input'
+Slack : 0.335
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'state.wait_between_sent'
+Slack : 0.398
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Setup 'clk'
+Slack : -4.811
+TNS   : -290.318
+
+Type  : Slow 1100mV 0C Model Setup 'state.send_spi'
+Slack : -3.640
+TNS   : -3.640
+
+Type  : Slow 1100mV 0C Model Setup 'state.wait_input'
+Slack : -3.199
+TNS   : -6.528
+
+Type  : Slow 1100mV 0C Model Setup 'state.wait_between_sent'
+Slack : -1.730
+TNS   : -1.730
+
+Type  : Slow 1100mV 0C Model Hold 'clk'
+Slack : -0.280
+TNS   : -1.500
+
+Type  : Slow 1100mV 0C Model Hold 'state.wait_input'
+Slack : 0.765
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'state.wait_between_sent'
+Slack : 0.959
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'state.send_spi'
+Slack : 2.707
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clk'
+Slack : -0.538
+TNS   : -69.149
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'state.wait_input'
+Slack : 0.274
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'state.send_spi'
+Slack : 0.300
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'state.wait_between_sent'
+Slack : 0.398
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Setup 'clk'
+Slack : -1.999
+TNS   : -124.833
+
+Type  : Fast 1100mV 85C Model Setup 'state.send_spi'
+Slack : -1.075
+TNS   : -1.075
+
+Type  : Fast 1100mV 85C Model Setup 'state.wait_input'
+Slack : -0.933
+TNS   : -2.084
+
+Type  : Fast 1100mV 85C Model Setup 'state.wait_between_sent'
+Slack : -0.660
+TNS   : -0.660
+
+Type  : Fast 1100mV 85C Model Hold 'clk'
+Slack : 0.156
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'state.wait_input'
+Slack : 0.330
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'state.wait_between_sent'
+Slack : 0.466
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'state.send_spi'
+Slack : 1.282
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clk'
+Slack : -0.106
+TNS   : -8.996
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'state.wait_input'
+Slack : 0.400
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'state.wait_between_sent'
+Slack : 0.449
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'state.send_spi'
+Slack : 0.451
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'clk'
+Slack : -1.710
+TNS   : -97.539
+
+Type  : Fast 1100mV 0C Model Setup 'state.send_spi'
+Slack : -1.019
+TNS   : -1.019
+
+Type  : Fast 1100mV 0C Model Setup 'state.wait_input'
+Slack : -0.871
+TNS   : -1.820
+
+Type  : Fast 1100mV 0C Model Setup 'state.wait_between_sent'
+Slack : -0.543
+TNS   : -0.543
+
+Type  : Fast 1100mV 0C Model Hold 'clk'
+Slack : 0.053
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'state.wait_input'
+Slack : 0.291
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'state.wait_between_sent'
+Slack : 0.418
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'state.send_spi'
+Slack : 1.248
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clk'
+Slack : -0.101
+TNS   : -8.692
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'state.wait_input'
+Slack : 0.427
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'state.send_spi'
+Slack : 0.449
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'state.wait_between_sent'
+Slack : 0.455
+TNS   : 0.000
+
+------------------------------------------------------------

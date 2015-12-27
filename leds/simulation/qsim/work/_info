@@ -1,0 +1,90 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Daichi/hubiC/ELN/FPGA/Projects/leds/simulation/qsim
+vleds
+Z1 !s110 1449926411
+!i10b 1
+!s100 D<7F[XAmZ<0S7_Z<d;eZD2
+IH:`mKQ6PcmF2BW@9ZOQoX3
+Z2 V`JN@9S9cnhjKRR_L]QIcM3
+R0
+w1449926410
+8leds.vo
+Fleds.vo
+L0 32
+Z3 OV;L;10.3d;59
+r1
+!s85 0
+31
+!s108 1449926411.326000
+!s107 leds.vo|
+!s90 -work|work|leds.vo|
+!i113 1
+Z4 o-work work
+vleds_vlg_check_tst
+R1
+!i10b 1
+!s100 `S89e5zn<@a@UQ^dg=jke1
+IonPTMIl;0HzS^AL`^gNF62
+R2
+R0
+Z5 w1449926408
+Z6 8Waveform.vwf.vt
+Z7 FWaveform.vwf.vt
+L0 58
+R3
+r1
+!s85 0
+31
+Z8 !s108 1449926411.389000
+Z9 !s107 Waveform.vwf.vt|
+Z10 !s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R4
+vleds_vlg_sample_tst
+R1
+!i10b 1
+!s100 d7[Kf3XjOIl3BQ[Se49B_1
+I3B9B:7gRh:fRZ]]IgRQP_0
+R2
+R0
+R5
+R6
+R7
+L0 30
+R3
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R4
+vleds_vlg_vec_tst
+R1
+!i10b 1
+!s100 onKmlX<jKk0]K40cSZ5T>2
+IVCL8LnPbNGh_X:30`0UXi0
+R2
+R0
+R5
+R6
+R7
+L0 314
+R3
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R4

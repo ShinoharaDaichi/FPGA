@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deploy
+ date="2015.12.17.12:41:34"
+ outputDirectory="C:/Users/Daichi/hubiC/ELN/FPGA/Projects/qsys/test/">
+ <perimeter>
+  <parameter
+     name="AUTO_GENERATION_ID"
+     type="Integer"
+     defaultValue="0"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_UNIQUE_ID"
+     type="String"
+     defaultValue=""
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_FAMILY"
+     type="String"
+     defaultValue="Cyclone V"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE"
+     type="String"
+     defaultValue="5CGXFC5C6F27C7"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_SPEEDGRADE"
+     type="String"
+     defaultValue="7_H6"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLK_CLOCK_RATE"
+     type="Long"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLK_CLOCK_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLK_RESET_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <interface name="clk" kind="clock" start="0">
+   <property name="clockRate" value="0" />
+   <property name="externallyDriven" value="false" />
+   <property name="ptfSchematicName" value="" />
+   <port name="clk_clk" direction="input" role="clk" width="1" />
+  </interface>
+  <interface name="reset" kind="reset" start="0">
+   <property name="associatedClock" value="" />
+   <property name="synchronousEdges" value="NONE" />
+   <port name="reset_reset_n" direction="input" role="reset_n" width="1" />
+  </interface>
+  <interface name="spi_0_reset" kind="reset" start="0">
+   <property name="associatedClock" value="clk" />
+   <property name="synchronousEdges" value="DEASSERT" />
+   <port name="spi_0_reset_reset_n" direction="input" role="reset_n" width="1" />
+  </interface>
+ </perimeter>
+ <entity
+   path=""
+   parameterizationKey="test:1.0:AUTO_CLK_CLOCK_DOMAIN=-1,AUTO_CLK_CLOCK_RATE=-1,AUTO_CLK_RESET_DOMAIN=-1,AUTO_DEVICE=5CGXFC5C6F27C7,AUTO_DEVICE_FAMILY=Cyclone V,AUTO_DEVICE_SPEEDGRADE=7_H6,AUTO_GENERATION_ID=1450352492,AUTO_UNIQUE_ID=(clock_source:15.0:clockFrequency=50000000,clockFrequencyKnown=false,inputClockFrequency=0,resetSynchronousEdges=NONE)(altera_avalon_spi:15.0:actualClockRate=0.0,actualSlaveSelectToSClkDelay=0.0,avalonSpec=2.0,clockPhase=0,clockPolarity=0,dataWidth=8,disableAvalonFlowControl=false,inputClockRate=0,insertDelayBetweenSlaveSelectAndSClk=false,insertSync=false,legacySignalsAllow=false,lsbOrderedFirst=false,masterSPI=true,numberOfSlaves=1,slaveDataBusWidth=16,syncRegDepth=2,targetClockRate=128000,targetSlaveSelectToSClkDelay=0.0)(clock:15.0:)"
+   instancePathKey="test"
+   kind="test"
+   version="1.0"
+   name="test">
+  <parameter name="AUTO_CLK_CLOCK_RATE" value="-1" />
+  <parameter name="AUTO_GENERATION_ID" value="1450352492" />
+  <parameter name="AUTO_DEVICE" value="5CGXFC5C6F27C7" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Cyclone V" />
+  <parameter name="AUTO_CLK_RESET_DOMAIN" value="-1" />
+  <parameter name="AUTO_CLK_CLOCK_DOMAIN" value="-1" />
+  <parameter name="AUTO_UNIQUE_ID" value="" />
+  <parameter name="AUTO_DEVICE_SPEEDGRADE" value="7_H6" />
+  <generatedFiles>
+   <file
+       path="C:/Users/Daichi/hubiC/ELN/FPGA/Projects/qsys/test/synthesis/test.vhd"
+       type="VHDL" />
+  </generatedFiles>
+  <childGeneratedFiles/>
+  <sourceFiles>
+   <file path="C:/Users/Daichi/hubiC/ELN/FPGA/Projects/qsys/test.qsys" />
+  </sourceFiles>
+  <childSourceFiles>
+   <file
+       path="C:/altera/15.0/ip/altera/sopc_builder_ip/altera_avalon_spi/altera_avalon_spi_hw.tcl" />
+  </childSourceFiles>
+  <messages>
+   <message level="Debug" culprit="test">queue size: 0 starting:test "test"</message>
+   <message level="Progress" culprit="min"></message>
+   <message level="Progress" culprit="max"></message>
+   <message level="Progress" culprit="current"></message>
+   <message level="Debug">Transform: CustomInstructionTransform</message>
+   <message level="Debug">No custom instruction connections, skipping transform </message>
+   <message level="Debug" culprit="merlin_custom_instruction_transform"><![CDATA[After transform: <b>2</b> modules, <b>1</b> connections]]></message>
+   <message level="Debug">Transform: MMTransform</message>
+   <message level="Debug">Transform: InterruptMapperTransform</message>
+   <message level="Debug">Transform: InterruptSyncTransform</message>
+   <message level="Debug">Transform: InterruptFanoutTransform</message>
+   <message level="Debug">Transform: AvalonStreamingTransform</message>
+   <message level="Debug">Transform: ResetAdaptation</message>
+   <message level="Debug" culprit="test"><![CDATA["<b>test</b>" reuses <b>altera_avalon_spi</b> "<b>submodules/test_spi_0</b>"]]></message>
+   <message level="Debug" culprit="test">queue size: 0 starting:altera_avalon_spi "submodules/test_spi_0"</message>
+   <message level="Info" culprit="spi_0">Starting RTL generation for module 'test_spi_0'</message>
+   <message level="Info" culprit="spi_0">  Generation command is [exec C:/altera/15.0/quartus/bin64/perl/bin/perl.exe -I C:/altera/15.0/quartus/bin64/perl/lib -I C:/altera/15.0/quartus/sopc_builder/bin/europa -I C:/altera/15.0/quartus/sopc_builder/bin/perl_lib -I C:/altera/15.0/quartus/sopc_builder/bin -I C:/altera/15.0/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/15.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_spi -- C:/altera/15.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_spi/generate_rtl.pl --name=test_spi_0 --dir=C:/Users/Daichi/AppData/Local/Temp/alt6786_277216856377665149.dir/0001_spi_0_gen/ --quartus_dir=C:/altera/15.0/quartus --verilog --config=C:/Users/Daichi/AppData/Local/Temp/alt6786_277216856377665149.dir/0001_spi_0_gen//test_spi_0_component_configuration.pl  --do_build_sim=0  ]</message>
+   <message level="Info" culprit="spi_0">Illegal division by zero at C:/altera/15.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_spi/em_spi_qsys.pm line 338.</message>
+   <message level="Error" culprit="spi_0">Failed to generate module test_spi_0</message>
+   <message level="Info" culprit="spi_0">Done RTL generation for module 'test_spi_0'</message>
+   <message level="Info" culprit="spi_0"><![CDATA["<b>test</b>" instantiated <b>altera_avalon_spi</b> "<b>spi_0</b>"]]></message>
+  </messages>
+ </entity>
+ <entity
+   path="submodules/"
+   parameterizationKey="altera_avalon_spi:15.0:actualClockRate=0.0,actualSlaveSelectToSClkDelay=0.0,avalonSpec=2.0,clockPhase=0,clockPolarity=0,dataWidth=8,disableAvalonFlowControl=false,inputClockRate=0,insertDelayBetweenSlaveSelectAndSClk=false,insertSync=false,legacySignalsAllow=false,lsbOrderedFirst=false,masterSPI=true,numberOfSlaves=1,slaveDataBusWidth=16,syncRegDepth=2,targetClockRate=128000,targetSlaveSelectToSClkDelay=0.0"
+   instancePathKey="test:.:spi_0"
+   kind="altera_avalon_spi"
+   version="15.0"
+   name="test_spi_0">
+  <parameter name="legacySignalsAllow" value="false" />
+  <parameter name="insertSync" value="false" />
+  <parameter name="targetClockRate" value="128000" />
+  <parameter name="disableAvalonFlowControl" value="false" />
+  <parameter name="avalonSpec" value="2.0" />
+  <parameter name="clockPolarity" value="0" />
+  <parameter name="insertDelayBetweenSlaveSelectAndSClk" value="false" />
+  <parameter name="actualClockRate" value="0.0" />
+  <parameter name="clockPhase" value="0" />
+  <parameter name="masterSPI" value="true" />
+  <parameter name="slaveDataBusWidth" value="16" />
+  <parameter name="numberOfSlaves" value="1" />
+  <parameter name="syncRegDepth" value="2" />
+  <parameter name="actualSlaveSelectToSClkDelay" value="0.0" />
+  <parameter name="inputClockRate" value="0" />
+  <parameter name="dataWidth" value="8" />
+  <parameter name="targetSlaveSelectToSClkDelay" value="0.0" />
+  <parameter name="lsbOrderedFirst" value="false" />
+  <generatedFiles/>
+  <childGeneratedFiles/>
+  <sourceFiles>
+   <file
+       path="C:/altera/15.0/ip/altera/sopc_builder_ip/altera_avalon_spi/altera_avalon_spi_hw.tcl" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator instantiator="test" as="spi_0" />
+  <messages>
+   <message level="Debug" culprit="test">queue size: 0 starting:altera_avalon_spi "submodules/test_spi_0"</message>
+   <message level="Info" culprit="spi_0">Starting RTL generation for module 'test_spi_0'</message>
+   <message level="Info" culprit="spi_0">  Generation command is [exec C:/altera/15.0/quartus/bin64/perl/bin/perl.exe -I C:/altera/15.0/quartus/bin64/perl/lib -I C:/altera/15.0/quartus/sopc_builder/bin/europa -I C:/altera/15.0/quartus/sopc_builder/bin/perl_lib -I C:/altera/15.0/quartus/sopc_builder/bin -I C:/altera/15.0/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/15.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_spi -- C:/altera/15.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_spi/generate_rtl.pl --name=test_spi_0 --dir=C:/Users/Daichi/AppData/Local/Temp/alt6786_277216856377665149.dir/0001_spi_0_gen/ --quartus_dir=C:/altera/15.0/quartus --verilog --config=C:/Users/Daichi/AppData/Local/Temp/alt6786_277216856377665149.dir/0001_spi_0_gen//test_spi_0_component_configuration.pl  --do_build_sim=0  ]</message>
+   <message level="Info" culprit="spi_0">Illegal division by zero at C:/altera/15.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_spi/em_spi_qsys.pm line 338.</message>
+   <message level="Error" culprit="spi_0">Failed to generate module test_spi_0</message>
+   <message level="Info" culprit="spi_0">Done RTL generation for module 'test_spi_0'</message>
+   <message level="Info" culprit="spi_0"><![CDATA["<b>test</b>" instantiated <b>altera_avalon_spi</b> "<b>spi_0</b>"]]></message>
+  </messages>
+ </entity>
+</deploy>

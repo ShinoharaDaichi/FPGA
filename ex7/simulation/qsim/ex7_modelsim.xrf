@@ -1,0 +1,15 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/Daichi/hubiC/ELN/FPGA/Projects/ex7/ex7.vhd
+source_file = 1, C:/Users/Daichi/hubiC/ELN/FPGA/Projects/ex7/nand_gate.vhd
+source_file = 1, C:/Users/Daichi/hubiC/ELN/FPGA/Projects/ex7/Waveform.vwf
+source_file = 1, c:/altera/15.0/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, c:/altera/15.0/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, c:/altera/15.0/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, c:/altera/15.0/quartus/libraries/vhdl/ieee/timing_p.vhd
+source_file = 1, C:/Users/Daichi/hubiC/ELN/FPGA/Projects/ex7/db/ex7.cbx.xml
+design_name = ex7
+instance = comp, \f~output , f~output, ex7, 1
+instance = comp, \x~input , x~input, ex7, 1
+instance = comp, \y~input , y~input, ex7, 1
+instance = comp, \nand3|process_0~0 , nand3|process_0~0, ex7, 1
+instance = comp, \~QUARTUS_CREATED_GND~I , ~QUARTUS_CREATED_GND~I, ex7, 1

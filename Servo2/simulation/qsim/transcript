@@ -1,0 +1,112 @@
+# do servo2.do
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:49:16 on Dec 02,2015
+# vlog -work work servo2.vo 
+# -- Compiling module servo2
+# 
+# Top level modules:
+# 	servo2
+# End time: 11:49:16 on Dec 02,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:49:16 on Dec 02,2015
+# vlog -work work servo2.vwf.vt 
+# -- Compiling module servo2_vlg_sample_tst
+# -- Compiling module servo2_vlg_check_tst
+# -- Compiling module servo2_vlg_vec_tst
+# 
+# Top level modules:
+# 	servo2_vlg_vec_tst
+# End time: 11:49:16 on Dec 02,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -c -do "servo2.do" 
+# Start time: 11:49:16 on Dec 02,2015
+# Loading work.servo2_vlg_vec_tst
+# Loading work.servo2
+# Loading altera_ver.dffeas
+# Loading work.servo2_vlg_sample_tst
+# Loading work.servo2_vlg_check_tst
+# Loading altera_ver.PRIM_GDFF_LOW
+# ** Warning: (vsim-3016) servo2.vo(2417): Port type is incompatible with connection (port 'ax').
+# 
+#         Region: /servo2_vlg_vec_tst/i1/\servo_parallel_input|pwm_1|Mult0~8 
+# ** Warning: (vsim-3016) servo2.vo(2417): Port type is incompatible with connection (port 'ax').
+# 
+#         Region: /servo2_vlg_vec_tst/i1/\servo_parallel_input|pwm_1|Mult0~8 
+# ** Warning: (vsim-3016) servo2.vo(2417): Port type is incompatible with connection (port 'ax').
+# 
+#         Region: /servo2_vlg_vec_tst/i1/\servo_parallel_input|pwm_1|Mult0~8 
+# ** Warning: (vsim-3016) servo2.vo(2417): Port type is incompatible with connection (port 'ax').
+# 
+#         Region: /servo2_vlg_vec_tst/i1/\servo_parallel_input|pwm_1|Mult0~8 
+# ** Warning: (vsim-3016) servo2.vo(2417): Port type is incompatible with connection (port 'ax').
+# 
+#         Region: /servo2_vlg_vec_tst/i1/\servo_parallel_input|pwm_1|Mult0~8 
+# ** Warning: (vsim-3016) servo2.vo(2417): Port type is incompatible with connection (port 'ax').
+# 
+#         Region: /servo2_vlg_vec_tst/i1/\servo_parallel_input|pwm_1|Mult0~8 
+# ** Warning: (vsim-3016) servo2.vo(2417): Port type is incompatible with connection (port 'ax').
+# 
+#         Region: /servo2_vlg_vec_tst/i1/\servo_parallel_input|pwm_1|Mult0~8 
+# ** Warning: (vsim-3015) servo2.vo(2417): [PCDPC] - Port size (1) does not match connection size (26) for port 'az'. The port definition is at: nofile(38).
+# 
+#         Region: /servo2_vlg_vec_tst/i1/\servo_parallel_input|pwm_1|Mult0~8 
+# ** Warning: (vsim-3015) servo2.vo(2417): [PCDPC] - Port size (16) does not match connection size (18) for port 'bx'. The port definition is at: nofile(38).
+# 
+#         Region: /servo2_vlg_vec_tst/i1/\servo_parallel_input|pwm_1|Mult0~8 
+# ** Warning: (vsim-3015) servo2.vo(2417): [PCDPC] - Port size (16) does not match connection size (19) for port 'by'. The port definition is at: nofile(38).
+# 
+#         Region: /servo2_vlg_vec_tst/i1/\servo_parallel_input|pwm_1|Mult0~8 
+# ** Warning: (vsim-3015) servo2.vo(2417): [PCDPC] - Port size (1) does not match connection size (18) for port 'bz'. The port definition is at: nofile(38).
+# 
+#         Region: /servo2_vlg_vec_tst/i1/\servo_parallel_input|pwm_1|Mult0~8 
+# ** Warning: (vsim-3015) servo2.vo(2417): [PCDPC] - Port size (8) does not match connection size (27) for port 'scanin'. The port definition is at: nofile(38).
+# 
+#         Region: /servo2_vlg_vec_tst/i1/\servo_parallel_input|pwm_1|Mult0~8 
+# ** Warning: (vsim-3015) servo2.vo(2417): [PCDPC] - Port size (64) does not match connection size (1) for port 'chainin'. The port definition is at: nofile(38).
+# 
+#         Region: /servo2_vlg_vec_tst/i1/\servo_parallel_input|pwm_1|Mult0~8 
+# ** Warning: (vsim-3016) servo2.vo(4952): Port type is incompatible with connection (port 'ax').
+# 
+#         Region: /servo2_vlg_vec_tst/i1/\servo_incremental_input|pwm_1|Mult0~8 
+# ** Warning: (vsim-3016) servo2.vo(4952): Port type is incompatible with connection (port 'ax').
+# 
+#         Region: /servo2_vlg_vec_tst/i1/\servo_incremental_input|pwm_1|Mult0~8 
+# ** Warning: (vsim-3016) servo2.vo(4952): Port type is incompatible with connection (port 'ax').
+# 
+#         Region: /servo2_vlg_vec_tst/i1/\servo_incremental_input|pwm_1|Mult0~8 
+# ** Warning: (vsim-3016) servo2.vo(4952): Port type is incompatible with connection (port 'ax').
+# 
+#         Region: /servo2_vlg_vec_tst/i1/\servo_incremental_input|pwm_1|Mult0~8 
+# ** Warning: (vsim-3016) servo2.vo(4952): Port type is incompatible with connection (port 'ax').
+# 
+#         Region: /servo2_vlg_vec_tst/i1/\servo_incremental_input|pwm_1|Mult0~8 
+# ** Warning: (vsim-3016) servo2.vo(4952): Port type is incompatible with connection (port 'ax').
+# 
+#         Region: /servo2_vlg_vec_tst/i1/\servo_incremental_input|pwm_1|Mult0~8 
+# ** Warning: (vsim-3016) servo2.vo(4952): Port type is incompatible with connection (port 'ax').
+# 
+#         Region: /servo2_vlg_vec_tst/i1/\servo_incremental_input|pwm_1|Mult0~8 
+# ** Warning: (vsim-3015) servo2.vo(4952): [PCDPC] - Port size (1) does not match connection size (26) for port 'az'. The port definition is at: nofile(38).
+# 
+#         Region: /servo2_vlg_vec_tst/i1/\servo_incremental_input|pwm_1|Mult0~8 
+# ** Warning: (vsim-3015) servo2.vo(4952): [PCDPC] - Port size (16) does not match connection size (18) for port 'bx'. The port definition is at: nofile(38).
+# 
+#         Region: /servo2_vlg_vec_tst/i1/\servo_incremental_input|pwm_1|Mult0~8 
+# ** Warning: (vsim-3015) servo2.vo(4952): [PCDPC] - Port size (16) does not match connection size (19) for port 'by'. The port definition is at: nofile(38).
+# 
+#         Region: /servo2_vlg_vec_tst/i1/\servo_incremental_input|pwm_1|Mult0~8 
+# ** Warning: (vsim-3015) servo2.vo(4952): [PCDPC] - Port size (1) does not match connection size (18) for port 'bz'. The port definition is at: nofile(38).
+# 
+#         Region: /servo2_vlg_vec_tst/i1/\servo_incremental_input|pwm_1|Mult0~8 
+# ** Warning: (vsim-3015) servo2.vo(4952): [PCDPC] - Port size (8) does not match connection size (27) for port 'scanin'. The port definition is at: nofile(38).
+# 
+#         Region: /servo2_vlg_vec_tst/i1/\servo_incremental_input|pwm_1|Mult0~8 
+# ** Warning: (vsim-3015) servo2.vo(4952): [PCDPC] - Port size (64) does not match connection size (1) for port 'chainin'. The port definition is at: nofile(38).
+# 
+#         Region: /servo2_vlg_vec_tst/i1/\servo_incremental_input|pwm_1|Mult0~8 
+# Simulation passed !
+# ** Note: $finish    : servo2.vwf.vt(304)
+#    Time: 1 us  Iteration: 0  Instance: /servo2_vlg_vec_tst/tb_out
+# End time: 11:49:16 on Dec 02,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 26

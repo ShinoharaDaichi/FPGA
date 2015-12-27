@@ -1,0 +1,90 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Daichi/hubiC/ELN/FPGA/Projects/PWM/simulation/qsim
+vpwm
+Z1 !s110 1449931658
+!i10b 1
+!s100 <ag4JlZd1IMOVnNJKlnS63
+I]]Dj2>UMH;l1=C289TcS:0
+Z2 V`JN@9S9cnhjKRR_L]QIcM3
+R0
+w1449931657
+8pwm.vo
+Fpwm.vo
+L0 32
+Z3 OV;L;10.3d;59
+r1
+!s85 0
+31
+!s108 1449931658.184000
+!s107 pwm.vo|
+!s90 -work|work|pwm.vo|
+!i113 1
+Z4 o-work work
+vpwm_vlg_check_tst
+R1
+!i10b 1
+!s100 oC0=kMK`[V8]f1JA3:]g?3
+INk?TfJQH1?g3VgHJI4;`j0
+R2
+R0
+Z5 w1449931655
+Z6 8Waveform.vwf.vt
+Z7 FWaveform.vwf.vt
+L0 64
+R3
+r1
+!s85 0
+31
+Z8 !s108 1449931658.255000
+Z9 !s107 Waveform.vwf.vt|
+Z10 !s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R4
+vpwm_vlg_sample_tst
+R1
+!i10b 1
+!s100 @?V2G88B37Cmcc@IA<3WH1
+IGU9dif1VLcF@6zRD3UU>73
+R2
+R0
+R5
+R6
+R7
+L0 30
+R3
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R4
+vpwm_vlg_vec_tst
+R1
+!i10b 1
+!s100 ZLz=ihinC=2Se6:YZVacU2
+IHnc0H1MN`gd[40887a8NF3
+R2
+R0
+R5
+R6
+R7
+L0 186
+R3
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R4

@@ -1,0 +1,9 @@
+
+State Machine - |adc|state
+Name state.wait_between_sent state.wait_while_busy state.send state.start_conversion state.wait_input state.initial 
+state.initial 0 0 0 0 0 0 
+state.wait_input 0 0 0 0 1 1 
+state.start_conversion 0 0 0 1 0 1 
+state.send 0 0 1 0 0 1 
+state.wait_while_busy 0 1 0 0 0 1 
+state.wait_between_sent 1 0 0 0 0 1 

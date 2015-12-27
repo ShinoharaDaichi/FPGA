@@ -1,0 +1,45 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate C:\Users\Daichi\hubiC\ELN\FPGA\Projects\qsys\test.qsys --block-symbol-file --output-directory=C:\Users\Daichi\hubiC\ELN\FPGA\Projects\qsys\test --family="Cyclone V" --part=5CGXFC5C6F27C7
+Progress: Loading qsys/test.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 15.0]
+Progress: Parameterizing module clk_0
+Progress: Adding spi_0 [altera_avalon_spi 15.0]
+Progress: Parameterizing module spi_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Warning: test.clk_0: The input clock frequency must be known or set by the parent if this is a subsystem.
+Warning: test.spi_0: spi_0.external must be exported, or connected to a matching conduit.
+Warning: test.spi_0: Interrupt sender spi_0.irq is not connected to an interrupt receiver
+Warning: test.spi_0: spi_0.spi_control_port must be connected to an Avalon-MM master
+Info: ip-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate C:\Users\Daichi\hubiC\ELN\FPGA\Projects\qsys\test.qsys --synthesis=VHDL --output-directory=C:\Users\Daichi\hubiC\ELN\FPGA\Projects\qsys\test\synthesis --family="Cyclone V" --part=5CGXFC5C6F27C7
+Progress: Loading qsys/test.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 15.0]
+Progress: Parameterizing module clk_0
+Progress: Adding spi_0 [altera_avalon_spi 15.0]
+Progress: Parameterizing module spi_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Warning: test.clk_0: The input clock frequency must be known or set by the parent if this is a subsystem.
+Warning: test.spi_0: spi_0.external must be exported, or connected to a matching conduit.
+Warning: test.spi_0: Interrupt sender spi_0.irq is not connected to an interrupt receiver
+Warning: test.spi_0: spi_0.spi_control_port must be connected to an Avalon-MM master
+Info: test: Generating test "test" for QUARTUS_SYNTH
+Info: spi_0: Starting RTL generation for module 'test_spi_0'
+Info: spi_0:   Generation command is [exec C:/altera/15.0/quartus/bin64/perl/bin/perl.exe -I C:/altera/15.0/quartus/bin64/perl/lib -I C:/altera/15.0/quartus/sopc_builder/bin/europa -I C:/altera/15.0/quartus/sopc_builder/bin/perl_lib -I C:/altera/15.0/quartus/sopc_builder/bin -I C:/altera/15.0/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/15.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_spi -- C:/altera/15.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_spi/generate_rtl.pl --name=test_spi_0 --dir=C:/Users/Daichi/AppData/Local/Temp/alt6786_277216856377665149.dir/0001_spi_0_gen/ --quartus_dir=C:/altera/15.0/quartus --verilog --config=C:/Users/Daichi/AppData/Local/Temp/alt6786_277216856377665149.dir/0001_spi_0_gen//test_spi_0_component_configuration.pl  --do_build_sim=0  ]
+Info: spi_0: Illegal division by zero at C:/altera/15.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_spi/em_spi_qsys.pm line 338.
+Error: spi_0: Failed to generate module test_spi_0
+Info: spi_0: Done RTL generation for module 'test_spi_0'
+Info: spi_0: "test" instantiated altera_avalon_spi "spi_0"
+Info: test: Done "test" with 2 modules, 1 files
+Error: ip-generate failed with exit code 1: 1 Error, 4 Warnings
+Info: Finished: Create HDL design files for synthesis

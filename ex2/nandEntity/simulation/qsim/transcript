@@ -1,0 +1,37 @@
+# do nandEntity.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 13:26:20 on Dec 08,2015
+# vlog -work work nandEntity.vo 
+# -- Compiling module nandEntity
+# 
+# Top level modules:
+# 	nandEntity
+# End time: 13:26:21 on Dec 08,2015, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 13:26:21 on Dec 08,2015
+# vlog -work work Waveform.vwf.vt 
+# -- Compiling module nandEntity_vlg_sample_tst
+# -- Compiling module nandEntity_vlg_check_tst
+# -- Compiling module nandEntity_vlg_vec_tst
+# 
+# Top level modules:
+# 	nandEntity_vlg_vec_tst
+# End time: 13:26:21 on Dec 08,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -c -do "nandEntity.do" 
+# Start time: 13:26:21 on Dec 08,2015
+# Loading work.nandEntity_vlg_vec_tst
+# Loading work.nandEntity
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading cycloneive_ver.cycloneive_lcell_comb
+# Loading work.nandEntity_vlg_sample_tst
+# Loading work.nandEntity_vlg_check_tst
+# Simulation passed !
+# ** Note: $finish    : Waveform.vwf.vt(151)
+#    Time: 1 us  Iteration: 0  Instance: /nandEntity_vlg_vec_tst/tb_out
+# End time: 13:26:21 on Dec 08,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0

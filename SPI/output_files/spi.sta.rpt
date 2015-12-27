@@ -1,0 +1,1308 @@
+TimeQuest Timing Analyzer report for spi
+Thu Dec 10 13:49:00 2015
+Quartus II 64-Bit Version 15.0.0 Build 145 04/22/2015 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. TimeQuest Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Slow 1100mV 85C Model Fmax Summary
+  6. Timing Closure Recommendations
+  7. Slow 1100mV 85C Model Setup Summary
+  8. Slow 1100mV 85C Model Hold Summary
+  9. Slow 1100mV 85C Model Recovery Summary
+ 10. Slow 1100mV 85C Model Removal Summary
+ 11. Slow 1100mV 85C Model Minimum Pulse Width Summary
+ 12. Setup Times
+ 13. Hold Times
+ 14. Clock to Output Times
+ 15. Minimum Clock to Output Times
+ 16. Propagation Delay
+ 17. Minimum Propagation Delay
+ 18. Output Enable Times
+ 19. Minimum Output Enable Times
+ 20. Output Disable Times
+ 21. Minimum Output Disable Times
+ 22. Slow 1100mV 85C Model Metastability Summary
+ 23. Slow 1100mV 0C Model Fmax Summary
+ 24. Slow 1100mV 0C Model Setup Summary
+ 25. Slow 1100mV 0C Model Hold Summary
+ 26. Slow 1100mV 0C Model Recovery Summary
+ 27. Slow 1100mV 0C Model Removal Summary
+ 28. Slow 1100mV 0C Model Minimum Pulse Width Summary
+ 29. Setup Times
+ 30. Hold Times
+ 31. Clock to Output Times
+ 32. Minimum Clock to Output Times
+ 33. Propagation Delay
+ 34. Minimum Propagation Delay
+ 35. Output Enable Times
+ 36. Minimum Output Enable Times
+ 37. Output Disable Times
+ 38. Minimum Output Disable Times
+ 39. Slow 1100mV 0C Model Metastability Summary
+ 40. Fast 1100mV 85C Model Setup Summary
+ 41. Fast 1100mV 85C Model Hold Summary
+ 42. Fast 1100mV 85C Model Recovery Summary
+ 43. Fast 1100mV 85C Model Removal Summary
+ 44. Fast 1100mV 85C Model Minimum Pulse Width Summary
+ 45. Setup Times
+ 46. Hold Times
+ 47. Clock to Output Times
+ 48. Minimum Clock to Output Times
+ 49. Propagation Delay
+ 50. Minimum Propagation Delay
+ 51. Output Enable Times
+ 52. Minimum Output Enable Times
+ 53. Output Disable Times
+ 54. Minimum Output Disable Times
+ 55. Fast 1100mV 85C Model Metastability Summary
+ 56. Fast 1100mV 0C Model Setup Summary
+ 57. Fast 1100mV 0C Model Hold Summary
+ 58. Fast 1100mV 0C Model Recovery Summary
+ 59. Fast 1100mV 0C Model Removal Summary
+ 60. Fast 1100mV 0C Model Minimum Pulse Width Summary
+ 61. Setup Times
+ 62. Hold Times
+ 63. Clock to Output Times
+ 64. Minimum Clock to Output Times
+ 65. Propagation Delay
+ 66. Minimum Propagation Delay
+ 67. Output Enable Times
+ 68. Minimum Output Enable Times
+ 69. Output Disable Times
+ 70. Minimum Output Disable Times
+ 71. Fast 1100mV 0C Model Metastability Summary
+ 72. Multicorner Timing Analysis Summary
+ 73. Setup Times
+ 74. Hold Times
+ 75. Clock to Output Times
+ 76. Minimum Clock to Output Times
+ 77. Propagation Delay
+ 78. Minimum Propagation Delay
+ 79. Board Trace Model Assignments
+ 80. Input Transition Times
+ 81. Signal Integrity Metrics (Slow 1100mv 0c Model)
+ 82. Signal Integrity Metrics (Slow 1100mv 85c Model)
+ 83. Signal Integrity Metrics (Fast 1100mv 0c Model)
+ 84. Signal Integrity Metrics (Fast 1100mv 85c Model)
+ 85. Setup Transfers
+ 86. Hold Transfers
+ 87. Report TCCS
+ 88. Report RSKM
+ 89. Unconstrained Paths
+ 90. TimeQuest Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus II License Agreement,
+the Altera MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Altera and sold by Altera or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++-------------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                       ;
++--------------------+----------------------------------------------------+
+; Quartus II Version ; Version 15.0.0 Build 145 04/22/2015 SJ Web Edition ;
+; Revision Name      ; spi                                                ;
+; Device Family      ; Cyclone V                                          ;
+; Device Name        ; 5CGXFC5C6F27C7                                     ;
+; Timing Models      ; Final                                              ;
+; Delay Model        ; Combined                                           ;
+; Rise/Fall Delays   ; Enabled                                            ;
++--------------------+----------------------------------------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 8      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                                                           ;
++-------------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-----------------------------+
+; Clock Name              ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets                     ;
++-------------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-----------------------------+
+; clk                     ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clk }                     ;
+; state.send_spi          ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { state.send_spi }          ;
+; state.wait_between_sent ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { state.wait_between_sent } ;
+; state.wait_input        ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { state.wait_input }        ;
++-------------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-----------------------------+
+
+
++--------------------------------------------------+
+; Slow 1100mV 85C Model Fmax Summary               ;
++------------+-----------------+------------+------+
+; Fmax       ; Restricted Fmax ; Clock Name ; Note ;
++------------+-----------------+------------+------+
+; 170.56 MHz ; 170.56 MHz      ; clk        ;      ;
++------------+-----------------+------------+------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+
+
+----------------------------------
+; Timing Closure Recommendations ;
+----------------------------------
+HTML report is unavailable in plain text report export.
+
+
++--------------------------------------------------+
+; Slow 1100mV 85C Model Setup Summary              ;
++-------------------------+--------+---------------+
+; Clock                   ; Slack  ; End Point TNS ;
++-------------------------+--------+---------------+
+; clk                     ; -4.863 ; -299.386      ;
+; state.send_spi          ; -3.496 ; -3.496        ;
+; state.wait_input        ; -3.117 ; -6.343        ;
+; state.wait_between_sent ; -1.740 ; -1.740        ;
++-------------------------+--------+---------------+
+
+
++-------------------------------------------------+
+; Slow 1100mV 85C Model Hold Summary              ;
++-------------------------+-------+---------------+
+; Clock                   ; Slack ; End Point TNS ;
++-------------------------+-------+---------------+
+; clk                     ; 0.059 ; 0.000         ;
+; state.wait_input        ; 0.743 ; 0.000         ;
+; state.wait_between_sent ; 0.957 ; 0.000         ;
+; state.send_spi          ; 2.654 ; 0.000         ;
++-------------------------+-------+---------------+
+
+
+------------------------------------------
+; Slow 1100mV 85C Model Recovery Summary ;
+------------------------------------------
+No paths to report.
+
+
+-----------------------------------------
+; Slow 1100mV 85C Model Removal Summary ;
+-----------------------------------------
+No paths to report.
+
+
++---------------------------------------------------+
+; Slow 1100mV 85C Model Minimum Pulse Width Summary ;
++-------------------------+--------+----------------+
+; Clock                   ; Slack  ; End Point TNS  ;
++-------------------------+--------+----------------+
+; clk                     ; -0.538 ; -68.548        ;
+; state.send_spi          ; 0.329  ; 0.000          ;
+; state.wait_input        ; 0.335  ; 0.000          ;
+; state.wait_between_sent ; 0.398  ; 0.000          ;
++-------------------------+--------+----------------+
+
+
++-----------------------------------------------------------------------+
+; Setup Times                                                           ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; ena       ; clk        ; 3.588 ; 3.428 ; Rise       ; clk             ;
+; reset_n   ; clk        ; 3.837 ; 4.520 ; Rise       ; clk             ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-----------------------------------------------------------------------+
+; Hold Times                                                            ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; ena       ; clk        ; 0.269 ; 0.095 ; Rise       ; clk             ;
+; reset_n   ; clk        ; 0.320 ; 0.051 ; Rise       ; clk             ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------------------------------------------+
+; Clock to Output Times                                                                                 ;
++--------------------+-------------------------+--------+--------+------------+-------------------------+
+; Data Port          ; Clock Port              ; Rise   ; Fall   ; Clock Edge ; Clock Reference         ;
++--------------------+-------------------------+--------+--------+------------+-------------------------+
+; adc_sck            ; clk                     ; 10.983 ; 11.231 ; Rise       ; clk                     ;
+; sclk               ; clk                     ; 8.696  ; 8.850  ; Rise       ; clk                     ;
+; sdio               ; clk                     ; 9.343  ; 9.549  ; Rise       ; clk                     ;
+; sinitial           ; clk                     ; 8.572  ; 8.412  ; Rise       ; clk                     ;
+; swait_while_busy   ; clk                     ; 9.953  ; 10.448 ; Rise       ; clk                     ;
+; ssend              ; state.send_spi          ; 4.520  ;        ; Rise       ; state.send_spi          ;
+; test               ; state.send_spi          ; 6.560  ; 6.618  ; Rise       ; state.send_spi          ;
+; ssend              ; state.send_spi          ;        ; 4.653  ; Fall       ; state.send_spi          ;
+; swait_between_sent ; state.wait_between_sent ; 6.090  ;        ; Rise       ; state.wait_between_sent ;
+; swait_between_sent ; state.wait_between_sent ;        ; 6.571  ; Fall       ; state.wait_between_sent ;
+; swait_input        ; state.wait_input        ; 5.029  ;        ; Rise       ; state.wait_input        ;
+; test               ; state.wait_input        ; 7.054  ; 7.112  ; Rise       ; state.wait_input        ;
+; swait_input        ; state.wait_input        ;        ; 5.312  ; Fall       ; state.wait_input        ;
++--------------------+-------------------------+--------+--------+------------+-------------------------+
+
+
++-----------------------------------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                                                       ;
++--------------------+-------------------------+-------+-------+------------+-------------------------+
+; Data Port          ; Clock Port              ; Rise  ; Fall  ; Clock Edge ; Clock Reference         ;
++--------------------+-------------------------+-------+-------+------------+-------------------------+
+; adc_sck            ; clk                     ; 8.853 ; 8.981 ; Rise       ; clk                     ;
+; sclk               ; clk                     ; 7.953 ; 8.044 ; Rise       ; clk                     ;
+; sdio               ; clk                     ; 8.537 ; 8.653 ; Rise       ; clk                     ;
+; sinitial           ; clk                     ; 7.769 ; 7.675 ; Rise       ; clk                     ;
+; swait_while_busy   ; clk                     ; 9.086 ; 9.408 ; Rise       ; clk                     ;
+; ssend              ; state.send_spi          ; 4.247 ;       ; Rise       ; state.send_spi          ;
+; test               ; state.send_spi          ; 4.910 ; 4.968 ; Rise       ; state.send_spi          ;
+; ssend              ; state.send_spi          ;       ; 4.336 ; Fall       ; state.send_spi          ;
+; swait_between_sent ; state.wait_between_sent ; 5.667 ;       ; Rise       ; state.wait_between_sent ;
+; swait_between_sent ; state.wait_between_sent ;       ; 5.977 ; Fall       ; state.wait_between_sent ;
+; swait_input        ; state.wait_input        ; 4.685 ;       ; Rise       ; state.wait_input        ;
+; test               ; state.wait_input        ; 5.289 ; 5.347 ; Rise       ; state.wait_input        ;
+; swait_input        ; state.wait_input        ;       ; 4.871 ; Fall       ; state.wait_input        ;
++--------------------+-------------------------+-------+-------+------------+-------------------------+
+
+
++-----------------------------------------------------+
+; Propagation Delay                                   ;
++------------+-------------+-------+----+----+--------+
+; Input Port ; Output Port ; RR    ; RF ; FR ; FF     ;
++------------+-------------+-------+----+----+--------+
+; sdio       ; adc_sdi     ; 9.883 ;    ;    ; 10.136 ;
+; sdio       ; adc_sdo     ; 9.925 ;    ;    ; 10.184 ;
+; sdio       ; adc_sdot    ; 8.650 ;    ;    ; 8.850  ;
++------------+-------------+-------+----+----+--------+
+
+
++----------------------------------------------------+
+; Minimum Propagation Delay                          ;
++------------+-------------+-------+----+----+-------+
+; Input Port ; Output Port ; RR    ; RF ; FR ; FF    ;
++------------+-------------+-------+----+----+-------+
+; sdio       ; adc_sdi     ; 7.973 ;    ;    ; 8.178 ;
+; sdio       ; adc_sdo     ; 8.015 ;    ;    ; 8.226 ;
+; sdio       ; adc_sdot    ; 8.022 ;    ;    ; 8.168 ;
++------------+-------------+-------+----+----+-------+
+
+
++-------------------------------------------------------------------------+
+; Output Enable Times                                                     ;
++-----------+------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+------------+--------+--------+------------+-----------------+
+; sdio      ; clk        ; 11.033 ; 11.069 ; Rise       ; clk             ;
++-----------+------------+--------+--------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Minimum Output Enable Times                                             ;
++-----------+------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+------------+--------+--------+------------+-----------------+
+; sdio      ; clk        ; 10.075 ; 10.110 ; Rise       ; clk             ;
++-----------+------------+--------+--------+------------+-----------------+
+
+
++-------------------------------------------------------------------------------+
+; Output Disable Times                                                          ;
++-----------+------------+-----------+-----------+------------+-----------------+
+; Data Port ; Clock Port ; 0 to Hi-Z ; 1 to Hi-Z ; Clock Edge ; Clock Reference ;
++-----------+------------+-----------+-----------+------------+-----------------+
+; sdio      ; clk        ; 11.497    ; 11.461    ; Rise       ; clk             ;
++-----------+------------+-----------+-----------+------------+-----------------+
+
+
++-------------------------------------------------------------------------------+
+; Minimum Output Disable Times                                                  ;
++-----------+------------+-----------+-----------+------------+-----------------+
+; Data Port ; Clock Port ; 0 to Hi-Z ; 1 to Hi-Z ; Clock Edge ; Clock Reference ;
++-----------+------------+-----------+-----------+------------+-----------------+
+; sdio      ; clk        ; 10.394    ; 10.359    ; Rise       ; clk             ;
++-----------+------------+-----------+-----------+------------+-----------------+
+
+
+-----------------------------------------------
+; Slow 1100mV 85C Model Metastability Summary ;
+-----------------------------------------------
+No synchronizer chains to report.
+
+
++--------------------------------------------------+
+; Slow 1100mV 0C Model Fmax Summary                ;
++------------+-----------------+------------+------+
+; Fmax       ; Restricted Fmax ; Clock Name ; Note ;
++------------+-----------------+------------+------+
+; 172.09 MHz ; 172.09 MHz      ; clk        ;      ;
++------------+-----------------+------------+------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+
+
++--------------------------------------------------+
+; Slow 1100mV 0C Model Setup Summary               ;
++-------------------------+--------+---------------+
+; Clock                   ; Slack  ; End Point TNS ;
++-------------------------+--------+---------------+
+; clk                     ; -4.811 ; -290.318      ;
+; state.send_spi          ; -3.640 ; -3.640        ;
+; state.wait_input        ; -3.199 ; -6.528        ;
+; state.wait_between_sent ; -1.730 ; -1.730        ;
++-------------------------+--------+---------------+
+
+
++--------------------------------------------------+
+; Slow 1100mV 0C Model Hold Summary                ;
++-------------------------+--------+---------------+
+; Clock                   ; Slack  ; End Point TNS ;
++-------------------------+--------+---------------+
+; clk                     ; -0.280 ; -1.500        ;
+; state.wait_input        ; 0.765  ; 0.000         ;
+; state.wait_between_sent ; 0.959  ; 0.000         ;
+; state.send_spi          ; 2.707  ; 0.000         ;
++-------------------------+--------+---------------+
+
+
+-----------------------------------------
+; Slow 1100mV 0C Model Recovery Summary ;
+-----------------------------------------
+No paths to report.
+
+
+----------------------------------------
+; Slow 1100mV 0C Model Removal Summary ;
+----------------------------------------
+No paths to report.
+
+
++--------------------------------------------------+
+; Slow 1100mV 0C Model Minimum Pulse Width Summary ;
++-------------------------+--------+---------------+
+; Clock                   ; Slack  ; End Point TNS ;
++-------------------------+--------+---------------+
+; clk                     ; -0.538 ; -69.149       ;
+; state.wait_input        ; 0.274  ; 0.000         ;
+; state.send_spi          ; 0.300  ; 0.000         ;
+; state.wait_between_sent ; 0.398  ; 0.000         ;
++-------------------------+--------+---------------+
+
+
++-----------------------------------------------------------------------+
+; Setup Times                                                           ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; ena       ; clk        ; 3.416 ; 3.215 ; Rise       ; clk             ;
+; reset_n   ; clk        ; 3.534 ; 4.275 ; Rise       ; clk             ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-----------------------------------------------------------------------+
+; Hold Times                                                            ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; ena       ; clk        ; 0.349 ; 0.174 ; Rise       ; clk             ;
+; reset_n   ; clk        ; 0.400 ; 0.159 ; Rise       ; clk             ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------------------------------------------+
+; Clock to Output Times                                                                                 ;
++--------------------+-------------------------+--------+--------+------------+-------------------------+
+; Data Port          ; Clock Port              ; Rise   ; Fall   ; Clock Edge ; Clock Reference         ;
++--------------------+-------------------------+--------+--------+------------+-------------------------+
+; adc_sck            ; clk                     ; 10.760 ; 11.056 ; Rise       ; clk                     ;
+; sclk               ; clk                     ; 8.534  ; 8.719  ; Rise       ; clk                     ;
+; sdio               ; clk                     ; 9.132  ; 9.378  ; Rise       ; clk                     ;
+; sinitial           ; clk                     ; 8.437  ; 8.285  ; Rise       ; clk                     ;
+; swait_while_busy   ; clk                     ; 9.694  ; 10.223 ; Rise       ; clk                     ;
+; ssend              ; state.send_spi          ; 4.341  ;        ; Rise       ; state.send_spi          ;
+; test               ; state.send_spi          ; 6.362  ; 6.448  ; Rise       ; state.send_spi          ;
+; ssend              ; state.send_spi          ;        ; 4.478  ; Fall       ; state.send_spi          ;
+; swait_between_sent ; state.wait_between_sent ; 5.793  ;        ; Rise       ; state.wait_between_sent ;
+; swait_between_sent ; state.wait_between_sent ;        ; 6.308  ; Fall       ; state.wait_between_sent ;
+; swait_input        ; state.wait_input        ; 4.823  ;        ; Rise       ; state.wait_input        ;
+; test               ; state.wait_input        ; 6.940  ; 7.026  ; Rise       ; state.wait_input        ;
+; swait_input        ; state.wait_input        ;        ; 5.129  ; Fall       ; state.wait_input        ;
++--------------------+-------------------------+--------+--------+------------+-------------------------+
+
+
++-----------------------------------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                                                       ;
++--------------------+-------------------------+-------+-------+------------+-------------------------+
+; Data Port          ; Clock Port              ; Rise  ; Fall  ; Clock Edge ; Clock Reference         ;
++--------------------+-------------------------+-------+-------+------------+-------------------------+
+; adc_sck            ; clk                     ; 8.659 ; 8.853 ; Rise       ; clk                     ;
+; sclk               ; clk                     ; 7.800 ; 7.944 ; Rise       ; clk                     ;
+; sdio               ; clk                     ; 8.340 ; 8.508 ; Rise       ; clk                     ;
+; sinitial           ; clk                     ; 7.665 ; 7.564 ; Rise       ; clk                     ;
+; swait_while_busy   ; clk                     ; 8.840 ; 9.211 ; Rise       ; clk                     ;
+; ssend              ; state.send_spi          ; 4.075 ;       ; Rise       ; state.send_spi          ;
+; test               ; state.send_spi          ; 4.724 ; 4.810 ; Rise       ; state.send_spi          ;
+; ssend              ; state.send_spi          ;       ; 4.177 ; Fall       ; state.send_spi          ;
+; swait_between_sent ; state.wait_between_sent ; 5.377 ;       ; Rise       ; state.wait_between_sent ;
+; swait_between_sent ; state.wait_between_sent ;       ; 5.736 ; Fall       ; state.wait_between_sent ;
+; swait_input        ; state.wait_input        ; 4.488 ;       ; Rise       ; state.wait_input        ;
+; test               ; state.wait_input        ; 5.165 ; 5.251 ; Rise       ; state.wait_input        ;
+; swait_input        ; state.wait_input        ;       ; 4.711 ; Fall       ; state.wait_input        ;
++--------------------+-------------------------+-------+-------+------------+-------------------------+
+
+
++----------------------------------------------------+
+; Propagation Delay                                  ;
++------------+-------------+-------+----+----+-------+
+; Input Port ; Output Port ; RR    ; RF ; FR ; FF    ;
++------------+-------------+-------+----+----+-------+
+; sdio       ; adc_sdi     ; 9.548 ;    ;    ; 9.885 ;
+; sdio       ; adc_sdo     ; 9.593 ;    ;    ; 9.936 ;
+; sdio       ; adc_sdot    ; 8.289 ;    ;    ; 8.594 ;
++------------+-------------+-------+----+----+-------+
+
+
++----------------------------------------------------+
+; Minimum Propagation Delay                          ;
++------------+-------------+-------+----+----+-------+
+; Input Port ; Output Port ; RR    ; RF ; FR ; FF    ;
++------------+-------------+-------+----+----+-------+
+; sdio       ; adc_sdi     ; 7.652 ;    ;    ; 7.939 ;
+; sdio       ; adc_sdo     ; 7.697 ;    ;    ; 7.990 ;
+; sdio       ; adc_sdot    ; 7.667 ;    ;    ; 7.919 ;
++------------+-------------+-------+----+----+-------+
+
+
++-------------------------------------------------------------------------+
+; Output Enable Times                                                     ;
++-----------+------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+------------+--------+--------+------------+-----------------+
+; sdio      ; clk        ; 10.725 ; 10.767 ; Rise       ; clk             ;
++-----------+------------+--------+--------+------------+-----------------+
+
+
++-----------------------------------------------------------------------+
+; Minimum Output Enable Times                                           ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; sdio      ; clk        ; 9.808 ; 9.848 ; Rise       ; clk             ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------------------+
+; Output Disable Times                                                          ;
++-----------+------------+-----------+-----------+------------+-----------------+
+; Data Port ; Clock Port ; 0 to Hi-Z ; 1 to Hi-Z ; Clock Edge ; Clock Reference ;
++-----------+------------+-----------+-----------+------------+-----------------+
+; sdio      ; clk        ; 11.221    ; 11.179    ; Rise       ; clk             ;
++-----------+------------+-----------+-----------+------------+-----------------+
+
+
++-------------------------------------------------------------------------------+
+; Minimum Output Disable Times                                                  ;
++-----------+------------+-----------+-----------+------------+-----------------+
+; Data Port ; Clock Port ; 0 to Hi-Z ; 1 to Hi-Z ; Clock Edge ; Clock Reference ;
++-----------+------------+-----------+-----------+------------+-----------------+
+; sdio      ; clk        ; 10.176    ; 10.136    ; Rise       ; clk             ;
++-----------+------------+-----------+-----------+------------+-----------------+
+
+
+----------------------------------------------
+; Slow 1100mV 0C Model Metastability Summary ;
+----------------------------------------------
+No synchronizer chains to report.
+
+
++--------------------------------------------------+
+; Fast 1100mV 85C Model Setup Summary              ;
++-------------------------+--------+---------------+
+; Clock                   ; Slack  ; End Point TNS ;
++-------------------------+--------+---------------+
+; clk                     ; -1.999 ; -124.833      ;
+; state.send_spi          ; -1.075 ; -1.075        ;
+; state.wait_input        ; -0.933 ; -2.084        ;
+; state.wait_between_sent ; -0.660 ; -0.660        ;
++-------------------------+--------+---------------+
+
+
++-------------------------------------------------+
+; Fast 1100mV 85C Model Hold Summary              ;
++-------------------------+-------+---------------+
+; Clock                   ; Slack ; End Point TNS ;
++-------------------------+-------+---------------+
+; clk                     ; 0.156 ; 0.000         ;
+; state.wait_input        ; 0.330 ; 0.000         ;
+; state.wait_between_sent ; 0.466 ; 0.000         ;
+; state.send_spi          ; 1.282 ; 0.000         ;
++-------------------------+-------+---------------+
+
+
+------------------------------------------
+; Fast 1100mV 85C Model Recovery Summary ;
+------------------------------------------
+No paths to report.
+
+
+-----------------------------------------
+; Fast 1100mV 85C Model Removal Summary ;
+-----------------------------------------
+No paths to report.
+
+
++---------------------------------------------------+
+; Fast 1100mV 85C Model Minimum Pulse Width Summary ;
++-------------------------+--------+----------------+
+; Clock                   ; Slack  ; End Point TNS  ;
++-------------------------+--------+----------------+
+; clk                     ; -0.106 ; -8.996         ;
+; state.wait_input        ; 0.400  ; 0.000          ;
+; state.wait_between_sent ; 0.449  ; 0.000          ;
+; state.send_spi          ; 0.451  ; 0.000          ;
++-------------------------+--------+----------------+
+
+
++-----------------------------------------------------------------------+
+; Setup Times                                                           ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; ena       ; clk        ; 2.044 ; 2.178 ; Rise       ; clk             ;
+; reset_n   ; clk        ; 1.933 ; 2.935 ; Rise       ; clk             ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++------------------------------------------------------------------------+
+; Hold Times                                                             ;
++-----------+------------+-------+--------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+--------+------------+-----------------+
+; ena       ; clk        ; 0.098 ; -0.399 ; Rise       ; clk             ;
+; reset_n   ; clk        ; 0.090 ; -0.441 ; Rise       ; clk             ;
++-----------+------------+-------+--------+------------+-----------------+
+
+
++-----------------------------------------------------------------------------------------------------+
+; Clock to Output Times                                                                               ;
++--------------------+-------------------------+-------+-------+------------+-------------------------+
+; Data Port          ; Clock Port              ; Rise  ; Fall  ; Clock Edge ; Clock Reference         ;
++--------------------+-------------------------+-------+-------+------------+-------------------------+
+; adc_sck            ; clk                     ; 5.626 ; 5.972 ; Rise       ; clk                     ;
+; sclk               ; clk                     ; 4.561 ; 4.783 ; Rise       ; clk                     ;
+; sdio               ; clk                     ; 4.899 ; 5.222 ; Rise       ; clk                     ;
+; sinitial           ; clk                     ; 4.632 ; 4.418 ; Rise       ; clk                     ;
+; swait_while_busy   ; clk                     ; 5.255 ; 5.784 ; Rise       ; clk                     ;
+; ssend              ; state.send_spi          ; 2.537 ;       ; Rise       ; state.send_spi          ;
+; test               ; state.send_spi          ; 3.421 ; 3.537 ; Rise       ; state.send_spi          ;
+; ssend              ; state.send_spi          ;       ; 2.726 ; Fall       ; state.send_spi          ;
+; swait_between_sent ; state.wait_between_sent ; 3.414 ;       ; Rise       ; state.wait_between_sent ;
+; swait_between_sent ; state.wait_between_sent ;       ; 3.959 ; Fall       ; state.wait_between_sent ;
+; swait_input        ; state.wait_input        ; 2.816 ;       ; Rise       ; state.wait_input        ;
+; test               ; state.wait_input        ; 3.597 ; 3.713 ; Rise       ; state.wait_input        ;
+; swait_input        ; state.wait_input        ;       ; 3.125 ; Fall       ; state.wait_input        ;
++--------------------+-------------------------+-------+-------+------------+-------------------------+
+
+
++-----------------------------------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                                                       ;
++--------------------+-------------------------+-------+-------+------------+-------------------------+
+; Data Port          ; Clock Port              ; Rise  ; Fall  ; Clock Edge ; Clock Reference         ;
++--------------------+-------------------------+-------+-------+------------+-------------------------+
+; adc_sck            ; clk                     ; 4.699 ; 4.977 ; Rise       ; clk                     ;
+; sclk               ; clk                     ; 4.259 ; 4.441 ; Rise       ; clk                     ;
+; sdio               ; clk                     ; 4.569 ; 4.842 ; Rise       ; clk                     ;
+; sinitial           ; clk                     ; 4.291 ; 4.117 ; Rise       ; clk                     ;
+; swait_while_busy   ; clk                     ; 4.886 ; 5.314 ; Rise       ; clk                     ;
+; ssend              ; state.send_spi          ; 2.430 ;       ; Rise       ; state.send_spi          ;
+; test               ; state.send_spi          ; 2.707 ; 2.821 ; Rise       ; state.send_spi          ;
+; ssend              ; state.send_spi          ;       ; 2.595 ; Fall       ; state.send_spi          ;
+; swait_between_sent ; state.wait_between_sent ; 3.216 ;       ; Rise       ; state.wait_between_sent ;
+; swait_between_sent ; state.wait_between_sent ;       ; 3.659 ; Fall       ; state.wait_between_sent ;
+; swait_input        ; state.wait_input        ; 2.671 ;       ; Rise       ; state.wait_input        ;
+; test               ; state.wait_input        ; 2.849 ; 2.963 ; Rise       ; state.wait_input        ;
+; swait_input        ; state.wait_input        ;       ; 2.924 ; Fall       ; state.wait_input        ;
++--------------------+-------------------------+-------+-------+------------+-------------------------+
+
+
++----------------------------------------------------+
+; Propagation Delay                                  ;
++------------+-------------+-------+----+----+-------+
+; Input Port ; Output Port ; RR    ; RF ; FR ; FF    ;
++------------+-------------+-------+----+----+-------+
+; sdio       ; adc_sdi     ; 5.099 ;    ;    ; 5.763 ;
+; sdio       ; adc_sdo     ; 5.110 ;    ;    ; 5.782 ;
+; sdio       ; adc_sdot    ; 4.552 ;    ;    ; 5.233 ;
++------------+-------------+-------+----+----+-------+
+
+
++----------------------------------------------------+
+; Minimum Propagation Delay                          ;
++------------+-------------+-------+----+----+-------+
+; Input Port ; Output Port ; RR    ; RF ; FR ; FF    ;
++------------+-------------+-------+----+----+-------+
+; sdio       ; adc_sdi     ; 4.253 ;    ;    ; 4.900 ;
+; sdio       ; adc_sdo     ; 4.264 ;    ;    ; 4.918 ;
+; sdio       ; adc_sdot    ; 4.281 ;    ;    ; 4.944 ;
++------------+-------------+-------+----+----+-------+
+
+
++-----------------------------------------------------------------------+
+; Output Enable Times                                                   ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; sdio      ; clk        ; 5.760 ; 5.848 ; Rise       ; clk             ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-----------------------------------------------------------------------+
+; Minimum Output Enable Times                                           ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; sdio      ; clk        ; 5.376 ; 5.464 ; Rise       ; clk             ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------------------+
+; Output Disable Times                                                          ;
++-----------+------------+-----------+-----------+------------+-----------------+
+; Data Port ; Clock Port ; 0 to Hi-Z ; 1 to Hi-Z ; Clock Edge ; Clock Reference ;
++-----------+------------+-----------+-----------+------------+-----------------+
+; sdio      ; clk        ; 6.319     ; 6.231     ; Rise       ; clk             ;
++-----------+------------+-----------+-----------+------------+-----------------+
+
+
++-------------------------------------------------------------------------------+
+; Minimum Output Disable Times                                                  ;
++-----------+------------+-----------+-----------+------------+-----------------+
+; Data Port ; Clock Port ; 0 to Hi-Z ; 1 to Hi-Z ; Clock Edge ; Clock Reference ;
++-----------+------------+-----------+-----------+------------+-----------------+
+; sdio      ; clk        ; 5.846     ; 5.758     ; Rise       ; clk             ;
++-----------+------------+-----------+-----------+------------+-----------------+
+
+
+-----------------------------------------------
+; Fast 1100mV 85C Model Metastability Summary ;
+-----------------------------------------------
+No synchronizer chains to report.
+
+
++--------------------------------------------------+
+; Fast 1100mV 0C Model Setup Summary               ;
++-------------------------+--------+---------------+
+; Clock                   ; Slack  ; End Point TNS ;
++-------------------------+--------+---------------+
+; clk                     ; -1.710 ; -97.539       ;
+; state.send_spi          ; -1.019 ; -1.019        ;
+; state.wait_input        ; -0.871 ; -1.820        ;
+; state.wait_between_sent ; -0.543 ; -0.543        ;
++-------------------------+--------+---------------+
+
+
++-------------------------------------------------+
+; Fast 1100mV 0C Model Hold Summary               ;
++-------------------------+-------+---------------+
+; Clock                   ; Slack ; End Point TNS ;
++-------------------------+-------+---------------+
+; clk                     ; 0.053 ; 0.000         ;
+; state.wait_input        ; 0.291 ; 0.000         ;
+; state.wait_between_sent ; 0.418 ; 0.000         ;
+; state.send_spi          ; 1.248 ; 0.000         ;
++-------------------------+-------+---------------+
+
+
+-----------------------------------------
+; Fast 1100mV 0C Model Recovery Summary ;
+-----------------------------------------
+No paths to report.
+
+
+----------------------------------------
+; Fast 1100mV 0C Model Removal Summary ;
+----------------------------------------
+No paths to report.
+
+
++--------------------------------------------------+
+; Fast 1100mV 0C Model Minimum Pulse Width Summary ;
++-------------------------+--------+---------------+
+; Clock                   ; Slack  ; End Point TNS ;
++-------------------------+--------+---------------+
+; clk                     ; -0.101 ; -8.692        ;
+; state.wait_input        ; 0.427  ; 0.000         ;
+; state.send_spi          ; 0.449  ; 0.000         ;
+; state.wait_between_sent ; 0.455  ; 0.000         ;
++-------------------------+--------+---------------+
+
+
++-----------------------------------------------------------------------+
+; Setup Times                                                           ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; ena       ; clk        ; 1.838 ; 2.013 ; Rise       ; clk             ;
+; reset_n   ; clk        ; 1.717 ; 2.640 ; Rise       ; clk             ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++------------------------------------------------------------------------+
+; Hold Times                                                             ;
++-----------+------------+-------+--------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+--------+------------+-----------------+
+; ena       ; clk        ; 0.088 ; -0.398 ; Rise       ; clk             ;
+; reset_n   ; clk        ; 0.098 ; -0.411 ; Rise       ; clk             ;
++-----------+------------+-------+--------+------------+-----------------+
+
+
++-----------------------------------------------------------------------------------------------------+
+; Clock to Output Times                                                                               ;
++--------------------+-------------------------+-------+-------+------------+-------------------------+
+; Data Port          ; Clock Port              ; Rise  ; Fall  ; Clock Edge ; Clock Reference         ;
++--------------------+-------------------------+-------+-------+------------+-------------------------+
+; adc_sck            ; clk                     ; 5.300 ; 5.577 ; Rise       ; clk                     ;
+; sclk               ; clk                     ; 4.288 ; 4.448 ; Rise       ; clk                     ;
+; sdio               ; clk                     ; 4.524 ; 4.814 ; Rise       ; clk                     ;
+; sinitial           ; clk                     ; 4.315 ; 4.131 ; Rise       ; clk                     ;
+; swait_while_busy   ; clk                     ; 4.846 ; 5.302 ; Rise       ; clk                     ;
+; ssend              ; state.send_spi          ; 2.332 ;       ; Rise       ; state.send_spi          ;
+; test               ; state.send_spi          ; 3.230 ; 3.305 ; Rise       ; state.send_spi          ;
+; ssend              ; state.send_spi          ;       ; 2.485 ; Fall       ; state.send_spi          ;
+; swait_between_sent ; state.wait_between_sent ; 3.065 ;       ; Rise       ; state.wait_between_sent ;
+; swait_between_sent ; state.wait_between_sent ;       ; 3.534 ; Fall       ; state.wait_between_sent ;
+; swait_input        ; state.wait_input        ; 2.578 ;       ; Rise       ; state.wait_input        ;
+; test               ; state.wait_input        ; 3.412 ; 3.487 ; Rise       ; state.wait_input        ;
+; swait_input        ; state.wait_input        ;       ; 2.829 ; Fall       ; state.wait_input        ;
++--------------------+-------------------------+-------+-------+------------+-------------------------+
+
+
++-----------------------------------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                                                       ;
++--------------------+-------------------------+-------+-------+------------+-------------------------+
+; Data Port          ; Clock Port              ; Rise  ; Fall  ; Clock Edge ; Clock Reference         ;
++--------------------+-------------------------+-------+-------+------------+-------------------------+
+; adc_sck            ; clk                     ; 4.392 ; 4.613 ; Rise       ; clk                     ;
+; sclk               ; clk                     ; 4.001 ; 4.137 ; Rise       ; clk                     ;
+; sdio               ; clk                     ; 4.215 ; 4.461 ; Rise       ; clk                     ;
+; sinitial           ; clk                     ; 3.996 ; 3.844 ; Rise       ; clk                     ;
+; swait_while_busy   ; clk                     ; 4.502 ; 4.871 ; Rise       ; clk                     ;
+; ssend              ; state.send_spi          ; 2.232 ;       ; Rise       ; state.send_spi          ;
+; test               ; state.send_spi          ; 2.521 ; 2.593 ; Rise       ; state.send_spi          ;
+; ssend              ; state.send_spi          ;       ; 2.365 ; Fall       ; state.send_spi          ;
+; swait_between_sent ; state.wait_between_sent ; 2.888 ;       ; Rise       ; state.wait_between_sent ;
+; swait_between_sent ; state.wait_between_sent ;       ; 3.271 ; Fall       ; state.wait_between_sent ;
+; swait_input        ; state.wait_input        ; 2.444 ;       ; Rise       ; state.wait_input        ;
+; test               ; state.wait_input        ; 2.669 ; 2.741 ; Rise       ; state.wait_input        ;
+; swait_input        ; state.wait_input        ;       ; 2.653 ; Fall       ; state.wait_input        ;
++--------------------+-------------------------+-------+-------+------------+-------------------------+
+
+
++----------------------------------------------------+
+; Propagation Delay                                  ;
++------------+-------------+-------+----+----+-------+
+; Input Port ; Output Port ; RR    ; RF ; FR ; FF    ;
++------------+-------------+-------+----+----+-------+
+; sdio       ; adc_sdi     ; 4.780 ;    ;    ; 5.438 ;
+; sdio       ; adc_sdo     ; 4.804 ;    ;    ; 5.466 ;
+; sdio       ; adc_sdot    ; 4.217 ;    ;    ; 4.890 ;
++------------+-------------+-------+----+----+-------+
+
+
++----------------------------------------------------+
+; Minimum Propagation Delay                          ;
++------------+-------------+-------+----+----+-------+
+; Input Port ; Output Port ; RR    ; RF ; FR ; FF    ;
++------------+-------------+-------+----+----+-------+
+; sdio       ; adc_sdi     ; 3.947 ;    ;    ; 4.580 ;
+; sdio       ; adc_sdo     ; 3.972 ;    ;    ; 4.607 ;
+; sdio       ; adc_sdot    ; 3.962 ;    ;    ; 4.608 ;
++------------+-------------+-------+----+----+-------+
+
+
++-----------------------------------------------------------------------+
+; Output Enable Times                                                   ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; sdio      ; clk        ; 5.378 ; 5.448 ; Rise       ; clk             ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-----------------------------------------------------------------------+
+; Minimum Output Enable Times                                           ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; sdio      ; clk        ; 5.014 ; 5.084 ; Rise       ; clk             ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------------------+
+; Output Disable Times                                                          ;
++-----------+------------+-----------+-----------+------------+-----------------+
+; Data Port ; Clock Port ; 0 to Hi-Z ; 1 to Hi-Z ; Clock Edge ; Clock Reference ;
++-----------+------------+-----------+-----------+------------+-----------------+
+; sdio      ; clk        ; 5.837     ; 5.767     ; Rise       ; clk             ;
++-----------+------------+-----------+-----------+------------+-----------------+
+
+
++-------------------------------------------------------------------------------+
+; Minimum Output Disable Times                                                  ;
++-----------+------------+-----------+-----------+------------+-----------------+
+; Data Port ; Clock Port ; 0 to Hi-Z ; 1 to Hi-Z ; Clock Edge ; Clock Reference ;
++-----------+------------+-----------+-----------+------------+-----------------+
+; sdio      ; clk        ; 5.404     ; 5.334     ; Rise       ; clk             ;
++-----------+------------+-----------+-----------+------------+-----------------+
+
+
+----------------------------------------------
+; Fast 1100mV 0C Model Metastability Summary ;
+----------------------------------------------
+No synchronizer chains to report.
+
+
++-----------------------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                                     ;
++--------------------------+----------+--------+----------+---------+---------------------+
+; Clock                    ; Setup    ; Hold   ; Recovery ; Removal ; Minimum Pulse Width ;
++--------------------------+----------+--------+----------+---------+---------------------+
+; Worst-case Slack         ; -4.863   ; -0.280 ; N/A      ; N/A     ; -0.538              ;
+;  clk                     ; -4.863   ; -0.280 ; N/A      ; N/A     ; -0.538              ;
+;  state.send_spi          ; -3.640   ; 1.248  ; N/A      ; N/A     ; 0.300               ;
+;  state.wait_between_sent ; -1.740   ; 0.418  ; N/A      ; N/A     ; 0.398               ;
+;  state.wait_input        ; -3.199   ; 0.291  ; N/A      ; N/A     ; 0.274               ;
+; Design-wide TNS          ; -310.965 ; -1.5   ; 0.0      ; 0.0     ; -69.149             ;
+;  clk                     ; -299.386 ; -1.500 ; N/A      ; N/A     ; -69.149             ;
+;  state.send_spi          ; -3.640   ; 0.000  ; N/A      ; N/A     ; 0.000               ;
+;  state.wait_between_sent ; -1.740   ; 0.000  ; N/A      ; N/A     ; 0.000               ;
+;  state.wait_input        ; -6.528   ; 0.000  ; N/A      ; N/A     ; 0.000               ;
++--------------------------+----------+--------+----------+---------+---------------------+
+
+
++-----------------------------------------------------------------------+
+; Setup Times                                                           ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; ena       ; clk        ; 3.588 ; 3.428 ; Rise       ; clk             ;
+; reset_n   ; clk        ; 3.837 ; 4.520 ; Rise       ; clk             ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-----------------------------------------------------------------------+
+; Hold Times                                                            ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; ena       ; clk        ; 0.349 ; 0.174 ; Rise       ; clk             ;
+; reset_n   ; clk        ; 0.400 ; 0.159 ; Rise       ; clk             ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------------------------------------------+
+; Clock to Output Times                                                                                 ;
++--------------------+-------------------------+--------+--------+------------+-------------------------+
+; Data Port          ; Clock Port              ; Rise   ; Fall   ; Clock Edge ; Clock Reference         ;
++--------------------+-------------------------+--------+--------+------------+-------------------------+
+; adc_sck            ; clk                     ; 10.983 ; 11.231 ; Rise       ; clk                     ;
+; sclk               ; clk                     ; 8.696  ; 8.850  ; Rise       ; clk                     ;
+; sdio               ; clk                     ; 9.343  ; 9.549  ; Rise       ; clk                     ;
+; sinitial           ; clk                     ; 8.572  ; 8.412  ; Rise       ; clk                     ;
+; swait_while_busy   ; clk                     ; 9.953  ; 10.448 ; Rise       ; clk                     ;
+; ssend              ; state.send_spi          ; 4.520  ;        ; Rise       ; state.send_spi          ;
+; test               ; state.send_spi          ; 6.560  ; 6.618  ; Rise       ; state.send_spi          ;
+; ssend              ; state.send_spi          ;        ; 4.653  ; Fall       ; state.send_spi          ;
+; swait_between_sent ; state.wait_between_sent ; 6.090  ;        ; Rise       ; state.wait_between_sent ;
+; swait_between_sent ; state.wait_between_sent ;        ; 6.571  ; Fall       ; state.wait_between_sent ;
+; swait_input        ; state.wait_input        ; 5.029  ;        ; Rise       ; state.wait_input        ;
+; test               ; state.wait_input        ; 7.054  ; 7.112  ; Rise       ; state.wait_input        ;
+; swait_input        ; state.wait_input        ;        ; 5.312  ; Fall       ; state.wait_input        ;
++--------------------+-------------------------+--------+--------+------------+-------------------------+
+
+
++-----------------------------------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                                                       ;
++--------------------+-------------------------+-------+-------+------------+-------------------------+
+; Data Port          ; Clock Port              ; Rise  ; Fall  ; Clock Edge ; Clock Reference         ;
++--------------------+-------------------------+-------+-------+------------+-------------------------+
+; adc_sck            ; clk                     ; 4.392 ; 4.613 ; Rise       ; clk                     ;
+; sclk               ; clk                     ; 4.001 ; 4.137 ; Rise       ; clk                     ;
+; sdio               ; clk                     ; 4.215 ; 4.461 ; Rise       ; clk                     ;
+; sinitial           ; clk                     ; 3.996 ; 3.844 ; Rise       ; clk                     ;
+; swait_while_busy   ; clk                     ; 4.502 ; 4.871 ; Rise       ; clk                     ;
+; ssend              ; state.send_spi          ; 2.232 ;       ; Rise       ; state.send_spi          ;
+; test               ; state.send_spi          ; 2.521 ; 2.593 ; Rise       ; state.send_spi          ;
+; ssend              ; state.send_spi          ;       ; 2.365 ; Fall       ; state.send_spi          ;
+; swait_between_sent ; state.wait_between_sent ; 2.888 ;       ; Rise       ; state.wait_between_sent ;
+; swait_between_sent ; state.wait_between_sent ;       ; 3.271 ; Fall       ; state.wait_between_sent ;
+; swait_input        ; state.wait_input        ; 2.444 ;       ; Rise       ; state.wait_input        ;
+; test               ; state.wait_input        ; 2.669 ; 2.741 ; Rise       ; state.wait_input        ;
+; swait_input        ; state.wait_input        ;       ; 2.653 ; Fall       ; state.wait_input        ;
++--------------------+-------------------------+-------+-------+------------+-------------------------+
+
+
++-----------------------------------------------------+
+; Propagation Delay                                   ;
++------------+-------------+-------+----+----+--------+
+; Input Port ; Output Port ; RR    ; RF ; FR ; FF     ;
++------------+-------------+-------+----+----+--------+
+; sdio       ; adc_sdi     ; 9.883 ;    ;    ; 10.136 ;
+; sdio       ; adc_sdo     ; 9.925 ;    ;    ; 10.184 ;
+; sdio       ; adc_sdot    ; 8.650 ;    ;    ; 8.850  ;
++------------+-------------+-------+----+----+--------+
+
+
++----------------------------------------------------+
+; Minimum Propagation Delay                          ;
++------------+-------------+-------+----+----+-------+
+; Input Port ; Output Port ; RR    ; RF ; FR ; FF    ;
++------------+-------------+-------+----+----+-------+
+; sdio       ; adc_sdi     ; 3.947 ;    ;    ; 4.580 ;
+; sdio       ; adc_sdo     ; 3.972 ;    ;    ; 4.607 ;
+; sdio       ; adc_sdot    ; 3.962 ;    ;    ; 4.608 ;
++------------+-------------+-------+----+----+-------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Board Trace Model Assignments                                                                                                                                                                                                                                                                                                                                                                                         ;
++--------------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
+; Pin                ; I/O Standard ; Near Tline Length ; Near Tline L per Length ; Near Tline C per Length ; Near Series R ; Near Differential R ; Near Pull-up R ; Near Pull-down R ; Near C ; Far Tline Length ; Far Tline L per Length ; Far Tline C per Length ; Far Series R ; Far Pull-up R ; Far Pull-down R ; Far C ; Termination Voltage ; Far Differential R ; EBD File Name ; EBD Signal Name ; EBD Far-end ;
++--------------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
+; sclk               ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; cs                 ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; test               ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; convst             ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; adc_sck            ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; adc_sdi            ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; sinitial           ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; swait_input        ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; ssend              ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; swait_while_busy   ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; swait_between_sent ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; sdio               ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; adc_sdo            ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; adc_sdot           ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
++--------------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
+
+
++-------------------------------------------------------------+
+; Input Transition Times                                      ;
++----------+--------------+-----------------+-----------------+
+; Pin      ; I/O Standard ; 10-90 Rise Time ; 90-10 Fall Time ;
++----------+--------------+-----------------+-----------------+
+; sdio     ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; adc_sdo  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; adc_sdot ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; reset_n  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; clk      ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ena      ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
++----------+--------------+-----------------+-----------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Integrity Metrics (Slow 1100mv 0c Model)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ;
++--------------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Pin                ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
++--------------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; sclk               ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 2.15e-07 V                   ; 2.41 V              ; -0.0495 V           ; 0.18 V                               ; 0.115 V                              ; 4.54e-10 s                  ; 4.44e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 2.15e-07 V                  ; 2.41 V             ; -0.0495 V          ; 0.18 V                              ; 0.115 V                             ; 4.54e-10 s                 ; 4.44e-10 s                 ; No                        ; Yes                       ;
+; cs                 ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 2.15e-07 V                   ; 2.41 V              ; -0.0492 V           ; 0.181 V                              ; 0.116 V                              ; 4.54e-10 s                  ; 4.44e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 2.15e-07 V                  ; 2.41 V             ; -0.0492 V          ; 0.181 V                             ; 0.116 V                             ; 4.54e-10 s                 ; 4.44e-10 s                 ; No                        ; Yes                       ;
+; test               ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 2.15e-07 V                   ; 2.41 V              ; -0.0495 V           ; 0.18 V                               ; 0.115 V                              ; 4.54e-10 s                  ; 4.44e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 2.15e-07 V                  ; 2.41 V             ; -0.0495 V          ; 0.18 V                              ; 0.115 V                             ; 4.54e-10 s                 ; 4.44e-10 s                 ; No                        ; Yes                       ;
+; convst             ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 2.15e-07 V                   ; 2.41 V              ; -0.0492 V           ; 0.181 V                              ; 0.116 V                              ; 4.54e-10 s                  ; 4.44e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 2.15e-07 V                  ; 2.41 V             ; -0.0492 V          ; 0.181 V                             ; 0.116 V                             ; 4.54e-10 s                 ; 4.44e-10 s                 ; No                        ; Yes                       ;
+; adc_sck            ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 2.15e-07 V                   ; 2.41 V              ; -0.0495 V           ; 0.18 V                               ; 0.115 V                              ; 4.54e-10 s                  ; 4.44e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 2.15e-07 V                  ; 2.41 V             ; -0.0495 V          ; 0.18 V                              ; 0.115 V                             ; 4.54e-10 s                 ; 4.44e-10 s                 ; No                        ; Yes                       ;
+; adc_sdi            ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 2.15e-07 V                   ; 2.41 V              ; -0.0495 V           ; 0.18 V                               ; 0.115 V                              ; 4.54e-10 s                  ; 4.44e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 2.15e-07 V                  ; 2.41 V             ; -0.0495 V          ; 0.18 V                              ; 0.115 V                             ; 4.54e-10 s                 ; 4.44e-10 s                 ; No                        ; Yes                       ;
+; sinitial           ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 2.19e-07 V                   ; 2.4 V               ; -0.039 V            ; 0.21 V                               ; 0.145 V                              ; 4.67e-10 s                  ; 4.63e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 2.19e-07 V                  ; 2.4 V              ; -0.039 V           ; 0.21 V                              ; 0.145 V                             ; 4.67e-10 s                 ; 4.63e-10 s                 ; No                        ; Yes                       ;
+; swait_input        ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.88e-07 V                   ; 2.35 V              ; -0.0185 V           ; 0.153 V                              ; 0.099 V                              ; 4.6e-10 s                   ; 4.48e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 1.88e-07 V                  ; 2.35 V             ; -0.0185 V          ; 0.153 V                             ; 0.099 V                             ; 4.6e-10 s                  ; 4.48e-10 s                 ; No                        ; Yes                       ;
+; ssend              ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.88e-07 V                   ; 2.35 V              ; -0.0185 V           ; 0.153 V                              ; 0.099 V                              ; 4.6e-10 s                   ; 4.48e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 1.88e-07 V                  ; 2.35 V             ; -0.0185 V          ; 0.153 V                             ; 0.099 V                             ; 4.6e-10 s                  ; 4.48e-10 s                 ; No                        ; Yes                       ;
+; swait_while_busy   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.88e-07 V                   ; 2.35 V              ; -0.0185 V           ; 0.153 V                              ; 0.099 V                              ; 4.6e-10 s                   ; 4.48e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 1.88e-07 V                  ; 2.35 V             ; -0.0185 V          ; 0.153 V                             ; 0.099 V                             ; 4.6e-10 s                  ; 4.48e-10 s                 ; No                        ; Yes                       ;
+; swait_between_sent ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 2.19e-07 V                   ; 2.4 V               ; -0.039 V            ; 0.21 V                               ; 0.145 V                              ; 4.67e-10 s                  ; 4.63e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 2.19e-07 V                  ; 2.4 V              ; -0.039 V           ; 0.21 V                              ; 0.145 V                             ; 4.67e-10 s                 ; 4.63e-10 s                 ; No                        ; Yes                       ;
+; sdio               ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 2.19e-07 V                   ; 2.4 V               ; -0.039 V            ; 0.21 V                               ; 0.145 V                              ; 4.67e-10 s                  ; 4.63e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 2.19e-07 V                  ; 2.4 V              ; -0.039 V           ; 0.21 V                              ; 0.145 V                             ; 4.67e-10 s                 ; 4.63e-10 s                 ; No                        ; Yes                       ;
+; adc_sdo            ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 2.15e-07 V                   ; 2.41 V              ; -0.0492 V           ; 0.181 V                              ; 0.116 V                              ; 4.54e-10 s                  ; 4.44e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 2.15e-07 V                  ; 2.41 V             ; -0.0492 V          ; 0.181 V                             ; 0.116 V                             ; 4.54e-10 s                 ; 4.44e-10 s                 ; No                        ; Yes                       ;
+; adc_sdot           ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 2.15e-07 V                   ; 2.41 V              ; -0.0492 V           ; 0.181 V                              ; 0.116 V                              ; 4.54e-10 s                  ; 4.44e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 2.15e-07 V                  ; 2.41 V             ; -0.0492 V          ; 0.181 V                             ; 0.116 V                             ; 4.54e-10 s                 ; 4.44e-10 s                 ; No                        ; Yes                       ;
++--------------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Integrity Metrics (Slow 1100mv 85c Model)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                ;
++--------------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Pin                ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
++--------------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; sclk               ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 2.52e-05 V                   ; 2.38 V              ; -0.0315 V           ; 0.205 V                              ; 0.182 V                              ; 4.74e-10 s                  ; 4.85e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 2.52e-05 V                  ; 2.38 V             ; -0.0315 V          ; 0.205 V                             ; 0.182 V                             ; 4.74e-10 s                 ; 4.85e-10 s                 ; No                        ; Yes                       ;
+; cs                 ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 2.52e-05 V                   ; 2.38 V              ; -0.032 V            ; 0.204 V                              ; 0.181 V                              ; 4.74e-10 s                  ; 4.85e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 2.52e-05 V                  ; 2.38 V             ; -0.032 V           ; 0.204 V                             ; 0.181 V                             ; 4.74e-10 s                 ; 4.85e-10 s                 ; No                        ; Yes                       ;
+; test               ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 2.52e-05 V                   ; 2.38 V              ; -0.0315 V           ; 0.205 V                              ; 0.182 V                              ; 4.74e-10 s                  ; 4.85e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 2.52e-05 V                  ; 2.38 V             ; -0.0315 V          ; 0.205 V                             ; 0.182 V                             ; 4.74e-10 s                 ; 4.85e-10 s                 ; No                        ; Yes                       ;
+; convst             ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 2.52e-05 V                   ; 2.38 V              ; -0.032 V            ; 0.204 V                              ; 0.181 V                              ; 4.74e-10 s                  ; 4.85e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 2.52e-05 V                  ; 2.38 V             ; -0.032 V           ; 0.204 V                             ; 0.181 V                             ; 4.74e-10 s                 ; 4.85e-10 s                 ; No                        ; Yes                       ;
+; adc_sck            ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 2.52e-05 V                   ; 2.38 V              ; -0.0315 V           ; 0.205 V                              ; 0.182 V                              ; 4.74e-10 s                  ; 4.85e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 2.52e-05 V                  ; 2.38 V             ; -0.0315 V          ; 0.205 V                             ; 0.182 V                             ; 4.74e-10 s                 ; 4.85e-10 s                 ; No                        ; Yes                       ;
+; adc_sdi            ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 2.52e-05 V                   ; 2.38 V              ; -0.0315 V           ; 0.205 V                              ; 0.182 V                              ; 4.74e-10 s                  ; 4.85e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 2.52e-05 V                  ; 2.38 V             ; -0.0315 V          ; 0.205 V                             ; 0.182 V                             ; 4.74e-10 s                 ; 4.85e-10 s                 ; No                        ; Yes                       ;
+; sinitial           ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 2.56e-05 V                   ; 2.38 V              ; -0.026 V            ; 0.249 V                              ; 0.089 V                              ; 4.95e-10 s                  ; 6.01e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 2.56e-05 V                  ; 2.38 V             ; -0.026 V           ; 0.249 V                             ; 0.089 V                             ; 4.95e-10 s                 ; 6.01e-10 s                 ; No                        ; Yes                       ;
+; swait_input        ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 2.27e-05 V                   ; 2.34 V              ; -0.0089 V           ; 0.206 V                              ; 0.058 V                              ; 4.97e-10 s                  ; 5.13e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 2.27e-05 V                  ; 2.34 V             ; -0.0089 V          ; 0.206 V                             ; 0.058 V                             ; 4.97e-10 s                 ; 5.13e-10 s                 ; Yes                       ; Yes                       ;
+; ssend              ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 2.27e-05 V                   ; 2.34 V              ; -0.0089 V           ; 0.206 V                              ; 0.058 V                              ; 4.97e-10 s                  ; 5.13e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 2.27e-05 V                  ; 2.34 V             ; -0.0089 V          ; 0.206 V                             ; 0.058 V                             ; 4.97e-10 s                 ; 5.13e-10 s                 ; Yes                       ; Yes                       ;
+; swait_while_busy   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 2.27e-05 V                   ; 2.34 V              ; -0.0089 V           ; 0.206 V                              ; 0.058 V                              ; 4.97e-10 s                  ; 5.13e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 2.27e-05 V                  ; 2.34 V             ; -0.0089 V          ; 0.206 V                             ; 0.058 V                             ; 4.97e-10 s                 ; 5.13e-10 s                 ; Yes                       ; Yes                       ;
+; swait_between_sent ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 2.56e-05 V                   ; 2.38 V              ; -0.026 V            ; 0.249 V                              ; 0.089 V                              ; 4.95e-10 s                  ; 6.01e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 2.56e-05 V                  ; 2.38 V             ; -0.026 V           ; 0.249 V                             ; 0.089 V                             ; 4.95e-10 s                 ; 6.01e-10 s                 ; No                        ; Yes                       ;
+; sdio               ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 2.56e-05 V                   ; 2.38 V              ; -0.026 V            ; 0.249 V                              ; 0.089 V                              ; 4.95e-10 s                  ; 6.01e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 2.56e-05 V                  ; 2.38 V             ; -0.026 V           ; 0.249 V                             ; 0.089 V                             ; 4.95e-10 s                 ; 6.01e-10 s                 ; No                        ; Yes                       ;
+; adc_sdo            ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 2.52e-05 V                   ; 2.38 V              ; -0.032 V            ; 0.204 V                              ; 0.181 V                              ; 4.74e-10 s                  ; 4.85e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 2.52e-05 V                  ; 2.38 V             ; -0.032 V           ; 0.204 V                             ; 0.181 V                             ; 4.74e-10 s                 ; 4.85e-10 s                 ; No                        ; Yes                       ;
+; adc_sdot           ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 2.52e-05 V                   ; 2.38 V              ; -0.032 V            ; 0.204 V                              ; 0.181 V                              ; 4.74e-10 s                  ; 4.85e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 2.52e-05 V                  ; 2.38 V             ; -0.032 V           ; 0.204 V                             ; 0.181 V                             ; 4.74e-10 s                 ; 4.85e-10 s                 ; No                        ; Yes                       ;
++--------------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Integrity Metrics (Fast 1100mv 0c Model)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ;
++--------------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Pin                ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
++--------------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; sclk               ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.14e-06 V                   ; 2.91 V              ; -0.121 V            ; 0.326 V                              ; 0.297 V                              ; 2.74e-10 s                  ; 2.8e-10 s                   ; No                         ; No                         ; 2.75 V                      ; 4.14e-06 V                  ; 2.91 V             ; -0.121 V           ; 0.326 V                             ; 0.297 V                             ; 2.74e-10 s                 ; 2.8e-10 s                  ; No                        ; No                        ;
+; cs                 ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.14e-06 V                   ; 2.91 V              ; -0.119 V            ; 0.326 V                              ; 0.298 V                              ; 2.74e-10 s                  ; 2.8e-10 s                   ; No                         ; No                         ; 2.75 V                      ; 4.14e-06 V                  ; 2.91 V             ; -0.119 V           ; 0.326 V                             ; 0.298 V                             ; 2.74e-10 s                 ; 2.8e-10 s                  ; No                        ; No                        ;
+; test               ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.14e-06 V                   ; 2.91 V              ; -0.121 V            ; 0.326 V                              ; 0.297 V                              ; 2.74e-10 s                  ; 2.8e-10 s                   ; No                         ; No                         ; 2.75 V                      ; 4.14e-06 V                  ; 2.91 V             ; -0.121 V           ; 0.326 V                             ; 0.297 V                             ; 2.74e-10 s                 ; 2.8e-10 s                  ; No                        ; No                        ;
+; convst             ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.14e-06 V                   ; 2.91 V              ; -0.119 V            ; 0.326 V                              ; 0.298 V                              ; 2.74e-10 s                  ; 2.8e-10 s                   ; No                         ; No                         ; 2.75 V                      ; 4.14e-06 V                  ; 2.91 V             ; -0.119 V           ; 0.326 V                             ; 0.298 V                             ; 2.74e-10 s                 ; 2.8e-10 s                  ; No                        ; No                        ;
+; adc_sck            ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.14e-06 V                   ; 2.91 V              ; -0.121 V            ; 0.326 V                              ; 0.297 V                              ; 2.74e-10 s                  ; 2.8e-10 s                   ; No                         ; No                         ; 2.75 V                      ; 4.14e-06 V                  ; 2.91 V             ; -0.121 V           ; 0.326 V                             ; 0.297 V                             ; 2.74e-10 s                 ; 2.8e-10 s                  ; No                        ; No                        ;
+; adc_sdi            ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.14e-06 V                   ; 2.91 V              ; -0.121 V            ; 0.326 V                              ; 0.297 V                              ; 2.74e-10 s                  ; 2.8e-10 s                   ; No                         ; No                         ; 2.75 V                      ; 4.14e-06 V                  ; 2.91 V             ; -0.121 V           ; 0.326 V                             ; 0.297 V                             ; 2.74e-10 s                 ; 2.8e-10 s                  ; No                        ; No                        ;
+; sinitial           ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.25e-06 V                   ; 2.9 V               ; -0.107 V            ; 0.378 V                              ; 0.16 V                               ; 2.87e-10 s                  ; 4.28e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 4.25e-06 V                  ; 2.9 V              ; -0.107 V           ; 0.378 V                             ; 0.16 V                              ; 2.87e-10 s                 ; 4.28e-10 s                 ; No                        ; No                        ;
+; swait_input        ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 3.54e-06 V                   ; 2.81 V              ; -0.0578 V           ; 0.303 V                              ; 0.28 V                               ; 2.93e-10 s                  ; 3.01e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 3.54e-06 V                  ; 2.81 V             ; -0.0578 V          ; 0.303 V                             ; 0.28 V                              ; 2.93e-10 s                 ; 3.01e-10 s                 ; No                        ; No                        ;
+; ssend              ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 3.54e-06 V                   ; 2.81 V              ; -0.0578 V           ; 0.303 V                              ; 0.28 V                               ; 2.93e-10 s                  ; 3.01e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 3.54e-06 V                  ; 2.81 V             ; -0.0578 V          ; 0.303 V                             ; 0.28 V                              ; 2.93e-10 s                 ; 3.01e-10 s                 ; No                        ; No                        ;
+; swait_while_busy   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 3.54e-06 V                   ; 2.81 V              ; -0.0578 V           ; 0.303 V                              ; 0.28 V                               ; 2.93e-10 s                  ; 3.01e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 3.54e-06 V                  ; 2.81 V             ; -0.0578 V          ; 0.303 V                             ; 0.28 V                              ; 2.93e-10 s                 ; 3.01e-10 s                 ; No                        ; No                        ;
+; swait_between_sent ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.25e-06 V                   ; 2.9 V               ; -0.107 V            ; 0.378 V                              ; 0.16 V                               ; 2.87e-10 s                  ; 4.28e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 4.25e-06 V                  ; 2.9 V              ; -0.107 V           ; 0.378 V                             ; 0.16 V                              ; 2.87e-10 s                 ; 4.28e-10 s                 ; No                        ; No                        ;
+; sdio               ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.25e-06 V                   ; 2.9 V               ; -0.107 V            ; 0.378 V                              ; 0.16 V                               ; 2.87e-10 s                  ; 4.28e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 4.25e-06 V                  ; 2.9 V              ; -0.107 V           ; 0.378 V                             ; 0.16 V                              ; 2.87e-10 s                 ; 4.28e-10 s                 ; No                        ; No                        ;
+; adc_sdo            ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.14e-06 V                   ; 2.91 V              ; -0.119 V            ; 0.326 V                              ; 0.298 V                              ; 2.74e-10 s                  ; 2.8e-10 s                   ; No                         ; No                         ; 2.75 V                      ; 4.14e-06 V                  ; 2.91 V             ; -0.119 V           ; 0.326 V                             ; 0.298 V                             ; 2.74e-10 s                 ; 2.8e-10 s                  ; No                        ; No                        ;
+; adc_sdot           ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.14e-06 V                   ; 2.91 V              ; -0.119 V            ; 0.326 V                              ; 0.298 V                              ; 2.74e-10 s                  ; 2.8e-10 s                   ; No                         ; No                         ; 2.75 V                      ; 4.14e-06 V                  ; 2.91 V             ; -0.119 V           ; 0.326 V                             ; 0.298 V                             ; 2.74e-10 s                 ; 2.8e-10 s                  ; No                        ; No                        ;
++--------------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Integrity Metrics (Fast 1100mv 85c Model)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                ;
++--------------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Pin                ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
++--------------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; sclk               ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000242 V                   ; 2.86 V              ; -0.0814 V           ; 0.36 V                               ; 0.156 V                              ; 3e-10 s                     ; 4.34e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000242 V                  ; 2.86 V             ; -0.0814 V          ; 0.36 V                              ; 0.156 V                             ; 3e-10 s                    ; 4.34e-10 s                 ; No                        ; No                        ;
+; cs                 ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000242 V                   ; 2.86 V              ; -0.0805 V           ; 0.358 V                              ; 0.156 V                              ; 3.01e-10 s                  ; 4.34e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000242 V                  ; 2.86 V             ; -0.0805 V          ; 0.358 V                             ; 0.156 V                             ; 3.01e-10 s                 ; 4.34e-10 s                 ; No                        ; No                        ;
+; test               ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000242 V                   ; 2.86 V              ; -0.0814 V           ; 0.36 V                               ; 0.156 V                              ; 3e-10 s                     ; 4.34e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000242 V                  ; 2.86 V             ; -0.0814 V          ; 0.36 V                              ; 0.156 V                             ; 3e-10 s                    ; 4.34e-10 s                 ; No                        ; No                        ;
+; convst             ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000242 V                   ; 2.86 V              ; -0.0805 V           ; 0.358 V                              ; 0.156 V                              ; 3.01e-10 s                  ; 4.34e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000242 V                  ; 2.86 V             ; -0.0805 V          ; 0.358 V                             ; 0.156 V                             ; 3.01e-10 s                 ; 4.34e-10 s                 ; No                        ; No                        ;
+; adc_sck            ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000242 V                   ; 2.86 V              ; -0.0814 V           ; 0.36 V                               ; 0.156 V                              ; 3e-10 s                     ; 4.34e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000242 V                  ; 2.86 V             ; -0.0814 V          ; 0.36 V                              ; 0.156 V                             ; 3e-10 s                    ; 4.34e-10 s                 ; No                        ; No                        ;
+; adc_sdi            ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000242 V                   ; 2.86 V              ; -0.0814 V           ; 0.36 V                               ; 0.156 V                              ; 3e-10 s                     ; 4.34e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000242 V                  ; 2.86 V             ; -0.0814 V          ; 0.36 V                              ; 0.156 V                             ; 3e-10 s                    ; 4.34e-10 s                 ; No                        ; No                        ;
+; sinitial           ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000247 V                   ; 2.85 V              ; -0.0711 V           ; 0.204 V                              ; 0.181 V                              ; 4.55e-10 s                  ; 4.49e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000247 V                  ; 2.85 V             ; -0.0711 V          ; 0.204 V                             ; 0.181 V                             ; 4.55e-10 s                 ; 4.49e-10 s                 ; No                        ; No                        ;
+; swait_input        ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000213 V                   ; 2.79 V              ; -0.0324 V           ; 0.139 V                              ; 0.119 V                              ; 4.42e-10 s                  ; 4.33e-10 s                  ; No                         ; Yes                        ; 2.75 V                      ; 0.000213 V                  ; 2.79 V             ; -0.0324 V          ; 0.139 V                             ; 0.119 V                             ; 4.42e-10 s                 ; 4.33e-10 s                 ; No                        ; Yes                       ;
+; ssend              ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000213 V                   ; 2.79 V              ; -0.0324 V           ; 0.139 V                              ; 0.119 V                              ; 4.42e-10 s                  ; 4.33e-10 s                  ; No                         ; Yes                        ; 2.75 V                      ; 0.000213 V                  ; 2.79 V             ; -0.0324 V          ; 0.139 V                             ; 0.119 V                             ; 4.42e-10 s                 ; 4.33e-10 s                 ; No                        ; Yes                       ;
+; swait_while_busy   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000213 V                   ; 2.79 V              ; -0.0324 V           ; 0.139 V                              ; 0.119 V                              ; 4.42e-10 s                  ; 4.33e-10 s                  ; No                         ; Yes                        ; 2.75 V                      ; 0.000213 V                  ; 2.79 V             ; -0.0324 V          ; 0.139 V                             ; 0.119 V                             ; 4.42e-10 s                 ; 4.33e-10 s                 ; No                        ; Yes                       ;
+; swait_between_sent ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000247 V                   ; 2.85 V              ; -0.0711 V           ; 0.204 V                              ; 0.181 V                              ; 4.55e-10 s                  ; 4.49e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000247 V                  ; 2.85 V             ; -0.0711 V          ; 0.204 V                             ; 0.181 V                             ; 4.55e-10 s                 ; 4.49e-10 s                 ; No                        ; No                        ;
+; sdio               ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000247 V                   ; 2.85 V              ; -0.0711 V           ; 0.204 V                              ; 0.181 V                              ; 4.55e-10 s                  ; 4.49e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000247 V                  ; 2.85 V             ; -0.0711 V          ; 0.204 V                             ; 0.181 V                             ; 4.55e-10 s                 ; 4.49e-10 s                 ; No                        ; No                        ;
+; adc_sdo            ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000242 V                   ; 2.86 V              ; -0.0805 V           ; 0.358 V                              ; 0.156 V                              ; 3.01e-10 s                  ; 4.34e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000242 V                  ; 2.86 V             ; -0.0805 V          ; 0.358 V                             ; 0.156 V                             ; 3.01e-10 s                 ; 4.34e-10 s                 ; No                        ; No                        ;
+; adc_sdot           ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000242 V                   ; 2.86 V              ; -0.0805 V           ; 0.358 V                              ; 0.156 V                              ; 3.01e-10 s                  ; 4.34e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000242 V                  ; 2.86 V             ; -0.0805 V          ; 0.358 V                             ; 0.156 V                             ; 3.01e-10 s                 ; 4.34e-10 s                 ; No                        ; No                        ;
++--------------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+
+
++-----------------------------------------------------------------------------------------------+
+; Setup Transfers                                                                               ;
++-------------------------+-------------------------+----------+----------+----------+----------+
+; From Clock              ; To Clock                ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++-------------------------+-------------------------+----------+----------+----------+----------+
+; clk                     ; clk                     ; 4029     ; 0        ; 0        ; 0        ;
+; state.send_spi          ; clk                     ; 1        ; 1        ; 0        ; 0        ;
+; state.wait_between_sent ; clk                     ; 35       ; 34       ; 0        ; 0        ;
+; state.wait_input        ; clk                     ; 51       ; 2        ; 0        ; 0        ;
+; clk                     ; state.send_spi          ; 1        ; 0        ; 0        ; 0        ;
+; state.send_spi          ; state.wait_between_sent ; 1        ; 1        ; 0        ; 0        ;
+; clk                     ; state.wait_input        ; 1        ; 0        ; 0        ; 0        ;
+; state.send_spi          ; state.wait_input        ; 2        ; 2        ; 0        ; 0        ;
++-------------------------+-------------------------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++-----------------------------------------------------------------------------------------------+
+; Hold Transfers                                                                                ;
++-------------------------+-------------------------+----------+----------+----------+----------+
+; From Clock              ; To Clock                ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++-------------------------+-------------------------+----------+----------+----------+----------+
+; clk                     ; clk                     ; 4029     ; 0        ; 0        ; 0        ;
+; state.send_spi          ; clk                     ; 1        ; 1        ; 0        ; 0        ;
+; state.wait_between_sent ; clk                     ; 35       ; 34       ; 0        ; 0        ;
+; state.wait_input        ; clk                     ; 51       ; 2        ; 0        ; 0        ;
+; clk                     ; state.send_spi          ; 1        ; 0        ; 0        ; 0        ;
+; state.send_spi          ; state.wait_between_sent ; 1        ; 1        ; 0        ; 0        ;
+; clk                     ; state.wait_input        ; 1        ; 0        ; 0        ; 0        ;
+; state.send_spi          ; state.wait_input        ; 2        ; 2        ; 0        ; 0        ;
++-------------------------+-------------------------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No non-DPA dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths                            ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 3     ; 3    ;
+; Unconstrained Input Port Paths  ; 92    ; 92   ;
+; Unconstrained Output Ports      ; 12    ; 12   ;
+; Unconstrained Output Port Paths ; 13    ; 13   ;
++---------------------------------+-------+------+
+
+
++------------------------------------+
+; TimeQuest Timing Analyzer Messages ;
++------------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
+    Info: Version 15.0.0 Build 145 04/22/2015 SJ Web Edition
+    Info: Processing started: Thu Dec 10 13:48:52 2015
+Info: Command: quartus_sta spi -c spi
+Info: qsta_default_script.tcl version: #11
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 85 degrees C
+Warning (335093): TimeQuest Timing Analyzer is analyzing 3 combinational loops as latches.
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'spi.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332105): Deriving Clocks
+    Info (332105): create_clock -period 1.000 -name clk clk
+    Info (332105): create_clock -period 1.000 -name state.wait_between_sent state.wait_between_sent
+    Info (332105): create_clock -period 1.000 -name state.send_spi state.send_spi
+    Info (332105): create_clock -period 1.000 -name state.wait_input state.wait_input
+Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
+Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
+Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info: Analyzing Slow 1100mV 85C Model
+Critical Warning (332148): Timing requirements not met
+    Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
+Info (332146): Worst-case setup slack is -4.863
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -4.863            -299.386 clk 
+    Info (332119):    -3.496              -3.496 state.send_spi 
+    Info (332119):    -3.117              -6.343 state.wait_input 
+    Info (332119):    -1.740              -1.740 state.wait_between_sent 
+Info (332146): Worst-case hold slack is 0.059
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     0.059               0.000 clk 
+    Info (332119):     0.743               0.000 state.wait_input 
+    Info (332119):     0.957               0.000 state.wait_between_sent 
+    Info (332119):     2.654               0.000 state.send_spi 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -0.538
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -0.538             -68.548 clk 
+    Info (332119):     0.329               0.000 state.send_spi 
+    Info (332119):     0.335               0.000 state.wait_input 
+    Info (332119):     0.398               0.000 state.wait_between_sent 
+Info: Analyzing Slow 1100mV 0C Model
+Info (334003): Started post-fitting delay annotation
+Info (334004): Delay annotation completed successfully
+Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
+Critical Warning (332148): Timing requirements not met
+    Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
+Info (332146): Worst-case setup slack is -4.811
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -4.811            -290.318 clk 
+    Info (332119):    -3.640              -3.640 state.send_spi 
+    Info (332119):    -3.199              -6.528 state.wait_input 
+    Info (332119):    -1.730              -1.730 state.wait_between_sent 
+Info (332146): Worst-case hold slack is -0.280
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -0.280              -1.500 clk 
+    Info (332119):     0.765               0.000 state.wait_input 
+    Info (332119):     0.959               0.000 state.wait_between_sent 
+    Info (332119):     2.707               0.000 state.send_spi 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -0.538
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -0.538             -69.149 clk 
+    Info (332119):     0.274               0.000 state.wait_input 
+    Info (332119):     0.300               0.000 state.send_spi 
+    Info (332119):     0.398               0.000 state.wait_between_sent 
+Info: Analyzing Fast 1100mV 85C Model
+Info (334003): Started post-fitting delay annotation
+Info (334004): Delay annotation completed successfully
+Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
+Critical Warning (332148): Timing requirements not met
+    Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
+Info (332146): Worst-case setup slack is -1.999
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -1.999            -124.833 clk 
+    Info (332119):    -1.075              -1.075 state.send_spi 
+    Info (332119):    -0.933              -2.084 state.wait_input 
+    Info (332119):    -0.660              -0.660 state.wait_between_sent 
+Info (332146): Worst-case hold slack is 0.156
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     0.156               0.000 clk 
+    Info (332119):     0.330               0.000 state.wait_input 
+    Info (332119):     0.466               0.000 state.wait_between_sent 
+    Info (332119):     1.282               0.000 state.send_spi 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -0.106
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -0.106              -8.996 clk 
+    Info (332119):     0.400               0.000 state.wait_input 
+    Info (332119):     0.449               0.000 state.wait_between_sent 
+    Info (332119):     0.451               0.000 state.send_spi 
+Info: Analyzing Fast 1100mV 0C Model
+Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
+Critical Warning (332148): Timing requirements not met
+    Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
+Info (332146): Worst-case setup slack is -1.710
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -1.710             -97.539 clk 
+    Info (332119):    -1.019              -1.019 state.send_spi 
+    Info (332119):    -0.871              -1.820 state.wait_input 
+    Info (332119):    -0.543              -0.543 state.wait_between_sent 
+Info (332146): Worst-case hold slack is 0.053
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     0.053               0.000 clk 
+    Info (332119):     0.291               0.000 state.wait_input 
+    Info (332119):     0.418               0.000 state.wait_between_sent 
+    Info (332119):     1.248               0.000 state.send_spi 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -0.101
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -0.101              -8.692 clk 
+    Info (332119):     0.427               0.000 state.wait_input 
+    Info (332119):     0.449               0.000 state.send_spi 
+    Info (332119):     0.455               0.000 state.wait_between_sent 
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 7 warnings
+    Info: Peak virtual memory: 1041 megabytes
+    Info: Processing ended: Thu Dec 10 13:49:00 2015
+    Info: Elapsed time: 00:00:08
+    Info: Total CPU time (on all processors): 00:00:08
+
+

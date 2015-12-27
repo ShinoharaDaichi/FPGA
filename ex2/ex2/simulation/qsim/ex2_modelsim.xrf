@@ -1,0 +1,14 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/Daichi/hubiC/ELN/FPGA/Projects/ex2/nandEntity/nandEntity.vhd
+source_file = 1, C:/Users/Daichi/hubiC/ELN/FPGA/Projects/ex2/ex2/ex2.vhd
+source_file = 1, C:/Users/Daichi/hubiC/ELN/FPGA/Projects/ex2/ex2/ex2.vwf
+source_file = 1, c:/altera/15.0/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, c:/altera/15.0/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, c:/altera/15.0/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, c:/altera/15.0/quartus/libraries/vhdl/ieee/timing_p.vhd
+source_file = 1, C:/Users/Daichi/hubiC/ELN/FPGA/Projects/ex2/ex2/db/ex2.cbx.xml
+design_name = ex2
+instance = comp, \f~output , f~output, ex2, 1
+instance = comp, \x~input , x~input, ex2, 1
+instance = comp, \y~input , y~input, ex2, 1
+instance = comp, \nand3|f~0 , nand3|f~0, ex2, 1

@@ -1,0 +1,197 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1100mV 85C Model Setup 'clk'
+Slack : -11.531
+TNS   : -3543.134
+
+Type  : Slow 1100mV 85C Model Setup 'chenillard_pwm_adc:chenillard_pwm_adc_entity|adc:adc_entity|adc_sck'
+Slack : -4.028
+TNS   : -171.906
+
+Type  : Slow 1100mV 85C Model Setup 'chenillard_pwm_adc:chenillard_pwm_adc_entity|adc:adc_entity|send_sck'
+Slack : -3.876
+TNS   : -118.291
+
+Type  : Slow 1100mV 85C Model Setup 'servo2:servo2_entity|servo:servo_incremental_input|slow_clk'
+Slack : -2.786
+TNS   : -39.177
+
+Type  : Slow 1100mV 85C Model Hold 'clk'
+Slack : -0.428
+TNS   : -2.523
+
+Type  : Slow 1100mV 85C Model Hold 'servo2:servo2_entity|servo:servo_incremental_input|slow_clk'
+Slack : 0.707
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'chenillard_pwm_adc:chenillard_pwm_adc_entity|adc:adc_entity|send_sck'
+Slack : 0.740
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'chenillard_pwm_adc:chenillard_pwm_adc_entity|adc:adc_entity|adc_sck'
+Slack : 0.972
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clk'
+Slack : -2.225
+TNS   : -559.454
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'servo2:servo2_entity|servo:servo_incremental_input|slow_clk'
+Slack : -2.225
+TNS   : -29.143
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'chenillard_pwm_adc:chenillard_pwm_adc_entity|adc:adc_entity|adc_sck'
+Slack : -0.538
+TNS   : -39.882
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'chenillard_pwm_adc:chenillard_pwm_adc_entity|adc:adc_entity|send_sck'
+Slack : -0.538
+TNS   : -27.145
+
+Type  : Slow 1100mV 0C Model Setup 'clk'
+Slack : -11.625
+TNS   : -3531.137
+
+Type  : Slow 1100mV 0C Model Setup 'chenillard_pwm_adc:chenillard_pwm_adc_entity|adc:adc_entity|adc_sck'
+Slack : -4.017
+TNS   : -171.519
+
+Type  : Slow 1100mV 0C Model Setup 'chenillard_pwm_adc:chenillard_pwm_adc_entity|adc:adc_entity|send_sck'
+Slack : -3.863
+TNS   : -118.807
+
+Type  : Slow 1100mV 0C Model Setup 'servo2:servo2_entity|servo:servo_incremental_input|slow_clk'
+Slack : -2.755
+TNS   : -39.483
+
+Type  : Slow 1100mV 0C Model Hold 'clk'
+Slack : -0.917
+TNS   : -27.135
+
+Type  : Slow 1100mV 0C Model Hold 'servo2:servo2_entity|servo:servo_incremental_input|slow_clk'
+Slack : 0.561
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'chenillard_pwm_adc:chenillard_pwm_adc_entity|adc:adc_entity|send_sck'
+Slack : 0.731
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'chenillard_pwm_adc:chenillard_pwm_adc_entity|adc:adc_entity|adc_sck'
+Slack : 0.955
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clk'
+Slack : -2.225
+TNS   : -595.586
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'servo2:servo2_entity|servo:servo_incremental_input|slow_clk'
+Slack : -2.225
+TNS   : -28.731
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'chenillard_pwm_adc:chenillard_pwm_adc_entity|adc:adc_entity|adc_sck'
+Slack : -0.538
+TNS   : -38.853
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'chenillard_pwm_adc:chenillard_pwm_adc_entity|adc:adc_entity|send_sck'
+Slack : -0.538
+TNS   : -27.053
+
+Type  : Fast 1100mV 85C Model Setup 'clk'
+Slack : -4.822
+TNS   : -1465.340
+
+Type  : Fast 1100mV 85C Model Setup 'chenillard_pwm_adc:chenillard_pwm_adc_entity|adc:adc_entity|adc_sck'
+Slack : -1.757
+TNS   : -74.935
+
+Type  : Fast 1100mV 85C Model Setup 'chenillard_pwm_adc:chenillard_pwm_adc_entity|adc:adc_entity|send_sck'
+Slack : -1.614
+TNS   : -47.397
+
+Type  : Fast 1100mV 85C Model Setup 'servo2:servo2_entity|servo:servo_incremental_input|slow_clk'
+Slack : -1.010
+TNS   : -12.555
+
+Type  : Fast 1100mV 85C Model Hold 'clk'
+Slack : -0.162
+TNS   : -1.499
+
+Type  : Fast 1100mV 85C Model Hold 'servo2:servo2_entity|servo:servo_incremental_input|slow_clk'
+Slack : 0.231
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'chenillard_pwm_adc:chenillard_pwm_adc_entity|adc:adc_entity|send_sck'
+Slack : 0.293
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'chenillard_pwm_adc:chenillard_pwm_adc_entity|adc:adc_entity|adc_sck'
+Slack : 0.420
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clk'
+Slack : -1.702
+TNS   : -72.667
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'servo2:servo2_entity|servo:servo_incremental_input|slow_clk'
+Slack : -1.702
+TNS   : -15.652
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'chenillard_pwm_adc:chenillard_pwm_adc_entity|adc:adc_entity|adc_sck'
+Slack : -0.009
+TNS   : -0.050
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'chenillard_pwm_adc:chenillard_pwm_adc_entity|adc:adc_entity|send_sck'
+Slack : 0.103
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'clk'
+Slack : -4.473
+TNS   : -1283.650
+
+Type  : Fast 1100mV 0C Model Setup 'chenillard_pwm_adc:chenillard_pwm_adc_entity|adc:adc_entity|adc_sck'
+Slack : -1.555
+TNS   : -65.969
+
+Type  : Fast 1100mV 0C Model Setup 'chenillard_pwm_adc:chenillard_pwm_adc_entity|adc:adc_entity|send_sck'
+Slack : -1.430
+TNS   : -42.034
+
+Type  : Fast 1100mV 0C Model Setup 'servo2:servo2_entity|servo:servo_incremental_input|slow_clk'
+Slack : -0.850
+TNS   : -10.827
+
+Type  : Fast 1100mV 0C Model Hold 'clk'
+Slack : -0.409
+TNS   : -12.908
+
+Type  : Fast 1100mV 0C Model Hold 'servo2:servo2_entity|servo:servo_incremental_input|slow_clk'
+Slack : 0.157
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'chenillard_pwm_adc:chenillard_pwm_adc_entity|adc:adc_entity|send_sck'
+Slack : 0.255
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'chenillard_pwm_adc:chenillard_pwm_adc_entity|adc:adc_entity|adc_sck'
+Slack : 0.380
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clk'
+Slack : -1.702
+TNS   : -74.770
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'servo2:servo2_entity|servo:servo_incremental_input|slow_clk'
+Slack : -1.702
+TNS   : -15.318
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'chenillard_pwm_adc:chenillard_pwm_adc_entity|adc:adc_entity|adc_sck'
+Slack : 0.033
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'chenillard_pwm_adc:chenillard_pwm_adc_entity|adc:adc_entity|send_sck'
+Slack : 0.115
+TNS   : 0.000
+
+------------------------------------------------------------
